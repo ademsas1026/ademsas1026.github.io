@@ -1,0 +1,1207 @@
+#appStyle {
+  display: flex;
+}
+@media only screen and (max-width: 721px) {
+  #appStyle #sidebar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  #appStyle #sidebar {
+    position: fixed;
+    width: 30vw;
+    height: 90%;
+    top: 0;
+    left: 5vw;
+    margin: -5vh 0vw 5vh -2vw;
+    padding: 5vh 2vw 10vh 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(65, 125, 77, 0.721);
+    border-left: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-right: 0.1em solid rgba(194, 145, 59, 0.5);
+  }
+  #appStyle #sidebar #titleHeading {
+    font-size: 2.5em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #sidebar #titleSubheading {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #sidebar img {
+    border-radius: 75%;
+    width: 18vw;
+    height: auto;
+    align-self: center;
+  }
+  #appStyle #sidebar #nav #columnNav {
+    position: relative;
+    top: -5vh;
+  }
+  #appStyle #sidebar #nav #rowNav {
+    position: relative;
+  }
+  #appStyle #sidebar #techList {
+    display: flex;
+  }
+  #appStyle #sidebar #techList ul {
+    list-style-type: none;
+  }
+}
+#appStyle section #rowNav {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+  align-items: space-evenly;
+  transition: 1s ease-in-out;
+}
+#appStyle section #columnNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5vh 0vw 5vh 0vw;
+  align-items: space-around;
+  transition: 1s ease-in-out;
+}
+#appStyle section h1 {
+  text-align: justify;
+  text-justify: inter-word;
+  flex-basis: 10%;
+  flex-wrap: wrap;
+}
+#appStyle section p {
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+#appStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#appStyle a {
+  text-decoration: none;
+}
+#appStyle a:visited {
+  color: black;
+}
+#appStyle a:hover {
+  color: #fff;
+}
+@media only screen and (max-device-width: 480px) {
+  #appStyle #navbar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: grey;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -2vh;
+    left: -1vw;
+    padding-right: 1vw;
+  }
+  #appStyle #navbar h1 {
+    font-size: 2em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #navbar h3 {
+    font-size: 1.25em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #navbar #headshot {
+    border-radius: 75%;
+    max-width: 30%;
+    max-height: auto;
+    margin-top: 2vw;
+    align-self: center;
+  }
+  #appStyle #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    font-size: 2em;
+  }
+  #appStyle #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appStyle #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appStyle #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appStyle #navbar #rowNav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    font-size: 1em;
+  }
+  #appStyle #navbar #rowNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appStyle #navbar #rowNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appStyle #navbar #rowNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appStyle #navbar #rowNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appStyle #navbar #techList {
+    display: flex;
+  }
+  #appStyle #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appStyle #navbar #techList ul h3 {
+    font-size: 0.5em;
+  }
+  #appStyle #navbar #techList ul li {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 721px) and (min-width: 481px) {
+  #appStyle #navbar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(194, 145, 59, 0.5);
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    top: 0;
+    left: -12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  #appStyle #navbar h1 {
+    font-size: 2em;
+    margin: 0 0 0 0;
+    align-self: center;
+  }
+  #appStyle #navbar h3 {
+    font-size: 1em;
+    margin: 0 0 0 0;
+    align-self: center;
+  }
+  #appStyle #navbar #headshot {
+    border-radius: 75%;
+    max-width: 30%;
+    max-height: auto;
+    margin-top: 2vw;
+    align-self: center;
+  }
+  #appStyle #navbar #nav {
+    display: flex;
+    align-items: stretch;
+    margin-top: 2vw;
+  }
+  #appStyle #navbar #nav #techLink {
+    margin-left: 4vw;
+  }
+  #appStyle #navbar #nav #portfolioLink {
+    margin-left: 4vw;
+  }
+  #appStyle #navbar #nav #contactLink {
+    align-self: flex-end;
+    margin-left: 4vw;
+  }
+  #appStyle #navbar #techList {
+    display: flex;
+  }
+  #appStyle #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appStyle #navbar #techList ul h3 {
+    font-size: 1em;
+  }
+  #appStyle #navbar #techList ul li {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 721px) {
+  #appStyle #navbar {
+    background-color: rgba(194, 145, 59, 0.5);
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    left: -50vw;
+    top: -0.2vw;
+  }
+  #appStyle #navbar h1 {
+    font-size: 3em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #navbar h3 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+  }
+  #appStyle #navbar #headshot {
+    border-radius: 75%;
+    width: 20vw;
+    height: auto;
+    margin-top: 2vw;
+  }
+  #appStyle #navbar #nav {
+    display: flex;
+    align-items: stretch;
+    margin-top: 2vw;
+  }
+  #appStyle #navbar #nav #portfolioLink {
+    margin-left: 4vw;
+  }
+  #appStyle #navbar #nav #contactLink {
+    align-self: flex-end;
+    margin-left: 4vw;
+  }
+  #appStyle #navbar #bio {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  #appStyle #navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  #appStyle #content .about {
+    width: 100%;
+    position: relative;
+    top: 90vh;
+    left: -25vw;
+  }
+  #appStyle #content .about #bioAbout {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -75vh;
+  }
+  #appStyle #content .about #bioAbout #bioHeader {
+    display: none;
+  }
+  #appStyle #content .about #bioAbout #about {
+    margin: 0vh -10vw 0vh -10vw;
+  }
+  #appStyle #content .about #bioAbout #about #contactLink:hover {
+    color: black;
+    text-decoration-color: blue;
+  }
+}
+@media only screen and (max-width: 721px) and (min-width: 481px) {
+  #appStyle {
+    position: absolute;
+  }
+  #appStyle #content {
+    position: relative;
+  }
+  #appStyle #content .about {
+    position: relative;
+    top: 80vh;
+    left: -25vw;
+  }
+  #appStyle #content .about #bioAbout {
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #content .about #bioAbout #bioHeader {
+    font-size: 2em;
+    align-self: center;
+  }
+  #appStyle #content .about #bioAbout #about {
+    font-size: 1em;
+    text-align: center;
+  }
+  #appStyle #content .about #bioAbout #about #contactLink:hover {
+    color: black;
+    text-decoration-color: blue;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 721px) {
+  #appStyle #content .about {
+    width: 130%;
+    position: relative;
+    bottom: 40vh;
+    top: 0vh;
+    left: -35vw;
+  }
+  #appStyle #content .about #bioAbout {
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #content .about #bioAbout #bioHeader {
+    font-size: 4em;
+    align-self: center;
+  }
+  #appStyle #content .about #bioAbout #about {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  #appStyle #content .about #bioAbout #about #contactLink:hover {
+    color: black;
+    text-decoration-color: blue;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #appStyle {
+    position: absolute;
+  }
+  #appStyle #content .about #bioAbout #aboutAbout {
+    position: relative;
+    bottom: 15vh;
+    top: 20vh;
+    width: 50vw;
+    background-color: beige;
+    padding: 0 10vw 2vh 2vw;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #appStyle #content .about #bioAbout #aboutAbout #contactLink {
+    margin-left: 0.5vw;
+  }
+  #appStyle #content .about #bioAbout #aboutAbout #contactLink:hover {
+    color: black;
+    font-size: 2em;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  #appStyle {
+    position: absolute;
+  }
+  #appStyle #content .portfolio {
+    position: relative;
+    left: -45vw;
+    top: 110vh;
+  }
+  #appStyle #content .portfolio #allPortfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolioHeader {
+    color: #fff;
+    background-color: beige;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover {
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image {
+    position: relative;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image .screenshot {
+    width: 150%;
+    position: absolute;
+    opacity: 0.3;
+    -moz-transform: translateY(-22vh);
+    -webkit-transform: translateY(-22vh);
+    transform: translateY(-22vh);
+    transition: 600ms ease-in-out;
+    top: -4vh;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image #description {
+    width: 120%;
+    height: 70%;
+    position: relative;
+    left: 5vw;
+    opacity: 1;
+    -moz-transform: translateY(22vh) translateX(8vw);
+    -webkit-transform: translateY(22vh) translateX(8vw);
+    transform: translateY(22vh) translateX(8vw);
+    z-index: 100;
+    transition: 300ms ease-in-out;
+    font-size: 1em;
+    margin: -20vh 0vw 30vh 0vw;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav {
+    position: relative;
+    bottom: 0;
+    top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 35vw;
+    z-index: 200;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #githubLink {
+    position: relative;
+    width: 100%;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #githubLink #githubIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #deployLink {
+    position: relative;
+    left: 4vw;
+    width: 100%;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #deployLink #globeIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image {
+    position: relative;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .screenshot {
+    width: 150%;
+    position: absolute;
+    top: -10vw;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image #description {
+    width: 120%;
+    height: 70%;
+    position: relative;
+    top: 10vh;
+    opacity: 0;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 721px) and (min-width: 480px) {
+  #allPortfolio {
+    position: absolute;
+    top: 130vh;
+    width: 100%;
+    height: auto;
+    left: -23vw;
+  }
+  #allPortfolio #portfolioHeader {
+    position: relative;
+    font-size: 2em;
+    left: 22vw;
+    background-color: beige;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+
+  #portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 1vh;
+  }
+  #portfolio #gridItem:hover {
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio #gridItem:hover #image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: -10vh;
+    top: 5vh;
+  }
+  #portfolio #gridItem:hover #image .screenshot {
+    width: 300%;
+    position: absolute;
+    opacity: 0.3;
+    -moz-transform: translateY(-10vh);
+    -webkit-transform: translateY(-10vh);
+    transform: translateY(-10vh);
+    transition: 600ms ease-in-out;
+  }
+  #portfolio #gridItem:hover #image #description {
+    width: 200%;
+    height: 30%;
+    position: relative;
+    top: -10vh;
+    left: 9vw;
+    opacity: 1;
+    -moz-transform: translateY(36vh) translateX(8vw);
+    -webkit-transform: translateY(36vh) translateX(8vw);
+    transform: translateY(36vh) translateX(8vw);
+    z-index: 100;
+    transition: 300ms ease-in-out;
+    font-size: 1/5em;
+    margin: -10vh 0vw 20vh 0vw;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #portfolio #gridItem:hover nav {
+    position: relative;
+    bottom: 0;
+    top: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 35vw;
+    z-index: 200;
+  }
+  #portfolio #gridItem:hover nav #githubLink {
+    position: relative;
+    width: 100%;
+  }
+  #portfolio #gridItem:hover nav #githubLink #githubIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #portfolio #gridItem:hover nav #deployLink {
+    position: relative;
+    left: 4vw;
+    width: 100%;
+  }
+  #portfolio #gridItem:hover nav #deployLink #globeIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #portfolio #gridItem {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    margin-bottom: 20vh;
+    position: relative;
+    left: -15vw;
+  }
+  #portfolio #gridItem #image {
+    position: relative;
+    top: 4vh;
+  }
+  #portfolio #gridItem #image .screenshot {
+    width: 300%;
+    position: absolute;
+    top: -10vw;
+  }
+  #portfolio #gridItem #image #description {
+    width: 140%;
+    height: 70%;
+    position: relative;
+    top: 30vh;
+    opacity: 0;
+  }
+  #portfolio #gridItem nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1400px) {
+  #allPortfolio {
+    position: absolute;
+    left: 70vw;
+    top: 90vh;
+    bottom: 10vh;
+    margin: 0vh 0vw 0vh -40vw;
+    width: 100%;
+    height: auto;
+  }
+  #allPortfolio #portfolioHeader {
+    position: relative;
+    font-size: 3em;
+    left: 10.5vw;
+    background-color: beige;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #allPortfolio #portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 1vh;
+  }
+  #allPortfolio #portfolio #gridItem:hover {
+    display: flex;
+    flex-direction: column;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image {
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image .screenshot {
+    opacity: 0.3;
+    width: 125%;
+    position: absolute;
+    top: -10vh;
+    -moz-transform: translateY(-22vh);
+    -webkit-transform: translateY(-22vh);
+    transform: translateY(-22vh);
+    transition: 600ms ease-in-out;
+    top: -4vh;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image #description {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 6vw;
+    opacity: 1;
+    -moz-transform: translateY(-13vh) translateX(8vw);
+    -webkit-transform: translateY(-13vh) translateX(8vw);
+    transform: translateY(-13vh) translateX(8vw);
+    z-index: 100;
+    transition: 300ms ease-in-out;
+    font-size: 1.2em;
+    margin: -10vh 0vw 20vh 0vw;
+    background-color: rgba(164, 137, 109, 0.797);
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav {
+    position: relative;
+    bottom: 0;
+    top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 15vw;
+    z-index: 200;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #githubLink {
+    position: relative;
+    width: 100%;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #githubLink #githubIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #deployLink {
+    position: relative;
+    left: 4vw;
+    width: 100%;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #deployLink #globeIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    margin-bottom: 30vh;
+    position: relative;
+    left: 1vw;
+  }
+  #allPortfolio #portfolio #gridItem #image {
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem #image .screenshot {
+    width: 125%;
+    position: absolute;
+    top: -10vh;
+  }
+  #allPortfolio #portfolio #gridItem #image #description {
+    width: 120%;
+    height: 70%;
+    position: relative;
+    top: 30vh;
+    opacity: 0;
+    left: -20vw;
+  }
+  #allPortfolio #portfolio #gridItem nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #allPortfolio {
+    position: absolute;
+    left: 30vw;
+    top: 130vh;
+    bottom: 20vh;
+    width: 100%;
+    height: auto;
+  }
+  #allPortfolio #portfolioHeader {
+    position: relative;
+    font-size: 4em;
+    left: 10vw;
+    background-color: beige;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #allPortfolio #portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 1vh;
+  }
+  #allPortfolio #portfolio #gridItem:hover {
+    display: flex;
+    flex-direction: column;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image {
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image .screenshot {
+    opacity: 0.3;
+    width: 140%;
+    position: absolute;
+    top: -10vh;
+    -moz-transform: translateY(-22vh);
+    -webkit-transform: translateY(-22vh);
+    transform: translateY(-22vh);
+    transition: 600ms ease-in-out;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image .Chronos {
+    width: 105%;
+    left: 9vw;
+    top: 2vh;
+  }
+  #allPortfolio #portfolio #gridItem:hover #image #description {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: -10vh;
+    left: 6vw;
+    opacity: 1;
+    -moz-transform: translateY(46vh) translateX(8vw);
+    -webkit-transform: translateY(46vh) translateX(8vw);
+    transform: translateY(46vh) translateX(8vw);
+    z-index: 100;
+    transition: 300ms ease-in-out;
+    font-size: 1.5em;
+    margin: -10vh 0vw 20vh 0vw;
+    background-color: beige;
+    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
+    -moz-box-shadow: 0px 7px 25px 3px #857e85;
+    box-shadow: 0px 7px 25px 3px #857e85;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav {
+    position: relative;
+    bottom: 0;
+    top: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 15vw;
+    z-index: 200;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #githubLink {
+    position: relative;
+    width: 100%;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #githubLink #githubIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #deployLink {
+    position: relative;
+    left: 4vw;
+    width: 100%;
+  }
+  #allPortfolio #portfolio #gridItem:hover nav #deployLink #globeIcon {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    margin-bottom: 60vh;
+    position: relative;
+    left: 1vw;
+  }
+  #allPortfolio #portfolio #gridItem #image {
+    position: relative;
+  }
+  #allPortfolio #portfolio #gridItem #image .screenshot {
+    width: 140%;
+    position: absolute;
+    top: -10vh;
+  }
+  #allPortfolio #portfolio #gridItem #image .Chronos {
+    width: 105%;
+    left: 9vw;
+    top: 2vh;
+  }
+  #allPortfolio #portfolio #gridItem #image #description {
+    width: 120%;
+    height: 70%;
+    position: relative;
+    top: 30vh;
+    opacity: 0;
+    left: -20vw;
+  }
+  #allPortfolio #portfolio #gridItem nav {
+    display: none;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  #appStyle .contact {
+    position: relative;
+    top: 130vh;
+    left: -5vw;
+  }
+  #appStyle .contact #contact {
+    position: relative;
+  }
+  #appStyle .contact #contact form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+    padding: none;
+    width: 100%;
+    left: -20vw;
+  }
+  #appStyle .contact #contact #alternateContact {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -10vw;
+    top: 20vw;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton {
+    width: 20%;
+    position: relative;
+    left: 3vw;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 721px) and (min-width: 480px) {
+  #appStyle .contact {
+    position: relative;
+    top: 25vh;
+    left: -3vw;
+  }
+  #appStyle .contact #contactNav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 24vw;
+  }
+  #appStyle .contact #contactNav #contactHeader {
+    font-size: 2em;
+    align-self: center;
+    position: relative;
+    margin-bottom: 1vh;
+  }
+  #appStyle .contact #contactNav #contactHome {
+    align-self: center;
+    margin-bottom: -2vh;
+  }
+  #appStyle .contact #contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    top: 110vh;
+    left: -25vw;
+    margin: 85vh 0vw 0vh 5vw;
+  }
+  #appStyle .contact #contact form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 3vh;
+    padding: none;
+    width: 100%;
+  }
+  #appStyle .contact #contact #alternateContact {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 18vw;
+    top: 5vw;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton {
+    width: 20%;
+    position: relative;
+    left: 3vw;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 721px) {
+  #appStyle .contact {
+    position: relative;
+    top: -20vh;
+  }
+  #appStyle .contact #contactNav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+  }
+  #appStyle .contact #contactNav #contactHeader {
+    font-size: 4em;
+    align-self: center;
+  }
+  #appStyle .contact #contactNav #contactHome {
+    align-self: center;
+  }
+  #appStyle .contact #contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    top: 105vh;
+    left: -25vw;
+    margin: 85vh 0vw 0vh 5vw;
+  }
+  #appStyle .contact #contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 0vw 10vh 0vw;
+    padding: none;
+    width: 100%;
+  }
+  #appStyle .contact #contact #alternateContact {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 20vw;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact::after {
+    background-image: url("/images/nyc-map.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  #appStyle {
+    position: absolute;
+  }
+  #appStyle .contact {
+    position: relative;
+    top: 275vh;
+    left: 6vw;
+  }
+  #appStyle .contact #contactNav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #appStyle .contact #contactNav #contactHeader {
+    font-size: 3em;
+    position: relative;
+    left: 15vw;
+  }
+  #appStyle .contact #contactNav #contactHome {
+    position: relative;
+    left: 15vw;
+    top: -2vh;
+  }
+  #appStyle .contact #contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200%;
+  }
+  #appStyle .contact #contact form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1vh;
+    left: 15vw;
+  }
+  #appStyle .contact #contact #alternateContact {
+    display: flex;
+    position: relative;
+    margin-bottom: 40vh;
+    left: 12vw;
+    top: 2vh;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #appStyle {
+    position: absolute;
+  }
+  #appStyle .contact {
+    position: relative;
+    top: 335vh;
+    left: 20vw;
+  }
+  #appStyle .contact #contactNav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #appStyle .contact #contactNav #contactHeader {
+    font-size: 4em;
+  }
+  #appStyle .contact #contactNav #contactHome {
+    position: relative;
+  }
+  #appStyle .contact #contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200%;
+  }
+  #appStyle .contact #contact form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    left: 2.5vw;
+  }
+  #appStyle .contact #contact #alternateContact {
+    display: flex;
+    position: relative;
+    margin-bottom: 40vh;
+    left: -0.5vw;
+    top: 4vw;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
+    width: 50%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton {
+    width: 20%;
+  }
+  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
+    width: 50%;
+  }
+}
+#app {
+  font-family: "Roboto", sans-serif;
+  z-index: 1000;
+}
+#app #appStyle #content {
+  margin: 0vh 5vw 0vh 40vw;
+  box-sizing: border-box;
+  width: 70vw;
+}
+#app #appStyle #content #bio #typing {
+  margin: 30vh 0vw 45vh -20vw;
+  font-size: 3em;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 90%;
+    top: 300vh;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle #navButton {
+    position: fixed;
+    top: 80vh;
+    left: 70vw;
+    border-radius: 50%;
+    background-color: grey;
+    z-index: 1000;
+  }
+  #appStyle #navButton:hover {
+    background-image: linear-gradient(grey, rgba(20, 53, 85, 0.7));
+  }
+}
+@media only screen and (max-width: 721px) and (min-width: 480px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: 65%;
+    top: 260vh;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle #content #navButton {
+    display: none;
+  }
+}
+@media only screen and (min-width: 721px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: auto;
+    top: 380vh;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle #content #navButton {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

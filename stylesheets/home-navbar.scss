@@ -1,0 +1,213 @@
+#appStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  };
+  a:visited {
+    color: black;
+  };
+  a:hover {
+    color:#fff;
+  };
+  @media only screen and (max-device-width:  480px){
+   
+    #navbar {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:grey;
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -2vh;
+      left: -1vw;
+      padding-right: 1vw;
+      h1 {
+        font-size: 2em;
+        margin: 0 0 0 0;
+      };
+      h3 {
+        font-size: 1.25em;
+        margin: 0 0 0 0;
+      };
+      #headshot {
+        border-radius: 75%;
+        max-width: 30%;
+        max-height: auto;
+        margin-top: 2vw;
+        align-self: center;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 10vh;
+        font-size: 2em;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+        
+      };
+      #rowNav {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 10vh;
+        font-size: 1em;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 0.5em;
+          }
+          li {
+            font-size: 0.5em;
+          };
+        };
+      };
+    };
+    
+  };
+
+  @media only screen and (max-width: 721px)
+                    and (min-width: 481px)
+  {
+    #navbar {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(194, 145, 59, 0.5);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      top: 0;
+      left: -12vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+      h1 {
+        font-size: 2em;
+        margin: 0 0 0 0;
+        align-self: center;
+      };
+      h3 {
+        font-size: 1em;
+        margin: 0 0 0 0;
+        align-self: center;
+      };
+      #headshot {
+        border-radius: 75%;
+        max-width: 30%;
+        max-height: auto;
+        margin-top: 2vw;
+        align-self: center;
+      };
+      #nav {
+        display: flex;
+        align-items: stretch;
+        margin-top: 2vw;
+        #techLink {
+          margin-left: 4vw;
+        };
+        #portfolioLink {
+          margin-left: 4vw;
+        };
+        #contactLink {
+          align-self: flex-end;
+          margin-left: 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1em;
+          }
+          li {
+            font-size: 1em;
+          }
+        }
+      }
+    };
+    
+  };
+
+  @media only screen and (max-width: 900px)
+                     and (min-width: 721px)
+      {
+    #navbar {
+      h1 {
+        font-size: 3em;
+        margin: 0 0 0 0;
+      };
+      h3 {
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+      };
+      background-color: rgba(194, 145, 59, 0.5);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 85%;
+      left: -50vw;
+      top: -0.2vw;
+      #headshot {
+        border-radius: 75%;
+        width: 20vw;
+        height: auto;
+        margin-top: 2vw;
+      };
+      #nav {
+        display: flex;
+        align-items: stretch;
+        margin-top: 2vw;
+        #portfolioLink {
+          margin-left: 4vw;
+        };
+        #contactLink {
+          align-self: flex-end;
+          margin-left: 4vw;
+        }
+      };
+      #bio {
+        display: none;
+      }
+    };
+  };
+
+  @media only screen and (min-width: 721px) {
+    #navbar {
+      display: none;
+    };
+  };
+};

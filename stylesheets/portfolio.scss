@@ -1,0 +1,491 @@
+@media only screen and (max-device-width:  480px){
+  #appStyle {
+    position: absolute;
+    #content {
+      .portfolio {
+        position: relative;
+        left: -45vw;
+        top: 110vh;
+        #allPortfolio {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          #portfolioHeader {
+            color: #fff;
+            background-color: beige;
+            -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          };
+          #portfolio {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            #gridItem:hover {
+              display: flex;
+              flex-direction: column;
+              #image {
+                position: relative;
+                .screenshot {
+                  width: 150%;
+                  position: absolute;
+                  opacity: 0.3;
+                  -moz-transform: translateY(-22vh);
+                  -webkit-transform: translateY(-22vh);
+                  transform: translateY(-22vh); 
+                  transition: 600ms ease-in-out;
+                  top: -4vh;
+                };
+                #description {
+                  width: 120%;
+                  height: 70%;
+                  position: relative;
+                  left: 5vw;
+                  opacity: 1;
+                  -moz-transform: translateY(22vh) translateX(8vw);
+                  -webkit-transform: translateY(22vh) translateX(8vw);
+                  transform: translateY(22vh) translateX(8vw); 
+                  z-index: 100;
+                  transition: 300ms ease-in-out;
+                  font-size: 1em;
+                  margin: -20vh 0vw 30vh 0vw;
+                };
+              };
+              nav {
+                position: relative;
+                bottom: 0;
+                top: 5vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                left: 35vw;
+                z-index: 200;
+                #githubLink {
+                  position: relative;
+                  width: 100%;
+                  #githubIcon {
+                    width: 30%;
+                    height: auto;
+                    position: relative;
+                  };
+                };
+                #deployLink {
+                  position: relative;
+                  left: 4vw;
+                  width: 100%;
+                  #globeIcon {
+                    width: 30%;
+                    height: auto;
+                    position: relative;
+                  };
+                };
+              };
+            };
+            #gridItem {
+              display: flex;
+              flex-direction: column;
+              width: 100vh;
+              height: auto;
+              // margin-bottom: 60vh;
+              #image {
+                position: relative;
+                .screenshot {
+                  width: 150%;
+                  position: absolute;
+                  // left: -5vw;
+                  top: -10vw;
+                };
+                #description {
+                  width: 120%;
+                  height: 70%;
+                  position: relative;
+                  top: 10vh;
+                  opacity: 0;
+                };
+              };
+              nav {
+                display: none;
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+};
+
+@media only screen and (max-width: 721px)
+                  and (min-width: 480px)
+{
+  #allPortfolio {
+    position: absolute;
+    top: 130vh;
+    width: 100%;
+    height: auto;
+    left: -23vw;
+    #portfolioHeader {
+      position: relative;
+      font-size: 2em;
+      left: 22vw;
+      background-color: beige;
+      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+    };
+  };
+  #portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 1vh;
+    
+    #gridItem:hover {
+      display: flex;
+      flex-direction: column;
+      #image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        bottom: -10vh;
+        top: 5vh;
+        .screenshot {
+          width: 300%;
+          position: absolute;
+          opacity: 0.3;
+          -moz-transform: translateY(-10vh);
+          -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh); 
+          transition: 600ms ease-in-out;
+        };
+        #description {
+          width: 200%;
+          height: 30%;
+          position: relative;
+          top: -10vh;
+          left: 9vw;
+          opacity: 1;
+          -moz-transform: translateY(36vh) translateX(8vw);
+          -webkit-transform: translateY(36vh) translateX(8vw);
+          transform: translateY(36vh) translateX(8vw); 
+          z-index: 100;
+          transition: 300ms ease-in-out;
+          font-size: 1/5em;
+          margin: -10vh 0vw 20vh 0vw;
+          -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+        };
+      };
+      nav {
+        position: relative;
+        bottom: 0;
+        top: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 35vw;
+        z-index: 200;
+        #githubLink {
+          position: relative;
+          width: 100%;
+          #githubIcon {
+            width: 30%;
+            height: auto;
+            position: relative;
+          };
+        };
+        #deployLink {
+          position: relative;
+          left: 4vw;
+          width: 100%;
+          #globeIcon {
+            width: 30%;
+            height: auto;
+            position: relative;
+          };
+        };
+      };
+    };
+    #gridItem {
+      display: flex;
+      flex-direction: column;
+      width: 100vh;
+      height: auto;
+      margin-bottom: 20vh;
+      position: relative;
+      left: -15vw;
+      #image {
+        position: relative;
+        top: 4vh;
+        .screenshot {
+          width: 300%;
+          position: absolute;
+          top: -10vw;
+        };
+        #description {
+          width: 140%;
+          height: 70%;
+          position: relative;
+          top: 30vh;
+          opacity: 0;
+        };
+      };
+      nav {
+        display: none;
+      };
+    };
+  };
+};
+
+@media only screen and (min-width: 721px)
+                  and (max-width: 1400px)
+                  {
+  #allPortfolio {
+    position: absolute;
+    left: 70vw;
+    top: 90vh;
+    bottom: 10vh;
+    margin: 0vh 0vw 0vh -40vw;
+    width: 100%;
+    height: auto;
+    #portfolioHeader {
+      position: relative;
+      font-size: 3em;
+      left: 10.5vw;
+      background-color: beige;
+      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+    };
+    #portfolio {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      top: 1vh;
+      #gridItem:hover {
+        display: flex;
+        flex-direction: column;
+        #image {
+          position: relative;
+          .screenshot {
+            opacity: 0.3;
+            width: 125%;
+            position: absolute;
+            top: -10vh;
+            -moz-transform: translateY(-22vh);
+            -webkit-transform: translateY(-22vh);
+            transform: translateY(-22vh); 
+            transition: 600ms ease-in-out;
+            top: -4vh;
+          };
+          #description {
+            width: 80%;
+            height: 70%;
+            position: relative;
+            left: 6vw;
+            opacity: 1;
+            -moz-transform: translateY(-13vh) translateX(8vw);
+            -webkit-transform: translateY(-13vh) translateX(8vw);
+            transform: translateY(-13vh) translateX(8vw); 
+            z-index: 100;
+            transition: 300ms ease-in-out;
+            font-size: 1.2em;
+            margin: -10vh 0vw 20vh 0vw;
+            background-color: rgba(164, 137, 109, 0.797);
+            -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          };
+        };
+        nav {
+          position: relative;
+          bottom: 0;
+          top: 5vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          left: 15vw;
+          z-index: 200;
+          #githubLink {
+            position: relative;
+            width: 100%;
+            #githubIcon {
+              width: 30%;
+              height: auto;
+              position: relative;
+            };
+          };
+          #deployLink {
+            position: relative;
+            left: 4vw;
+            width: 100%;
+            #globeIcon {
+              width: 30%;
+              height: auto;
+              position: relative;
+            };
+          };
+        };
+      };
+      #gridItem {
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: auto;
+        margin-bottom: 30vh;
+        position: relative;
+        left: 1vw;
+        #image {
+          position: relative;
+          .screenshot {
+            width: 125%;
+            position: absolute;
+            top: -10vh;
+          };
+          #description {
+            width: 120%;
+            height: 70%;
+            position: relative;
+            top: 30vh;
+            opacity: 0;
+            left: -20vw;
+          };
+        };
+        nav {
+          display: none;
+        };
+      };
+    };
+  };
+};
+
+@media only screen and (min-width: 1400px) {
+  #allPortfolio {
+    position: absolute;
+    left: 30vw;
+    top: 130vh;
+    bottom: 20vh;
+    width: 100%;
+    height: auto;
+    #portfolioHeader {
+      position: relative;
+      font-size: 4em;
+      left: 10vw;
+      background-color: beige;
+      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+    };
+    #portfolio {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      top: 1vh;
+      #gridItem:hover {
+        display: flex;
+        flex-direction: column;
+        #image {
+          position: relative;
+          .screenshot {
+            opacity: 0.3;
+            width: 140%;
+            position: absolute;
+            top: -10vh;
+            -moz-transform: translateY(-22vh);
+            -webkit-transform: translateY(-22vh);
+            transform: translateY(-22vh); 
+            transition: 600ms ease-in-out;
+          };
+          .Chronos {
+            width: 105%;
+            left: 9vw;
+            top: 2vh;
+          }
+          #description {
+            width: 80%;
+            height: 70%;
+            position: relative;
+            top: -10vh;
+            left: 6vw;
+            opacity: 1;
+            -moz-transform: translateY(46vh) translateX(8vw);
+            -webkit-transform: translateY(46vh) translateX(8vw);
+            transform: translateY(46vh) translateX(8vw); 
+            z-index: 100;
+            transition: 300ms ease-in-out;
+            font-size: 1.5em;
+            margin: -10vh 0vw 20vh 0vw;
+            background-color: beige;
+            -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          };
+        };
+        nav {
+          position: relative;
+          bottom: 0;
+          top: 15vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          left: 15vw;
+          z-index: 200;
+          #githubLink {
+            position: relative;
+            width: 100%;
+            #githubIcon {
+              width: 30%;
+              height: auto;
+              position: relative;
+            };
+          };
+          #deployLink {
+            position: relative;
+            left: 4vw;
+            width: 100%;
+            #globeIcon {
+              width: 30%;
+              height: auto;
+              position: relative;
+              
+            };
+          };
+        };
+      };
+      #gridItem {
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: auto;
+        margin-bottom: 60vh;
+        position: relative;
+        left: 1vw;
+        #image {
+          position: relative;
+          .screenshot {
+            width: 140%;
+            position: absolute;
+            top: -10vh;
+          };
+          .Chronos {
+            width: 105%;
+            left: 9vw;
+            top: 2vh;
+          }
+          #description {
+            width: 120%;
+            height: 70%;
+            position: relative;
+            top: 30vh;
+            opacity: 0;
+            left: -20vw;
+          };
+        };
+        nav {
+          display: none;
+        };
+      };
+    };
+  };
+};
+

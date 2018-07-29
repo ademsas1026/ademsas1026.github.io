@@ -1,0 +1,88 @@
+@import 'home-sidebar.scss';
+@import 'home-navbar.scss';
+@import 'about.scss';
+@import 'portfolio.scss';
+@import 'contact.scss';
+
+#app {
+  font-family: 'Roboto', sans-serif;
+  z-index: 1000; 
+  #appStyle {
+    #content {
+      margin: 0vh 5vw 0vh 40vw;
+      box-sizing: border-box;
+      width: 70vw;
+      #bio {
+        #typing {
+          margin: 30vh 0vw 45vh -20vw;
+          font-size: 3em;
+        };
+      }
+    };
+  };
+};
+
+@media only screen and (max-device-width:  480px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 90%;
+    top: 300vh;
+    position: absolute;
+    left: -1vw;
+  };
+  #appStyle {
+    #navButton {
+      position: fixed;
+      top: 80vh;
+      left: 70vw;
+      border-radius: 50%;
+      background-color: grey;
+      z-index: 1000;
+    };
+    #navButton:hover {
+      background-image: linear-gradient(grey, rgba(20, 53, 85, 0.7));
+    };
+  };
+};
+
+@media only screen and (max-width: 721px)
+                    and (min-width: 480px)
+{
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: 65%;
+    top: 260vh;
+    position: absolute;
+    left: -1vw;
+  };
+  #appStyle {
+    #content {
+      #navButton {
+        display: none
+      };
+    };
+  };
+};
+
+@media only screen and (min-width: 721px){
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: auto;
+    top: 380vh;
+    position: absolute;
+    left: -1vw;
+  };
+  #appStyle {
+    #content {
+      #navButton {
+        display: none;
+      };
+    };
+  };
+}
