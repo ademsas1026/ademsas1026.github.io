@@ -37,7 +37,7 @@ const About = () =>  (
               smooth={true}
               duration={500}
               id="contactLink"
-            >here.
+            > here.
           </Link>
         </h3>
       </div>

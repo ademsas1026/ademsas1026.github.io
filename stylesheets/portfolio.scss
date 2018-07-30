@@ -11,11 +11,12 @@
           display: flex;
           flex-direction: column;
           #portfolioHeader {
-            color: #fff;
             background-color: beige;
             -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            position: relative;
+            left: 25%;
           };
           #portfolio {
             position: relative;
@@ -26,26 +27,26 @@
               flex-direction: column;
               #image {
                 position: relative;
+                margin-bottom: 30vh;
                 .screenshot {
                   width: 150%;
                   position: absolute;
                   opacity: 0.3;
-                  -moz-transform: translateY(-22vh);
-                  -webkit-transform: translateY(-22vh);
-                  transform: translateY(-22vh); 
-                  transition: 600ms ease-in-out;
-                  top: -4vh;
+                };
+                .Chronos {
+                  width: 120%;
+                  left: 9vw;
+                  top: 10vh;
+                  margin-bottom: 40vh;
                 };
                 #description {
                   width: 120%;
                   height: 70%;
                   position: relative;
-                  left: 5vw;
+                  left: 15vw;
+                  top: 55vh;
+                  z-index: 200;
                   opacity: 1;
-                  -moz-transform: translateY(22vh) translateX(8vw);
-                  -webkit-transform: translateY(22vh) translateX(8vw);
-                  transform: translateY(22vh) translateX(8vw); 
-                  z-index: 100;
                   transition: 300ms ease-in-out;
                   font-size: 1em;
                   margin: -20vh 0vw 30vh 0vw;
@@ -54,11 +55,11 @@
               nav {
                 position: relative;
                 bottom: 0;
-                top: 5vh;
+                top: 20vh;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                left: 35vw;
+                left: 30vw;
                 z-index: 200;
                 #githubLink {
                   position: relative;
@@ -94,6 +95,11 @@
                   position: absolute;
                   // left: -5vw;
                   top: -10vw;
+                };
+                .Chronos {
+                  width: 120%;
+                  left: 9vw;
+                  top: 2vh;
                 };
                 #description {
                   width: 120%;

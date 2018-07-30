@@ -6,7 +6,7 @@
       .about {
         width: 100%;
         position: relative;
-        top: 90vh;
+        top: 100vh;
         left: -25vw;
         #bioAbout {
           display: flex;
@@ -18,9 +18,12 @@
           };
           #about {
             margin: 0vh -10vw 0vh -10vw;
-            #contactLink:hover {
+            #contactLink {
               color: black;
+            };
+            #contactLink:hover { 
               text-decoration-color: blue;
+              color: black;
             };
           };  
         };

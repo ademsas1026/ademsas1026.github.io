@@ -4,12 +4,14 @@
   justify-content: center;
   a {
     text-decoration: none;
+    color:#fff;
   };
   a:visited {
     color: black;
   };
   a:hover {
-    color:#fff;
+    text-decoration: underline;
+    text-decoration-color: rgba(12, 132, 223, 0.5)
   };
   @media only screen and (max-device-width:  480px){
    
@@ -19,7 +21,7 @@
       position: fixed;
       z-index: 500;
       margin-bottom: 50vh;
-      background-color:grey;
+      background-color:black;
       border-top: 0.1em solid rgba(194, 145, 59, 0.5);
       border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
       display: flex;

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Portfolio, Contact, Sidebar, Navbar, About } from './components'
 import { Events, animateScroll as scroll } from 'react-scroll'
 
+import { Menu } from '@material-ui/icons'
+
 
 class App extends Component {
 
@@ -53,7 +55,9 @@ class App extends Component {
                         showNav={this.showNav}
                       />
         }
-        
+        <h1 id="titleHeading">Abigail Demsas</h1>
+        <h2 id="titleSubheading">Software Developer</h2>
+        <a onClick={this.showNav} id="navButton"><h3><Menu /></h3></a>
         <section id="sidebar">
           <img src="/images/me.jpg" alt="me" id="headshot" />
           <br />
@@ -61,7 +65,7 @@ class App extends Component {
           <h2 id="titleSubheading">Software Developer</h2>
           <Sidebar />
         </section>
-        <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
+        
         <section id="content">
             
             <div className="about" name="about">
