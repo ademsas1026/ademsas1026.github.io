@@ -57,7 +57,7 @@ class App extends Component {
         }
         <h1 id="titleHeading">Abigail Demsas</h1>
         <h2 id="titleSubheading">Software Developer</h2>
-        <a onClick={this.showNav} id="navButton"><h3><Menu /></h3></a>
+        <a onClick={this.showNav} id="navButton"><Menu /></a>
         <section id="sidebar">
           <img src="/images/me.jpg" alt="me" id="headshot" />
           <br />

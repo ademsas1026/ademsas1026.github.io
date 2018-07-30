@@ -1183,6 +1183,11 @@
     background-image: linear-gradient(black, rgba(20, 53, 85, 0.7));
   }
 }
+@media only screen and (min-width: 480px) {
+  #appStyle #navButton {
+    opacity: 0;
+  }
+}
 #app {
   font-family: "Roboto", sans-serif;
   z-index: 1000;
