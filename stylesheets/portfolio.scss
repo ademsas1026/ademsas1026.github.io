@@ -39,6 +39,9 @@
                   top: 10vh;
                   margin-bottom: 40vh;
                 };
+                #title {
+                  display: none;
+                };
                 #description {
                   width: 120%;
                   height: 70%;
@@ -50,6 +53,7 @@
                   transition: 300ms ease-in-out;
                   font-size: 1em;
                   margin: -20vh 0vw 30vh 0vw;
+                  padding: 2%;
                 };
               };
               nav {
@@ -100,6 +104,9 @@
                   width: 120%;
                   left: 9vw;
                   top: 2vh;
+                };
+                #title {
+                  display: none;
                 };
                 #description {
                   width: 120%;
@@ -163,6 +170,9 @@
           transform: translateY(-10vh); 
           transition: 600ms ease-in-out;
         };
+        #title {
+          display: none;
+        };
         #description {
           width: 200%;
           height: 30%;
@@ -180,6 +190,7 @@
           -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
           -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
           box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+          padding: 2%;
         };
       };
       nav {
@@ -227,6 +238,9 @@
           width: 300%;
           position: absolute;
           top: -10vw;
+        };
+        #title {
+          display: none;
         };
         #description {
           width: 140%;
@@ -284,6 +298,9 @@
             transition: 600ms ease-in-out;
             top: -4vh;
           };
+          #title {
+            display: none;
+          };
           #description {
             width: 80%;
             height: 70%;
@@ -297,10 +314,11 @@
             transition: 300ms ease-in-out;
             font-size: 1.2em;
             margin: -10vh 0vw 20vh 0vw;
-            background-color: rgba(164, 137, 109, 0.797);
+            background-color: rgba(65, 125, 77, 0.721);
             -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            padding: 2%;
           };
         };
         nav {
@@ -347,6 +365,9 @@
             width: 125%;
             position: absolute;
             top: -10vh;
+          };
+          #title {
+            display: none;
           };
           #description {
             width: 120%;
@@ -406,7 +427,10 @@
             width: 105%;
             left: 9vw;
             top: 2vh;
-          }
+          };
+          #title {
+            display: none;
+          };
           #description {
             width: 80%;
             height: 70%;
@@ -421,10 +445,11 @@
             transition: 300ms ease-in-out;
             font-size: 1.5em;
             margin: -10vh 0vw 20vh 0vw;
-            background-color: beige;
+            background-color: rgba(65, 125, 77, 0.721);
             -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
+            padding: 2%;
           };
         };
         nav {
@@ -477,7 +502,16 @@
             width: 105%;
             left: 9vw;
             top: 2vh;
-          }
+          };
+          #title {
+            font-size: 1.5em;
+            position: absolute;
+            left: 30.7vw;
+            top: 59.5vh;
+            width: 60%;
+            background-color: rgba(65, 125, 77, 0.721);
+            padding: 2%;
+          };
           #description {
             width: 120%;
             height: 70%;

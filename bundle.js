@@ -712,7 +712,9 @@ function (_Component) {
         }, _react.default.createElement("img", {
           src: project.screenShot,
           className: "screenshot ".concat(project.name)
-        }), _react.default.createElement("h3", {
+        }), _react.default.createElement("h2", {
+          id: "title"
+        }, project.name), _react.default.createElement("h3", {
           id: "description"
         }, project.description)));
       })));
@@ -770,7 +772,8 @@ var Sidebar = function Sidebar() {
     activeClass: "active",
     spy: true,
     smooth: true,
-    duration: 500
+    duration: 500,
+    offset: -180
   }, _react.default.createElement("h2", {
     style: styles.colNav
   }, " ", _react.default.createElement("b", null, " About ")))), _react.default.createElement(_core.Button, {
@@ -782,7 +785,8 @@ var Sidebar = function Sidebar() {
     activeClass: "active",
     spy: true,
     smooth: true,
-    duration: 500
+    duration: 500,
+    offset: -100
   }, _react.default.createElement("h2", {
     style: styles.colNav
   }, _react.default.createElement("b", null, " Portfolio ")))), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
@@ -790,7 +794,8 @@ var Sidebar = function Sidebar() {
     activeClass: "active",
     spy: true,
     smooth: true,
-    duration: 500
+    duration: 500,
+    offset: -100
   }, _react.default.createElement("h2", {
     style: styles.colNav
   }, _react.default.createElement("b", null, " Contact "))))));

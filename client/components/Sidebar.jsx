@@ -22,6 +22,7 @@ const Sidebar = () => (
           spy={true}
           smooth={true}
           duration={500}
+          offset={-180}
         >
           <h2 style={styles.colNav}> <b> About </b></h2>
         </Link>
@@ -36,6 +37,7 @@ const Sidebar = () => (
           spy={true}
           smooth={true}
           duration={500}
+          offset={-100}
         >
           <h2 style={styles.colNav}><b> Portfolio </b></h2>
         </Link>
@@ -47,6 +49,7 @@ const Sidebar = () => (
           spy={true}
           smooth={true}
           duration={500}
+          offset={-100}
         >
           <h2 style={styles.colNav}><b> Contact </b></h2> 
         </Link>

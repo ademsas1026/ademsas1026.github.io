@@ -54,6 +54,7 @@ export default class Portfolio extends Component {
                 </nav>
                 <div id="image">
                   <img src={project.screenShot} className={`screenshot ${project.name}`} />
+                  <h2 id="title">{project.name}</h2>
                   <h3 id="description">{project.description}</h3>
                 </div>
                
