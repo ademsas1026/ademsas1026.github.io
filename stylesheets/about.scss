@@ -53,6 +53,9 @@
           #about {
             font-size: 1em;
             text-align: center;
+            #contactLink {
+              color: black;
+            }
             #contactLink:hover {
               color: black;
               text-decoration-color: blue;
@@ -115,10 +118,11 @@
             box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             #contactLink {
               margin-left: 0.5vw;
+              color: black;
             };
             #contactLink:hover {
-              color: black;
-              font-size: 2em;
+              color: rgba(65, 125, 77, 0.721);
+              text-decoration: none;
             };
 
           };  

@@ -339,6 +339,9 @@
     font-size: 1em;
     text-align: center;
   }
+  #appStyle #content .about #bioAbout #about #contactLink {
+    color: black;
+  }
   #appStyle #content .about #bioAbout #about #contactLink:hover {
     color: black;
     text-decoration-color: blue;
@@ -386,10 +389,11 @@
   }
   #appStyle #content .about #bioAbout #aboutAbout #contactLink {
     margin-left: 0.5vw;
+    color: black;
   }
   #appStyle #content .about #bioAbout #aboutAbout #contactLink:hover {
-    color: black;
-    font-size: 2em;
+    color: rgba(65, 125, 77, 0.721);
+    text-decoration: none;
   }
 }
 @media only screen and (max-device-width: 480px) {
