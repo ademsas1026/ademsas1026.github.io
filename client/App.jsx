@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { Portfolio, Contact, Sidebar, Navbar, About } from './components'
 import { Events, animateScroll as scroll } from 'react-scroll'
 
-import { Menu } from '@material-ui/icons'
-
-
 class App extends Component {
 
   constructor() {
