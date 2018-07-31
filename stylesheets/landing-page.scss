@@ -36,6 +36,12 @@
 
 @media only screen and (min-width:  480px){
   #appStyle {
+    #titleHeading {
+      display: none;
+    };
+    #titleSubheading {
+      display: none;
+    };
     #navButton {
       opacity: 0;
     }

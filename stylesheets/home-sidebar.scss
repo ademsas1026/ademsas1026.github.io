@@ -41,6 +41,13 @@
         #columnNav {
           position: relative;
           top: -5vh;
+          a {
+            color: black;
+          };
+          a:hover {
+            color: white;
+            text-decoration: none;
+          };
         };
         #rowNav {
           position: relative;

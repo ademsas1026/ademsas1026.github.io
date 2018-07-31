@@ -39,7 +39,9 @@ class App extends Component {
   }
 
   showNav(){
-    this.setState(prevState => { return {showNav: !prevState.showNav} })
+    this.setState(prevState => { 
+      return {showNav: !prevState.showNav} 
+    })
   }
 
   

@@ -41,6 +41,13 @@
     position: relative;
     top: -5vh;
   }
+  #appStyle #sidebar #nav #columnNav a {
+    color: black;
+  }
+  #appStyle #sidebar #nav #columnNav a:hover {
+    color: white;
+    text-decoration: none;
+  }
   #appStyle #sidebar #nav #rowNav {
     position: relative;
   }
@@ -1184,6 +1191,12 @@
   }
 }
 @media only screen and (min-width: 480px) {
+  #appStyle #titleHeading {
+    display: none;
+  }
+  #appStyle #titleSubheading {
+    display: none;
+  }
   #appStyle #navButton {
     opacity: 0;
   }
