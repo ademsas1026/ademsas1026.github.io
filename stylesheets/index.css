@@ -99,188 +99,84 @@
   text-decoration: underline;
   text-decoration-color: rgba(12, 132, 223, 0.5);
 }
-@media only screen and (max-device-width: 480px) {
-  #appStyle #navbar {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 500;
-    margin-bottom: 50vh;
-    background-color: black;
-    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: -2vh;
-    left: -1vw;
-    padding-right: 1vw;
-  }
-  #appStyle #navbar h1 {
-    font-size: 2em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #navbar h3 {
-    font-size: 1.25em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #navbar #headshot {
-    border-radius: 75%;
-    max-width: 30%;
-    max-height: auto;
-    margin-top: 2vw;
-    align-self: center;
-  }
-  #appStyle #navbar #columnNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 10vh;
-    font-size: 2em;
-  }
-  #appStyle #navbar #columnNav #aboutLink {
-    margin-bottom: 10vh;
-  }
-  #appStyle #navbar #columnNav #techLink {
-    margin-bottom: 10vh;
-  }
-  #appStyle #navbar #columnNav #portfolioLink {
-    margin-bottom: 10vh;
-  }
-  #appStyle #navbar #rowNav {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 10vh;
-    font-size: 1em;
-  }
-  #appStyle #navbar #rowNav #aboutLink {
-    margin: 0vh 0vw 10vh 4vw;
-  }
-  #appStyle #navbar #rowNav #techLink {
-    margin: 0vh 0vw 10vh 4vw;
-  }
-  #appStyle #navbar #rowNav #portfolioLink {
-    margin: 0vh 0vw 10vh 4vw;
-  }
-  #appStyle #navbar #rowNav #contactLink {
-    margin: 0vh 0vw 10vh 4vw;
-  }
-  #appStyle #navbar #techList {
-    display: flex;
-  }
-  #appStyle #navbar #techList ul {
-    list-style-type: none;
-  }
-  #appStyle #navbar #techList ul h3 {
-    font-size: 0.5em;
-  }
-  #appStyle #navbar #techList ul li {
-    font-size: 0.5em;
-  }
+#appStyle #navbar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 500;
+  margin-bottom: 50vh;
+  background-color: black;
+  border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+  border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -2vh;
+  left: -1vw;
+  padding-right: 1vw;
 }
-@media only screen and (max-width: 721px) and (min-width: 481px) {
-  #appStyle #navbar {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(194, 145, 59, 0.5);
-    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-    top: 0;
-    left: -12vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1000;
-  }
-  #appStyle #navbar h1 {
-    font-size: 2em;
-    margin: 0 0 0 0;
-    align-self: center;
-  }
-  #appStyle #navbar h3 {
-    font-size: 1em;
-    margin: 0 0 0 0;
-    align-self: center;
-  }
-  #appStyle #navbar #headshot {
-    border-radius: 75%;
-    max-width: 30%;
-    max-height: auto;
-    margin-top: 2vw;
-    align-self: center;
-  }
-  #appStyle #navbar #nav {
-    display: flex;
-    align-items: stretch;
-    margin-top: 2vw;
-  }
-  #appStyle #navbar #nav #techLink {
-    margin-left: 4vw;
-  }
-  #appStyle #navbar #nav #portfolioLink {
-    margin-left: 4vw;
-  }
-  #appStyle #navbar #nav #contactLink {
-    align-self: flex-end;
-    margin-left: 4vw;
-  }
-  #appStyle #navbar #techList {
-    display: flex;
-  }
-  #appStyle #navbar #techList ul {
-    list-style-type: none;
-  }
-  #appStyle #navbar #techList ul h3 {
-    font-size: 1em;
-  }
-  #appStyle #navbar #techList ul li {
-    font-size: 1em;
-  }
+#appStyle #navbar h1 {
+  font-size: 2em;
+  margin: 0 0 0 0;
 }
-@media only screen and (max-width: 900px) and (min-width: 721px) {
-  #appStyle #navbar {
-    background-color: rgba(194, 145, 59, 0.5);
-    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-    left: -50vw;
-    top: -0.2vw;
-  }
-  #appStyle #navbar h1 {
-    font-size: 3em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #navbar h3 {
-    font-size: 1.5em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #navbar #headshot {
-    border-radius: 75%;
-    width: 20vw;
-    height: auto;
-    margin-top: 2vw;
-  }
-  #appStyle #navbar #nav {
-    display: flex;
-    align-items: stretch;
-    margin-top: 2vw;
-  }
-  #appStyle #navbar #nav #portfolioLink {
-    margin-left: 4vw;
-  }
-  #appStyle #navbar #nav #contactLink {
-    align-self: flex-end;
-    margin-left: 4vw;
-  }
-  #appStyle #navbar #bio {
-    display: none;
-  }
+#appStyle #navbar h3 {
+  font-size: 1.25em;
+  margin: 0 0 0 0;
+}
+#appStyle #navbar #headshot {
+  border-radius: 75%;
+  max-width: 30%;
+  max-height: auto;
+  margin-top: 2vw;
+  align-self: center;
+}
+#appStyle #navbar #columnNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  font-size: 2em;
+}
+#appStyle #navbar #columnNav #aboutLink {
+  margin-bottom: 10vh;
+}
+#appStyle #navbar #columnNav #techLink {
+  margin-bottom: 10vh;
+}
+#appStyle #navbar #columnNav #portfolioLink {
+  margin-bottom: 10vh;
+}
+#appStyle #navbar #rowNav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  font-size: 1em;
+}
+#appStyle #navbar #rowNav #aboutLink {
+  margin: 0vh 0vw 10vh 4vw;
+}
+#appStyle #navbar #rowNav #techLink {
+  margin: 0vh 0vw 10vh 4vw;
+}
+#appStyle #navbar #rowNav #portfolioLink {
+  margin: 0vh 0vw 10vh 4vw;
+}
+#appStyle #navbar #rowNav #contactLink {
+  margin: 0vh 0vw 10vh 4vw;
+}
+#appStyle #navbar #techList {
+  display: flex;
+}
+#appStyle #navbar #techList ul {
+  list-style-type: none;
+}
+#appStyle #navbar #techList ul h3 {
+  font-size: 0.5em;
+}
+#appStyle #navbar #techList ul li {
+  font-size: 0.5em;
 }
 @media only screen and (min-width: 721px) {
   #appStyle #navbar {
@@ -315,7 +211,7 @@
     color: black;
   }
 }
-@media only screen and (max-width: 721px) and (min-width: 481px) {
+@media only screen and (max-width: 1400px) and (min-width: 481px) {
   #appStyle {
     position: absolute;
   }
@@ -324,7 +220,7 @@
   }
   #appStyle #content .about {
     position: relative;
-    top: 80vh;
+    top: 60vh;
     left: -25vw;
   }
   #appStyle #content .about #bioAbout {
@@ -347,32 +243,7 @@
     text-decoration-color: blue;
   }
 }
-@media only screen and (max-width: 1000px) and (min-width: 721px) {
-  #appStyle #content .about {
-    width: 130%;
-    position: relative;
-    bottom: 40vh;
-    top: 0vh;
-    left: -35vw;
-  }
-  #appStyle #content .about #bioAbout {
-    display: flex;
-    flex-direction: column;
-  }
-  #appStyle #content .about #bioAbout #bioHeader {
-    font-size: 4em;
-    align-self: center;
-  }
-  #appStyle #content .about #bioAbout #about {
-    font-size: 1.3em;
-    text-align: center;
-  }
-  #appStyle #content .about #bioAbout #about #contactLink:hover {
-    color: black;
-    text-decoration-color: blue;
-  }
-}
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1401px) {
   #appStyle {
     position: absolute;
   }
@@ -1228,7 +1099,43 @@
     background-image: linear-gradient(black, rgba(20, 53, 85, 0.7));
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 90%;
+    top: 400vh;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle {
+    top: 32vh;
+  }
+  #appStyle #titleHeading {
+    position: relative;
+    left: 12%;
+  }
+  #appStyle #titleSubheading {
+    position: relative;
+    left: 12%;
+  }
+  #appStyle #navButton {
+    position: fixed;
+    top: 2vh;
+    left: 5vw;
+    border-radius: 75%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+  }
+  #appStyle #navButton:hover {
+    background-image: linear-gradient(black, rgba(20, 53, 85, 0.7));
+  }
+}
+@media only screen and (min-width: 1000px) {
   #appStyle #titleHeading {
     display: none;
   }

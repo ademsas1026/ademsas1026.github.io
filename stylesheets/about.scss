@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (max-width: 721px)
+@media only screen and (max-width: 1400px)
                   and (min-width: 481px)
 {
   #appStyle {
@@ -41,7 +41,7 @@
       position: relative;
       .about {
         position: relative;
-        top: 80vh;
+        top: 60vh;
         left: -25vw;
         #bioAbout {
           display: flex;
@@ -67,39 +67,39 @@
   };
 };
 
-@media only screen and (max-width: 1000px) 
-                  and (min-width: 721px)
-{
-  #appStyle {
-    #content {
-      .about {
-        width: 130%;
-        position: relative;
-        bottom: 40vh;
-        top: 0vh;
-        left: -35vw;
-        #bioAbout {
-          display: flex;
-          flex-direction: column;
-          #bioHeader {
-            font-size: 4em;
-            align-self: center;
-          };
-          #about {
-            font-size: 1.3em;
-            text-align: center;
-            #contactLink:hover {
-              color: black;
-              text-decoration-color: blue;
-            };
-          };
-        }
-      }
-    }
-  }
-}
+// @media only screen and (max-width: 1000px) 
+//                   and (min-width: 721px)
+// {
+//   #appStyle {
+//     #content {
+//       .about {
+//         width: 130%;
+//         position: relative;
+//         bottom: 40vh;
+//         top: 0vh;
+//         left: -35vw;
+//         #bioAbout {
+//           display: flex;
+//           flex-direction: column;
+//           #bioHeader {
+//             font-size: 4em;
+//             align-self: center;
+//           };
+//           #about {
+//             font-size: 1.3em;
+//             text-align: center;
+//             #contactLink:hover {
+//               color: black;
+//               text-decoration-color: blue;
+//             };
+//           };
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1401px){
   #appStyle {
     position: absolute;
     
