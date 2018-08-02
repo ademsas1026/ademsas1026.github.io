@@ -1015,7 +1015,7 @@
   }
   #appStyle .contact {
     position: relative;
-    top: 335vh;
+    top: 345vh;
     left: 20vw;
   }
   #appStyle .contact #contactNav {
@@ -1186,6 +1186,9 @@
     left: -1vw;
   }
 
+  #appStyle {
+    top: -5vh;
+  }
   #appStyle #content #navButton {
     display: none;
   }
