@@ -83,113 +83,211 @@
   margin: 0vw 0vw 0vw 2vw;
 }
 
-#appStyle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media only screen and (max-device-width: 480px) {
+  #appAndNav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #appAndNav a:visited {
+    color: black;
+  }
 }
-#appStyle a {
-  text-decoration: none;
-  color: #fff;
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  #appAndNav #navbar {
+    width: 250vw;
+    height: 200vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -30vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 25vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 15vh;
+    font-size: 3.5em;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: flex-start;
+    position: relative;
+    top: 20vh;
+    font-size: 2em;
+    left: -35vw;
+    padding-right: 18%;
+    border-right: 0.2em solid black;
+    margin-right: 30vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -13vh;
+    left: 40vw;
+    border-left: 0.2em solid white;
+    padding-right: -5vw;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 2em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 2em;
+  }
 }
-#appStyle a:visited {
-  color: black;
-}
-#appStyle a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgba(12, 132, 223, 0.5);
-}
-#appStyle #navbar {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 500;
-  margin-bottom: 50vh;
-  background-color: black;
-  border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-  border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: -2vh;
-  left: -1vw;
-  padding-right: 1vw;
-}
-#appStyle #navbar h1 {
-  font-size: 2em;
-  margin: 0 0 0 0;
-}
-#appStyle #navbar h3 {
-  font-size: 1.25em;
-  margin: 0 0 0 0;
-}
-#appStyle #navbar #headshot {
-  border-radius: 75%;
-  max-width: 30%;
-  max-height: auto;
-  margin-top: 2vw;
-  align-self: center;
-}
-#appStyle #navbar #columnNav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: 10vh;
-  font-size: 2em;
-}
-#appStyle #navbar #columnNav #aboutLink {
-  margin-bottom: 10vh;
-}
-#appStyle #navbar #columnNav #techLink {
-  margin-bottom: 10vh;
-}
-#appStyle #navbar #columnNav #portfolioLink {
-  margin-bottom: 10vh;
-}
-#appStyle #navbar #rowNav {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: 10vh;
-  font-size: 1em;
-}
-#appStyle #navbar #rowNav #aboutLink {
-  margin: 0vh 0vw 10vh 4vw;
-}
-#appStyle #navbar #rowNav #techLink {
-  margin: 0vh 0vw 10vh 4vw;
-}
-#appStyle #navbar #rowNav #portfolioLink {
-  margin: 0vh 0vw 10vh 4vw;
-}
-#appStyle #navbar #rowNav #contactLink {
-  margin: 0vh 0vw 10vh 4vw;
-}
-#appStyle #navbar #techList {
-  display: flex;
-}
-#appStyle #navbar #techList ul {
-  list-style-type: none;
-}
-#appStyle #navbar #techList ul h3 {
-  font-size: 0.5em;
-}
-#appStyle #navbar #techList ul li {
-  font-size: 0.5em;
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  #appAndNav #navbar {
+    width: 200vw;
+    height: 200vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -40vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 25vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    position: relative;
+    top: 5vh;
+    font-size: 3em;
+    left: -2vw;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: flex-start;
+    position: relative;
+    top: 10vh;
+    font-size: 1.7em;
+    left: -10vw;
+    padding-right: 15%;
+    border-right: 0.2em solid black;
+    margin-right: 30vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -18vh;
+    left: 32vw;
+    border-left: 0.2em solid white;
+    padding-right: -5vw;
+    padding-left: -10vw;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 1.6em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 1.3em;
+  }
 }
 @media only screen and (min-width: 721px) {
-  #appStyle #navbar {
+  #appAndNav #navbar {
     display: none;
   }
 }
-
 @media only screen and (max-device-width: 480px) {
   #appStyle #content .about {
     width: 100%;
     position: relative;
-    top: 100vh;
-    left: -25vw;
+    top: 145vh;
+    left: -30vw;
+    background-color: rgba(223, 214, 223, 0.893);
+    padding-right: 2vw;
+    padding-left: 2vw;
   }
   #appStyle #content .about #bioAbout {
     display: flex;
@@ -200,15 +298,17 @@
   #appStyle #content .about #bioAbout #bioHeader {
     display: none;
   }
-  #appStyle #content .about #bioAbout #about {
-    margin: 0vh -10vw 0vh -10vw;
+  #appStyle #content .about #bioAbout #aboutAbout {
+    margin: 0vh 2vw 0vh 2vw;
+    font-weight: bold;
+    font-size: 1em;
   }
-  #appStyle #content .about #bioAbout #about #contactLink {
-    color: black;
+  #appStyle #content .about #bioAbout #aboutAbout #subAbout {
+    font-size: 0.75em;
   }
-  #appStyle #content .about #bioAbout #about #contactLink:hover {
-    text-decoration-color: blue;
-    color: black;
+  #appStyle #content .about #bioAbout #aboutAbout #subAbout #contactLink {
+    color: rgba(76, 186, 160, 0.571);
+    left: 2vw;
   }
 }
 @media only screen and (max-width: 1400px) and (min-width: 481px) {
@@ -274,7 +374,7 @@
   #appStyle #content .portfolio {
     position: relative;
     left: -45vw;
-    top: 110vh;
+    top: 150vh;
   }
   #appStyle #content .portfolio #allPortfolio {
     position: relative;
@@ -282,113 +382,97 @@
     flex-direction: column;
   }
   #appStyle #content .portfolio #allPortfolio #portfolioHeader {
-    background-color: beige;
-    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
-    -moz-box-shadow: 0px 7px 25px 3px #857e85;
-    box-shadow: 0px 7px 25px 3px #857e85;
     position: relative;
-    left: 25%;
+    left: 20%;
+    font-weight: bold;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio {
     position: relative;
     display: flex;
     flex-direction: column;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover {
-    display: flex;
-    flex-direction: column;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image {
-    position: relative;
-    margin-bottom: 30vh;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image .screenshot {
-    width: 150%;
-    position: absolute;
-    opacity: 0.3;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image .Chronos {
-    width: 120%;
-    left: 9vw;
-    top: 10vh;
-    margin-bottom: 40vh;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image #title {
-    display: none;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover #image #description {
-    width: 120%;
-    height: 70%;
-    position: relative;
-    left: 15vw;
-    top: 55vh;
-    z-index: 200;
-    opacity: 1;
-    transition: 300ms ease-in-out;
-    font-size: 1em;
-    margin: -20vh 0vw 30vh 0vw;
-    padding: 2%;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav {
-    position: relative;
-    bottom: 0;
-    top: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    left: 30vw;
-    z-index: 200;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #githubLink {
-    position: relative;
-    width: 100%;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #githubLink #githubIcon {
-    width: 30%;
-    height: auto;
-    position: relative;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #deployLink {
-    position: relative;
-    left: 4vw;
-    width: 100%;
-  }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem:hover nav #deployLink #globeIcon {
-    width: 30%;
-    height: auto;
-    position: relative;
+    top: -10vh;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio #gridItem {
     display: flex;
     flex-direction: column;
-    width: 100vh;
-    height: auto;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image {
     position: relative;
+    margin-bottom: 40vh;
+    margin-top: 5vh;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .screenshot {
     width: 150%;
     position: absolute;
-    top: -10vw;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .Chronos {
-    width: 120%;
-    left: 9vw;
-    top: 2vh;
+    width: 110%;
+    left: 14vw;
+    top: 10vh;
+    margin: 10vh 0 40vh 0;
   }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image #title {
-    display: none;
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .Chronos + .titleAndDescription {
+    margin-top: 10vh;
   }
-  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image #description {
-    width: 120%;
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .titleAndDescription {
+    background-color: rgba(223, 214, 223, 0.893);
+    padding: -5% 2% -10% 2%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50vh;
+    left: 20vw;
+    margin: -20% -10% -20% -10%;
+    width: 100%;
+    height: 80%;
+    padding: 0 5% 0 5%;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .titleAndDescription #title {
+    font-size: 1em;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem #image .titleAndDescription #description {
+    width: 100%;
     height: 70%;
     position: relative;
-    top: 10vh;
-    opacity: 0;
+    top: 20vh;
+    z-index: 200;
+    opacity: 1;
+    font-size: 0.5em;
+    transition: 300ms ease-in-out;
+    font-size: 1em;
+    margin: -20vh 0vw 30vh 0vw;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem .Chronos + nav {
+    position: relative;
+    top: 20vh;
   }
   #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav {
-    display: none;
+    position: relative;
+    bottom: 0;
+    top: 53vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 60vw;
+    z-index: 200;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav #githubLink {
+    position: relative;
+    width: 100%;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav #githubLink #githubIcon {
+    width: 15%;
+    height: auto;
+    position: relative;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav #deployLink {
+    position: relative;
+    left: -20vw;
+    width: 100%;
+  }
+  #appStyle #content .portfolio #allPortfolio #portfolio #gridItem nav #deployLink #globeIcon {
+    width: 15%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 721px) and (min-width: 480px) {
@@ -434,6 +518,11 @@
     -webkit-transform: translateY(-10vh);
     transform: translateY(-10vh);
     transition: 600ms ease-in-out;
+  }
+  #portfolio #gridItem:hover #image .Chronos {
+    width: 50%;
+    left: 10vw;
+    position: relative;
   }
   #portfolio #gridItem:hover #image #title {
     display: none;
@@ -785,30 +874,41 @@
     display: none;
   }
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
   #appStyle .contact {
     position: relative;
-    top: 150vh;
+    top: 12vh;
     left: -5vw;
   }
-  #appStyle .contact #contact {
+}
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
+  #appStyle .contact {
     position: relative;
+    top: 302vh;
+    left: -5vw;
+  }
+  #appStyle .contact #contact #contactNav #contactHeader {
+    position: relative;
+    top: -5vh;
   }
   #appStyle .contact #contact form {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 10vh;
     padding: none;
     width: 100%;
     left: -20vw;
+  }
+  #appStyle .contact #contact form #submitEmail {
+    position: relative;
+    left: -5vw;
   }
   #appStyle .contact #contact #alternateContact {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: -3vw;
-    top: 20vw;
+    left: -6vw;
+    top: -40vh;
   }
   #appStyle .contact #contact #alternateContact #linkedInButton {
     width: 20%;
@@ -1063,12 +1163,84 @@
     width: 50%;
   }
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  #background {
+    overflow-x: hidden;
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle {
+    top: 32vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #littleBubble {
+    background-color: rgba(76, 186, 160, 0.571);
+    position: relative;
+    border-radius: 75%;
+    top: -15vh;
+    left: -10vw;
+    z-index: 4000;
+    width: 55vw;
+    height: 25vh;
+    opacity: 0.5;
+    align-self: flex-end;
+  }
+  #appStyle #landingPage {
+    border-radius: 75%;
+    border: 0.2em solid white;
+    width: 180vw;
+    height: 90vh;
+    left: 2vw;
+    background-color: rgba(76, 186, 160, 0.571);
+    position: relative;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  #appStyle #landingPage #titleHeading {
+    align-self: center;
+    font-size: 2.5em;
+  }
+  #appStyle #landingPage #titleSubheading {
+    align-self: center;
+    font-size: 2em;
+  }
+  #appStyle #navButton {
+    position: fixed;
+    top: 7vh;
+    border-radius: 75%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    width: 40vw;
+    height: 20vh;
+  }
+  #appStyle #navButton h3 {
+    font-size: 2.2em;
+    position: relative;
+    left: 4vw;
+  }
+  #appStyle #navButton:hover {
+    background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+    text-decoration: none;
+  }
+}
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 375/667) {
   #background {
     opacity: 0.4;
     z-index: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
     top: 400vh;
     position: absolute;
     left: -1vw;
@@ -1076,14 +1248,41 @@
 
   #appStyle {
     top: 32vh;
+    display: flex;
+    flex-direction: column;
   }
-  #appStyle #titleHeading {
+  #appStyle #littleBubble {
+    background-color: rgba(76, 186, 160, 0.571);
     position: relative;
-    left: 12%;
+    border-radius: 75%;
+    top: -15vh;
+    left: 2vw;
+    z-index: 4000;
+    width: 40vw;
+    height: 20vh;
+    opacity: 0.5;
+    align-self: flex-end;
   }
-  #appStyle #titleSubheading {
+  #appStyle #landingPage {
+    border-radius: 75%;
+    border: 0.2em solid white;
+    width: 120vw;
+    height: 70vh;
+    background-color: rgba(76, 186, 160, 0.571);
     position: relative;
-    left: 12%;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #appStyle #landingPage #titleHeading {
+    align-self: center;
+    font-size: 2.5em;
+  }
+  #appStyle #landingPage #titleSubheading {
+    align-self: center;
+    font-size: 2em;
   }
   #appStyle #navButton {
     position: fixed;
@@ -1094,9 +1293,17 @@
     background-color: black;
     color: white;
     z-index: 1000;
+    width: 30vw;
+    height: 15vh;
+  }
+  #appStyle #navButton h3 {
+    font-size: 1.8em;
+    position: relative;
+    left: 3vw;
   }
   #appStyle #navButton:hover {
-    background-image: linear-gradient(black, rgba(20, 53, 85, 0.7));
+    background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+    text-decoration: none;
   }
 }
 @media only screen and (min-width: 481px) {
@@ -1112,6 +1319,9 @@
 
   #appStyle {
     top: 32vh;
+  }
+  #appStyle #littleBubble {
+    display: none;
   }
   #appStyle #titleHeading {
     position: relative;
@@ -1136,6 +1346,9 @@
   }
 }
 @media only screen and (min-width: 1000px) {
+  #appStyle #littleBubble {
+    display: none;
+  }
   #appStyle #titleHeading {
     display: none;
   }
@@ -1147,11 +1360,12 @@
   }
 }
 #app {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 1000;
+  overflow-x: hidden;
 }
 #app #appStyle #content {
-  margin: 0vh 5vw 0vh 40vw;
+  margin: 0vh -5vw 0vh 45vw;
   box-sizing: border-box;
   width: 70vw;
 }
@@ -1160,6 +1374,17 @@
   font-size: 3em;
 }
 
+@media only screen and (max-device-width: 480px) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: 65%;
+    top: 615vh;
+    position: absolute;
+    left: -1vw;
+  }
+}
 @media only screen and (max-width: 721px) and (min-width: 480px) {
   #background {
     opacity: 0.4;

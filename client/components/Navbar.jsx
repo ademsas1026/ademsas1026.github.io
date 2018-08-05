@@ -17,14 +17,14 @@ export default class Navbar extends Component {
 
   render() {
     const technologies = {
-      proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git'],
+      proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
       knowledgeable: ['Socket.io', 'Webpack', 'Firebase', 'Sequelize / ORMs', 'Mocha', 'Chai'],
       familiar: ['Material-UI', 'Heroku']
     }
     const { showTech } = this.state
     return (
       <div id="navbar">
-        <nav id={showTech ? 'rowNav' : 'columnNav'}>
+        <nav id={showTech ? 'leftColumnNav' : 'columnNav'}>
           <Link
             onClick={this.props.showNav}
             id="aboutLink" to="aboutAbout"

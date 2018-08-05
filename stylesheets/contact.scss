@@ -1,28 +1,51 @@
-@media only screen and (max-device-width:  480px){
+@media only screen and (max-device-width: 480px)
+                  and (device-aspect-ratio: 40/71)
+{
   #appStyle {
     .contact {
       // margin: 10vh 0 0 0;
       position: relative;
-      top: 150vh;
+      top: 12vh;
+      left: -5vw;
+    };
+  };
+}
+@media only screen and (max-device-width:  480px)
+                  and (device-aspect-ratio: 375/667)    
+{
+  #appStyle {
+    .contact {
+      // margin: 10vh 0 0 0;
+      position: relative;
+      top: 302vh;
       left: -5vw;
       #contact {
-        position: relative;
-        // left: 40vw;
+        #contactNav {
+          #contactHeader {
+            position: relative;
+            // left: -30vw;
+            top: -5vh;
+          }
+        };
         form {
           display: flex;
           flex-direction: column;
           position: relative;
-          top: 10vh;
+          // top: 5vh;
           padding: none;
           width: 100%;
           left: -20vw;
+          #submitEmail {
+            position: relative;
+            left: -5vw;
+          };
         };
         #alternateContact{
           display: flex;
           flex-direction: row;
           position: relative;
-          left: -3vw;
-          top: 20vw;
+          left: -6vw;
+          top: -40vh;
           #linkedInButton {
             width: 20%;
             #linkedInIcon {

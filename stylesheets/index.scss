@@ -6,11 +6,12 @@
 @import 'landing-page.scss';
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1000; 
+  overflow-x: hidden;
   #appStyle {
     #content {
-      margin: 0vh 5vw 0vh 40vw;
+      margin: 0vh -5vw 0vh 45vw;
       box-sizing: border-box;
       width: 70vw;
       #bio {
@@ -24,7 +25,17 @@
 };
 
 
-
+@media only screen and (max-device-width: 480px){
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 110%;
+    height: 65%;
+    top: 615vh;
+    position: absolute;
+    left: -1vw;
+  };
+}
 @media only screen and (max-width: 721px)
                     and (min-width: 480px)
 {

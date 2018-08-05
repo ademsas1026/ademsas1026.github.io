@@ -47,10 +47,6 @@ export default class Contact extends Component {
     }
   }
 
-  goHome(){
-    this.props.history.push('/')
-  }
-
   render() {
     const {  nameWarning, emailWarning, messageWarning } = this.state
 
@@ -58,7 +54,6 @@ export default class Contact extends Component {
       <div id="contact">
         <div id="contactNav">
           <h2 id="contactHeader">Contact</h2>
-          <Button onClick={this.props.scrollToTop} id="contactHome">Home</Button>
         </div>
         <form id="contactform" method="POST" action="https://formspree.io/abigail.demsas.codes@gmail.com">
         { nameWarning && <FormHelperText id="name-helper-text">Please enter your name</FormHelperText>}
@@ -89,7 +84,7 @@ export default class Contact extends Component {
               multiline="true"
             />
 
-          <Button type="submit">Send</Button>
+          <Button type="submit" id="submitEmail">Send</Button>
         </form>
         <div id="alternateContact">
           <Button id="linkedInButton" href="https://linkedin.com/in/abigail-demsas"><img src="/images/linkedin.svg" id="linkedInIcon"/></Button>

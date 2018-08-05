@@ -6,8 +6,11 @@
       .about {
         width: 100%;
         position: relative;
-        top: 100vh;
-        left: -25vw;
+        top: 145vh;
+        left: -30vw;
+        background-color: rgba(223, 214, 223, 0.893);
+        padding-right: 2vw;
+        padding-left: 2vw;
         #bioAbout {
           display: flex;
           flex-direction: column;
@@ -16,15 +19,18 @@
           #bioHeader {
             display: none;
           };
-          #about {
-            margin: 0vh -10vw 0vh -10vw;
-            #contactLink {
-              color: black;
+          #aboutAbout {
+            margin: 0vh 2vw 0vh 2vw;
+            font-weight: bold;
+            font-size: 1em;
+            #subAbout {
+              font-size: 0.75em;
+              #contactLink {
+                color: rgba(76, 186, 160, 0.571);
+                left: 2vw;
+              };
             };
-            #contactLink:hover { 
-              text-decoration-color: blue;
-              color: black;
-            };
+            
           };  
         };
       };

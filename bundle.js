@@ -188,14 +188,20 @@ function (_Component) {
     value: function render() {
       var showNav = this.state.showNav;
       return _react.default.createElement("div", {
-        id: "appStyle"
+        id: "appAndNav"
       }, showNav && _react.default.createElement(_components.Navbar, {
         showNav: this.showNav
-      }), _react.default.createElement("h1", {
+      }), _react.default.createElement("div", {
+        id: "appStyle"
+      }, _react.default.createElement("div", {
+        id: "littleBubble"
+      }), _react.default.createElement("div", {
+        id: "landingPage"
+      }, _react.default.createElement("h1", {
         id: "titleHeading"
       }, "Abigail Demsas"), _react.default.createElement("h2", {
         id: "titleSubheading"
-      }, "Software Developer"), _react.default.createElement("a", {
+      }, "Software Developer")), _react.default.createElement("a", {
         onClick: this.showNav,
         id: "navButton"
       }, _react.default.createElement("h3", null, "Menu")), _react.default.createElement("section", {
@@ -222,7 +228,7 @@ function (_Component) {
       }, _react.default.createElement(_components.Contact, {
         name: "contact",
         scrollToTop: this.scrollToTop
-      }))));
+      })))));
     }
   }]);
 
@@ -258,16 +264,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var About = function About() {
   return _react.default.createElement("div", {
     id: "bioAbout"
-  }, _react.default.createElement("div", null, _react.default.createElement("h3", {
+  }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, _react.default.createElement("br", null), _react.default.createElement("br", null), "Hi! I'm a fullstack web developer based in New York.", _react.default.createElement("br", null), _react.default.createElement("br", null), "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.", _react.default.createElement("br", null), _react.default.createElement("br", null), "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals.", _react.default.createElement("br", null), _react.default.createElement("br", null), "You can find me coding around the city and at various meetups. To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
+  }, _react.default.createElement("br", null), _react.default.createElement("br", null), "Hi! I'm a fullstack web developer based in New York.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h3", {
+    id: "subAbout"
+  }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.", _react.default.createElement("br", null), _react.default.createElement("br", null), "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals.", _react.default.createElement("br", null), _react.default.createElement("br", null), "You can find me coding around the city and at various meetups. To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
     to: "contact",
     activeClass: "active",
     spy: true,
     smooth: true,
     duration: 500,
     id: "contactLink"
-  }, " here."))));
+  }, " here.")))));
 };
 
 var _default = About;
@@ -382,11 +390,6 @@ function (_Component) {
       }
     }
   }, {
-    key: "goHome",
-    value: function goHome() {
-      this.props.history.push('/');
-    }
-  }, {
     key: "render",
     value: function render() {
       var _this$state = this.state,
@@ -399,10 +402,7 @@ function (_Component) {
         id: "contactNav"
       }, _react.default.createElement("h2", {
         id: "contactHeader"
-      }, "Contact"), _react.default.createElement(_core.Button, {
-        onClick: this.props.scrollToTop,
-        id: "contactHome"
-      }, "Home")), _react.default.createElement("form", {
+      }, "Contact")), _react.default.createElement("form", {
         id: "contactform",
         method: "POST",
         action: "https://formspree.io/abigail.demsas.codes@gmail.com"
@@ -450,7 +450,8 @@ function (_Component) {
         name: "message",
         multiline: "true"
       }), _react.default.createElement(_core.Button, {
-        type: "submit"
+        type: "submit",
+        id: "submitEmail"
       }, "Send")), _react.default.createElement("div", {
         id: "alternateContact"
       }, _react.default.createElement(_core.Button, {
@@ -545,7 +546,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var technologies = {
-        proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git'],
+        proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
         knowledgeable: ['Socket.io', 'Webpack', 'Firebase', 'Sequelize / ORMs', 'Mocha', 'Chai'],
         familiar: ['Material-UI', 'Heroku']
       };
@@ -553,7 +554,7 @@ function (_Component) {
       return _react.default.createElement("div", {
         id: "navbar"
       }, _react.default.createElement("nav", {
-        id: showTech ? 'rowNav' : 'columnNav'
+        id: showTech ? 'leftColumnNav' : 'columnNav'
       }, _react.default.createElement(_reactScroll.Link, {
         onClick: this.props.showNav,
         id: "aboutLink",
@@ -621,110 +622,74 @@ var _core = __webpack_require__(/*! @material-ui/core */ "./node_modules/@materi
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+var projects = [{
+  name: 'Not Alone',
+  githubLink: 'https://github.com/ademsas1026/we-are-not-alone',
+  deployLink: 'https://we-are-not-alone.herokuapp.com/',
+  screenShot: './images/screenshot-not-alone-1.png',
+  description: "a visualization of UFO sightings from 1950 - 2013, data furnished by the National UFO Reporting Center (NUFORC). Built with Mapbox, React, k-means clustering-based word frequency analysis, data visualization with Victory.",
+  technologies: ['Mapbox', 'Node', 'React', 'Victory']
+}, {
+  name: 'Mahazay',
+  githubLink: 'https://github.com/JARLcodes/mahazay-two',
+  deployLink: 'https://mahazay-c248c.firebaseapp.com/',
+  screenShot: './images/screenshot-mahazay-1.png',
+  description: 'a smart bullet journaling app built with Firestore, Google Cloud Functions and IBM Watson Personality and Tone Analyzer on the backend & Victory and React on the front.',
+  technologies: ['Node', 'Firebase / NOSQL Database', 'IBM Watson API integration', 'Data visualization', 'React']
+}, {
+  name: 'Chronos',
+  githubLink: 'https://github.com/ademsas1026/Chronos',
+  deployLink: 'https://we-are-chronos.herokuapp.com/',
+  screenShot: './images/screenshot-chronos.png',
+  description: 'a fully-featured e-commerce store unbound by the limits of reality. Want a slice of the Renaissance? Another chance at a great first date? Check out Chronos! Built with Node, Express, Sequelize, and React.',
+  technologies: ['Node', 'Express', 'Sequelize', 'React']
+}];
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var Portfolio = function Portfolio() {
+  return _react.default.createElement("div", {
+    id: "allPortfolio"
+  }, _react.default.createElement("h2", {
+    id: "portfolioHeader"
+  }, "Portfolio"), _react.default.createElement(_core.Grid, {
+    container: true,
+    spacing: 24,
+    id: "portfolio"
+  }, projects.length && projects.map(function (project) {
+    return _react.default.createElement(_core.Grid, {
+      item: true,
+      xs: 12,
+      sm: 6,
+      key: project.name,
+      id: "gridItem"
+    }, _react.default.createElement("nav", null, _react.default.createElement("a", {
+      href: project.githubLink,
+      id: "githubLink"
+    }, _react.default.createElement("img", {
+      src: "/images/github.svg",
+      id: "githubIcon"
+    })), _react.default.createElement("a", {
+      href: project.deployLink,
+      id: "deployLink"
+    }, _react.default.createElement("img", {
+      src: "/images/globe.png",
+      id: "globeIcon"
+    }))), _react.default.createElement("div", {
+      id: "image"
+    }, _react.default.createElement("img", {
+      src: project.screenShot,
+      className: "screenshot ".concat(project.name)
+    }), _react.default.createElement("div", {
+      className: "titleAndDescription"
+    }, _react.default.createElement("h2", {
+      id: "title"
+    }, project.name), _react.default.createElement("h3", {
+      id: "description"
+    }, project.description))));
+  })));
+};
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Portfolio =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Portfolio, _Component);
-
-  function Portfolio() {
-    _classCallCheck(this, Portfolio);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Portfolio).call(this));
-  }
-
-  _createClass(Portfolio, [{
-    key: "seeNav",
-    value: function seeNav() {
-      this.props.history.push('/nav');
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var projects = [{
-        name: 'We Are Not Alone',
-        githubLink: 'https://github.com/ademsas1026/we-are-not-alone',
-        deployLink: 'https://we-are-not-alone.herokuapp.com/',
-        screenShot: './images/screenshot-not-alone-1.png',
-        description: "We Are Not Alone: a visualization of UFO sightings from 1950 - 2013, data furnished by the National UFO Reporting Center (NUFORC). Built with Mapbox, React, k-means clustering-based word frequency analysis, data visualization with Victory.",
-        technologies: ['Mapbox', 'Node', 'React', 'Victory']
-      }, {
-        name: 'Mahazay',
-        githubLink: 'https://github.com/JARLcodes/mahazay-two',
-        deployLink: 'https://mahazay-c248c.firebaseapp.com/',
-        screenShot: './images/screenshot-mahazay-1.png',
-        description: 'Mahazay: a smart bullet journaling app built with Firestore, Google Cloud Functions and IBM Watson Personality and Tone Analyzer on the backend & Victory and React on the front.',
-        technologies: ['Node', 'Firebase / NOSQL Database', 'IBM Watson API integration', 'Data visualization', 'React']
-      }, {
-        name: 'Chronos',
-        githubLink: 'https://github.com/ademsas1026/Chronos',
-        deployLink: 'https://we-are-chronos.herokuapp.com/',
-        screenShot: './images/screenshot-chronos.png',
-        description: 'Chronos: a fully-featured e-commerce store unbound by the limits of reality. Want a slice of the Renaissance? Another chance at a great first date? Check out Chronos! Built with Node, Express, Sequelize, and React.',
-        technologies: ['Node', 'Express', 'Sequelize', 'React']
-      }];
-      return _react.default.createElement("div", {
-        id: "allPortfolio"
-      }, _react.default.createElement("h2", {
-        id: "portfolioHeader"
-      }, "Portfolio"), _react.default.createElement(_core.Grid, {
-        container: true,
-        spacing: 24,
-        id: "portfolio"
-      }, projects.length && projects.map(function (project) {
-        return _react.default.createElement(_core.Grid, {
-          item: true,
-          xs: 12,
-          sm: 6,
-          key: project.name,
-          id: "gridItem"
-        }, _react.default.createElement("nav", null, _react.default.createElement("a", {
-          href: project.githubLink,
-          id: "githubLink"
-        }, _react.default.createElement("img", {
-          src: "/images/github.svg",
-          id: "githubIcon"
-        })), _react.default.createElement("a", {
-          href: project.deployLink,
-          id: "deployLink"
-        }, _react.default.createElement("img", {
-          src: "/images/globe.png",
-          id: "globeIcon"
-        }))), _react.default.createElement("div", {
-          id: "image"
-        }, _react.default.createElement("img", {
-          src: project.screenShot,
-          className: "screenshot ".concat(project.name)
-        }), _react.default.createElement("h2", {
-          id: "title"
-        }, project.name), _react.default.createElement("h3", {
-          id: "description"
-        }, project.description)));
-      })));
-    }
-  }]);
-
-  return Portfolio;
-}(_react.Component);
-
-exports.default = Portfolio;
+var _default = Portfolio;
+exports.default = _default;
 
 /***/ }),
 
