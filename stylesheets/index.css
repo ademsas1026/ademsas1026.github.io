@@ -365,6 +365,96 @@
     font-size: 1em;
   }
 }
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 414/736) {
+  #appAndNav #navbar {
+    width: 200vw;
+    height: 200vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -40vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 25vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    position: relative;
+    font-size: 2.5em;
+    left: -5vw;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: flex-start;
+    position: relative;
+    top: 10vh;
+    font-size: 1.2em;
+    left: -25vw;
+    padding-right: 8%;
+    border-right: 0.2em solid black;
+    margin-right: 25vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -18vh;
+    left: 10vw;
+    border-left: 0.2em solid white;
+    padding-left: -10%;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 1.4em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width: 721px) {
   #appAndNav #navbar {
     display: none;
@@ -1464,6 +1554,79 @@
     position: relative;
     left: 3.5vw;
     top: 1.5vh;
+  }
+  #appStyle #navButton:hover {
+    background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+    text-decoration: none;
+  }
+}
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 414/736) {
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 400vh;
+    position: absolute;
+    left: -1vw;
+  }
+
+  #appStyle {
+    top: 32vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #appStyle #littleBubble {
+    background-color: rgba(76, 186, 160, 0.571);
+    position: relative;
+    border-radius: 75%;
+    top: -20vh;
+    left: -15vw;
+    z-index: 4000;
+    width: 35vw;
+    height: 20vh;
+    opacity: 0.5;
+    align-self: flex-end;
+  }
+  #appStyle #landingPage {
+    border-radius: 75%;
+    border: 0.2em solid white;
+    width: 90vw;
+    height: 50vh;
+    background-color: rgba(76, 186, 160, 0.571);
+    position: relative;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -15vh;
+  }
+  #appStyle #landingPage #titleHeading {
+    align-self: center;
+    font-size: 2.1em;
+  }
+  #appStyle #landingPage #titleSubheading {
+    align-self: center;
+    font-size: 1.6em;
+  }
+  #appStyle #navButton {
+    position: fixed;
+    top: 2vh;
+    left: 5vw;
+    border-radius: 75%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    width: 22vw;
+    height: 11vh;
+  }
+  #appStyle #navButton h3 {
+    font-size: 1.8em;
+    position: relative;
+    left: 0.5vw;
+    top: -1vh;
   }
   #appStyle #navButton:hover {
     background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
