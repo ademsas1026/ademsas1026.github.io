@@ -6,11 +6,12 @@
 @import 'landing-page.scss';
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1000; 
+  overflow-x: hidden;
   #appStyle {
     #content {
-      margin: 0vh 5vw 0vh 40vw;
+      margin: 0vh -5vw 0vh 45vw;
       box-sizing: border-box;
       width: 70vw;
       #bio {
@@ -24,7 +25,48 @@
 };
 
 
-
+@media only screen and (max-device-width: 480px)
+{
+  @media only screen and (device-aspect-ratio: 375/667) {
+    #background {
+      overflow-x: hidden;
+      opacity: 0.4;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -1vw;
+      top: 645vh;
+    };
+  }
+  @media only screen and (device-aspect-ratio: 411/731)
+  {
+    #background {
+      overflow-x: hidden;
+      opacity: 0.4;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -1vw;
+      top: 600vh;
+    };
+  };
+ 
+  @media only screen and (device-aspect-ratio: 320/568)
+  { 
+    #background {
+      opacity: 0.4;
+      z-index: 0;
+      width: 110%;
+      height: 65%;
+      top: 615vh;
+      position: absolute;
+      left: -1vw;
+    };
+  };
+ 
+}
 @media only screen and (max-width: 721px)
                     and (min-width: 480px)
 {

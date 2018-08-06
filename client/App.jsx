@@ -49,34 +49,40 @@ class App extends Component {
   render(){
     const { showNav } = this.state
     return (
-      <div id="appStyle">
-        { showNav && <Navbar
+      <div id="appAndNav">
+         { showNav && <Navbar
                         showNav={this.showNav}
                       />
         }
-        <h1 id="titleHeading">Abigail Demsas</h1>
-        <h2 id="titleSubheading">Software Developer</h2>
-        <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
-        <section id="sidebar">
-          <img src="/images/me.jpg" alt="me" id="headshot" />
-          <br />
-          <h1 id="titleHeading">Abigail Demsas</h1>
-          <h2 id="titleSubheading">Software Developer</h2>
-          <Sidebar />
-        </section>
+        <div id="appStyle">
         
-        <section id="content">
-            
-            <div className="about" name="about">
-              <About />
-            </div>
-            <div className="portfolio" name="portfolio">
-              <Portfolio />
-            </div>
-            <div className="contact" name="contact">
-              <Contact name="contact" scrollToTop={this.scrollToTop}/>
-            </div>
-        </section>
+          <div id="littleBubble"></div>
+          <div id="landingPage">
+            <h1 id="titleHeading">Abigail Demsas</h1>
+            <h2 id="titleSubheading">Software Developer</h2>
+          </div>
+          <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
+          <section id="sidebar">
+            <img src="/images/me.jpg" alt="me" id="headshot" />
+            <br />
+            <h1 id="titleHeading">Abigail Demsas</h1>
+            <h2 id="titleSubheading">Software Developer</h2>
+            <Sidebar />
+          </section>
+          
+          <section id="content">
+              
+              <div className="about" name="about">
+                <About />
+              </div>
+              <div className="portfolio" name="portfolio">
+                <Portfolio />
+              </div>
+              <div className="contact" name="contact">
+                <Contact name="contact" scrollToTop={this.scrollToTop}/>
+              </div>
+          </section>
+        </div>
       </div>
     )
   }

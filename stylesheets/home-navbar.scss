@@ -1,7 +1,8 @@
-#appStyle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+
+@media only screen and (max-device-width:  480px)                  
+{
+#appAndNav {
   a {
     text-decoration: none;
     color:#fff;
@@ -9,48 +10,35 @@
   a:visited {
     color: black;
   };
-  a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgba(12, 132, 223, 0.5)
-  };
-  // @media only screen and (max-device-width:  480px){
-   
+  @media only screen and (device-aspect-ratio: 411/731) 
+  {
     #navbar {
-      width: 100vw;
-      height: 100vh;
+      width: 200vw;
+      height: 150vh;
       position: fixed;
       z-index: 500;
       margin-bottom: 50vh;
-      background-color:black;
+      background-color:rgba(76, 186, 160, 1);
       border-top: 0.1em solid rgba(194, 145, 59, 0.5);
       border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
-      top: -2vh;
-      left: -1vw;
+      top: -5vh;
+      left: -30vw;
       padding-right: 1vw;
-      h1 {
-        font-size: 2em;
-        margin: 0 0 0 0;
-      };
       h3 {
-        font-size: 1.25em;
+        font-size: 1em;
         margin: 0 0 0 0;
-      };
-      #headshot {
-        border-radius: 75%;
-        max-width: 30%;
-        max-height: auto;
-        margin-top: 2vw;
-        align-self: center;
+        position: relative;
+        top: 25vh;
       };
       #columnNav {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         position: relative;
-        top: 10vh;
+        top: 15vh;
         font-size: 2em;
         #aboutLink {
           margin-bottom: 10vh;
@@ -63,17 +51,25 @@
         };
         
       };
-      #rowNav {
+      #leftColumnNav {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         position: relative;
-        top: 10vh;
-        font-size: 1em;
+        top: 25vh;
+        font-size: 1.5em;
+        left: -40vw;
+        padding-right: 5%;
+        border-right: 0.2em solid black;
+        margin-right: 15vw;
+        transition: 0.3s ease-in-out;
         #aboutLink {
           margin: 0vh 0vw 10vh 4vw;
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -84,130 +80,404 @@
       };
       #techList {
         display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -43vh;
+        left: 15vw;
+        border-left: 0.2em solid white;
+        // margin-right: -40vw;
+        margin-left: -35vw;
+        width: 60vw;
         ul {
           list-style-type: none;
           h3 {
-            font-size: 0.5em;
+            font-size: 1.2em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
           }
           li {
-            font-size: 0.5em;
+            font-size: 1.2em;
+            
           };
         };
       };
     };
-    
-  // };
+  };
+  @media only screen and (device-aspect-ratio: 320/568) {
+    #navbar {
+      width: 200vw;
+      height: 150vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -30vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: 15vh;
+        font-size: 2em;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+        
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        top: 25vh;
+        font-size: 1.5em;
+        left: -40vw;
+        padding-right: 5%;
+        border-right: 0.2em solid black;
+        margin-right: 15vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -43vh;
+        left: 15vw;
+        border-left: 0.2em solid white;
+        // margin-right: -40vw;
+        margin-left: -35vw;
+        width: 60vw;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1em;
+            
+          };
+        };
+      };
+    };
+  };
+  @media only screen and (device-aspect-ratio: 375/667) {
+    #navbar {
+      overflow-x: hidden;
+      width: 200vw;
+      height: 200vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -40vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        font-size: 2em;
+        left: 5vw;
+        // top: 10vh;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        align-items: flex-start;
+        position: relative;
+        top: 15vh;
+        font-size: 1.2em;
+        left: -20vw;
+        padding-right: 10%;
+        border-right: 0.2em solid black;
+        margin-right: 30vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -50vh;
+        left: 12vw;
+        border-left: 0.2em solid white;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1.2em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1em;
+            
+          };
+        };
+      };
+    };
+  };
+  @media only screen and (device-aspect-ratio: 375/812) {
+    #navbar {
+      width: 200vw;
+      height: 200vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -40vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        position: relative;
+        top: 5vh;
+        font-size: 2.5em;
+        left: -5vw;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        align-items: flex-start;
+        position: relative;
+        top: 10vh;
+        font-size: 1.2em;
+        left: -25vw;
+        padding-right: 8%;
+        border-right: 0.2em solid black;
+        margin-right: 25vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -18vh;
+        left: 10vw;
+        border-left: 0.2em solid white;
+        padding-left: -10%;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1.4em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1em;
+            
+          };
+        };
+      };
+    };
+  };
+  @media only screen and (device-aspect-ratio: 414/736) {
+    #navbar {
+      width: 200vw;
+      height: 200vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -40vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        position: relative;
+        top: 5vh;
+        font-size: 2.5em;
+        left: -5vw;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        align-items: flex-start;
+        position: relative;
+        top: 10vh;
+        font-size: 1.2em;
+        left: -25vw;
+        padding-right: 8%;
+        border-right: 0.2em solid black;
+        margin-right: 25vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -18vh;
+        left: 10vw;
+        border-left: 0.2em solid white;
+        padding-left: -10%;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1.4em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1em;
+            
+          };
+        };
+      };
+    };
+  };
+  };
+};
 
-  // @media only screen and (max-width: 721px)
-  //                   and (min-width: 481px)
-  // {
-  //   #navbar {
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //     background-color: rgba(194, 145, 59, 0.5);
-  //     border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-  //     border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-  //     top: 0;
-  //     left: -12vw;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     z-index: 1000;
-  //     h1 {
-  //       font-size: 2em;
-  //       margin: 0 0 0 0;
-  //       align-self: center;
-  //     };
-  //     h3 {
-  //       font-size: 1em;
-  //       margin: 0 0 0 0;
-  //       align-self: center;
-  //     };
-  //     #headshot {
-  //       border-radius: 75%;
-  //       max-width: 30%;
-  //       max-height: auto;
-  //       margin-top: 2vw;
-  //       align-self: center;
-  //     };
-  //     #nav {
-  //       display: flex;
-  //       align-items: stretch;
-  //       margin-top: 2vw;
-  //       #techLink {
-  //         margin-left: 4vw;
-  //       };
-  //       #portfolioLink {
-  //         margin-left: 4vw;
-  //       };
-  //       #contactLink {
-  //         align-self: flex-end;
-  //         margin-left: 4vw;
-  //       };
-  //     };
-  //     #techList {
-  //       display: flex;
-  //       ul {
-  //         list-style-type: none;
-  //         h3 {
-  //           font-size: 1em;
-  //         }
-  //         li {
-  //           font-size: 1em;
-  //         }
-  //       }
-  //     }
-  //   };
-    
-  // };
-
-  // @media only screen and (max-width: 900px)
-  //                    and (min-width: 721px)
-  //     {
-  //   #navbar {
-  //     h1 {
-  //       font-size: 3em;
-  //       margin: 0 0 0 0;
-  //     };
-  //     h3 {
-  //       font-size: 1.5em;
-  //       margin: 0 0 0 0;
-  //     };
-  //     background-color: rgba(194, 145, 59, 0.5);
-  //     border-top: 0.1em solid rgba(194, 145, 59, 0.5);
-  //     border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     width: 85%;
-  //     left: -50vw;
-  //     top: -0.2vw;
-  //     #headshot {
-  //       border-radius: 75%;
-  //       width: 20vw;
-  //       height: auto;
-  //       margin-top: 2vw;
-  //     };
-  //     #nav {
-  //       display: flex;
-  //       align-items: stretch;
-  //       margin-top: 2vw;
-  //       #portfolioLink {
-  //         margin-left: 4vw;
-  //       };
-  //       #contactLink {
-  //         align-self: flex-end;
-  //         margin-left: 4vw;
-  //       }
-  //     };
-  //     #bio {
-  //       display: none;
-  //     }
-  //   };
-  // };
-
-  @media only screen and (min-width: 721px) {
+@media only screen and (min-width: 721px) {
+  #appAndNav {
     #navbar {
       display: none;
     };
