@@ -20,17 +20,10 @@
       flex-direction: column;
       align-items: center;
       z-index: 1000;
-      background-color:rgba(65, 125, 77, 0.721);
+      background-color:rgba(76, 186, 160, 1);
       border-left: 0.1em solid rgba(194, 145, 59, 0.5);
       border-right: 0.1em solid rgba(194, 145, 59, 0.5);
-      #titleHeading {
-        font-size: 2.5em;
-        margin: 0 0 0 0;
-      };
-      #titleSubheading {
-        font-size: 1.5em;
-        margin: 0 0 0 0;
-      };
+     
       img {
         border-radius: 75%;
         width: 18vw;
@@ -78,6 +71,14 @@
       margin: 5vh 0vw 5vh 0vw;
       align-items: space-around;
       transition: 1s ease-in-out;
+      #titleHeading {
+        font-size: 2.5em;
+        margin: 0 0 0 0;
+      };
+      #titleSubheading {
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+      };
     };
     h1 {
       text-align: justify;

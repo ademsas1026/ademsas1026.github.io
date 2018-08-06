@@ -407,7 +407,8 @@
       position: relative;
       font-size: 4em;
       left: 10vw;
-      background-color: beige;
+      width: 20vw;
+      background-color: rgba(223, 214, 223, 0.893);
       -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
       -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
       box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
@@ -452,9 +453,9 @@
             transform: translateY(46vh) translateX(8vw); 
             z-index: 100;
             transition: 300ms ease-in-out;
-            font-size: 1.5em;
+            font-size: 1em;
             margin: -10vh 0vw 20vh 0vw;
-            background-color: rgba(65, 125, 77, 0.721);
+            background-color: rgba(223, 214, 223, 0.893);
             -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
             box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
@@ -518,7 +519,7 @@
             left: 30.7vw;
             top: 59.5vh;
             width: 60%;
-            background-color: rgba(65, 125, 77, 0.721);
+            background-color: rgba(223, 214, 223, 0.893);
             padding: 2%;
           };
           #description {

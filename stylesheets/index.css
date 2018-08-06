@@ -19,17 +19,9 @@
     flex-direction: column;
     align-items: center;
     z-index: 1000;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: #4cbaa0;
     border-left: 0.1em solid rgba(194, 145, 59, 0.5);
     border-right: 0.1em solid rgba(194, 145, 59, 0.5);
-  }
-  #appStyle #sidebar #titleHeading {
-    font-size: 2.5em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #sidebar #titleSubheading {
-    font-size: 1.5em;
-    margin: 0 0 0 0;
   }
   #appStyle #sidebar img {
     border-radius: 75%;
@@ -72,6 +64,14 @@
   margin: 5vh 0vw 5vh 0vw;
   align-items: space-around;
   transition: 1s ease-in-out;
+}
+#appStyle section #columnNav #titleHeading {
+  font-size: 2.5em;
+  margin: 0 0 0 0;
+}
+#appStyle section #columnNav #titleSubheading {
+  font-size: 1.5em;
+  margin: 0 0 0 0;
 }
 #appStyle section h1 {
   text-align: justify;
@@ -120,7 +120,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 15vh;
+    top: -5vh;
     font-size: 2em;
   }
   #appAndNav #navbar #columnNav #aboutLink {
@@ -128,6 +128,10 @@
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -137,7 +141,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    top: 25vh;
+    top: 10vh;
     font-size: 1.5em;
     left: -40vw;
     padding-right: 5%;
@@ -150,8 +154,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -182,6 +189,102 @@
     font-size: 1.2em;
   }
 }
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 414/736) {
+  #appAndNav #navbar {
+    width: 200vw;
+    height: 150vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -30vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 25vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: -15vh;
+    font-size: 2em;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 10vh;
+    font-size: 1.5em;
+    left: -40vw;
+    padding-right: 5%;
+    border-right: 0.2em solid black;
+    margin-right: 15vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -63vh;
+    left: 30vw;
+    border-left: 0.2em solid white;
+    width: 60vw;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 2em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 1.5em;
+  }
+}
 @media only screen and (max-device-width: 480px) and (device-aspect-ratio: 320/568) {
   #appAndNav #navbar {
     width: 200vw;
@@ -210,14 +313,18 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 15vh;
     font-size: 2em;
+    top: -5vh;
   }
   #appAndNav #navbar #columnNav #aboutLink {
     margin-bottom: 10vh;
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -240,8 +347,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -303,12 +413,17 @@
     position: relative;
     font-size: 2em;
     left: 5vw;
+    top: -10vh;
   }
   #appAndNav #navbar #columnNav #aboutLink {
     margin-bottom: 10vh;
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -319,7 +434,7 @@
     width: 25vw;
     align-items: flex-start;
     position: relative;
-    top: 15vh;
+    top: 5vh;
     font-size: 1.2em;
     left: -20vw;
     padding-right: 10%;
@@ -332,8 +447,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -409,7 +527,6 @@
     width: 25vw;
     align-items: flex-start;
     position: relative;
-    top: 10vh;
     font-size: 1.2em;
     left: -25vw;
     padding-right: 8%;
@@ -422,8 +539,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -512,8 +632,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -619,13 +742,15 @@
   #appStyle #content .about #bioAbout #aboutAbout {
     position: relative;
     bottom: 15vh;
-    top: 20vh;
-    width: 50vw;
-    background-color: beige;
+    top: 30vh;
+    width: 40vw;
+    left: -4.5vw;
+    background-color: rgba(223, 214, 223, 0.893);
     padding: 0 10vw 2vh 2vw;
-    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
-    -moz-box-shadow: 0px 7px 25px 3px #857e85;
-    box-shadow: 0px 7px 25px 3px #857e85;
+    font-size: 1.2em;
+  }
+  #appStyle #content .about #bioAbout #aboutAbout #subAbout {
+    font-size: 0.8em;
   }
   #appStyle #content .about #bioAbout #aboutAbout #contactLink {
     margin-left: 0.5vw;
@@ -1035,7 +1160,8 @@
     position: relative;
     font-size: 4em;
     left: 10vw;
-    background-color: beige;
+    width: 20vw;
+    background-color: rgba(223, 214, 223, 0.893);
     -webkit-box-shadow: 0px 7px 25px 3px #857e85;
     -moz-box-shadow: 0px 7px 25px 3px #857e85;
     box-shadow: 0px 7px 25px 3px #857e85;
@@ -1083,9 +1209,9 @@
     transform: translateY(46vh) translateX(8vw);
     z-index: 100;
     transition: 300ms ease-in-out;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: -10vh 0vw 20vh 0vw;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: rgba(223, 214, 223, 0.893);
     -webkit-box-shadow: 0px 7px 25px 3px #857e85;
     -moz-box-shadow: 0px 7px 25px 3px #857e85;
     box-shadow: 0px 7px 25px 3px #857e85;
@@ -1148,7 +1274,7 @@
     left: 30.7vw;
     top: 59.5vh;
     width: 60%;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: rgba(223, 214, 223, 0.893);
     padding: 2%;
   }
   #allPortfolio #portfolio #gridItem #image #description {
@@ -1542,7 +1668,7 @@
   #appStyle .contact {
     position: relative;
     top: 345vh;
-    left: 20vw;
+    left: 15vw;
   }
   #appStyle .contact #contactNav {
     display: flex;
@@ -1601,7 +1727,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1674,7 +1800,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1746,7 +1872,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1818,7 +1944,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 30vw;
     height: 15vh;
     opacity: 0.5;
@@ -1891,7 +2017,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 15vh;
     opacity: 0.5;
@@ -1964,7 +2090,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
