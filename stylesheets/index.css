@@ -19,17 +19,9 @@
     flex-direction: column;
     align-items: center;
     z-index: 1000;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: #4cbaa0;
     border-left: 0.1em solid rgba(194, 145, 59, 0.5);
     border-right: 0.1em solid rgba(194, 145, 59, 0.5);
-  }
-  #appStyle #sidebar #titleHeading {
-    font-size: 2.5em;
-    margin: 0 0 0 0;
-  }
-  #appStyle #sidebar #titleSubheading {
-    font-size: 1.5em;
-    margin: 0 0 0 0;
   }
   #appStyle #sidebar img {
     border-radius: 75%;
@@ -72,6 +64,14 @@
   margin: 5vh 0vw 5vh 0vw;
   align-items: space-around;
   transition: 1s ease-in-out;
+}
+#appStyle section #columnNav #titleHeading {
+  font-size: 2.5em;
+  margin: 0 0 0 0;
+}
+#appStyle section #columnNav #titleSubheading {
+  font-size: 1.5em;
+  margin: 0 0 0 0;
 }
 #appStyle section h1 {
   text-align: justify;
@@ -742,13 +742,15 @@
   #appStyle #content .about #bioAbout #aboutAbout {
     position: relative;
     bottom: 15vh;
-    top: 20vh;
-    width: 50vw;
-    background-color: beige;
+    top: 30vh;
+    width: 40vw;
+    left: -4.5vw;
+    background-color: rgba(223, 214, 223, 0.893);
     padding: 0 10vw 2vh 2vw;
-    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
-    -moz-box-shadow: 0px 7px 25px 3px #857e85;
-    box-shadow: 0px 7px 25px 3px #857e85;
+    font-size: 1.2em;
+  }
+  #appStyle #content .about #bioAbout #aboutAbout #subAbout {
+    font-size: 0.8em;
   }
   #appStyle #content .about #bioAbout #aboutAbout #contactLink {
     margin-left: 0.5vw;
@@ -1158,7 +1160,8 @@
     position: relative;
     font-size: 4em;
     left: 10vw;
-    background-color: beige;
+    width: 20vw;
+    background-color: rgba(223, 214, 223, 0.893);
     -webkit-box-shadow: 0px 7px 25px 3px #857e85;
     -moz-box-shadow: 0px 7px 25px 3px #857e85;
     box-shadow: 0px 7px 25px 3px #857e85;
@@ -1206,9 +1209,9 @@
     transform: translateY(46vh) translateX(8vw);
     z-index: 100;
     transition: 300ms ease-in-out;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: -10vh 0vw 20vh 0vw;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: rgba(223, 214, 223, 0.893);
     -webkit-box-shadow: 0px 7px 25px 3px #857e85;
     -moz-box-shadow: 0px 7px 25px 3px #857e85;
     box-shadow: 0px 7px 25px 3px #857e85;
@@ -1271,7 +1274,7 @@
     left: 30.7vw;
     top: 59.5vh;
     width: 60%;
-    background-color: rgba(65, 125, 77, 0.721);
+    background-color: rgba(223, 214, 223, 0.893);
     padding: 2%;
   }
   #allPortfolio #portfolio #gridItem #image #description {
@@ -1665,7 +1668,7 @@
   #appStyle .contact {
     position: relative;
     top: 345vh;
-    left: 20vw;
+    left: 15vw;
   }
   #appStyle .contact #contactNav {
     display: flex;

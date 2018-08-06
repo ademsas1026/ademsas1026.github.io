@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { Typography, Button } from '@material-ui/core'
+import React from 'react'
+import { Button } from '@material-ui/core'
 import { Link } from 'react-scroll'
 
 const styles = {
   rowNav: {
-    fontFamily: 'Montserrat, sans-serif', 
+    fontFamily: 'Montserrat, sans-serif',
     fontSize: '1.5em'
   },
   colNav: {
@@ -15,6 +15,8 @@ const styles = {
 const Sidebar = () => (
   <div id="nav">
     <nav id="columnNav">
+      <h2>Abigail Demsas</h2>
+      <h2>Fullstack Developer</h2>
       <Button>
         <Link
           to="aboutAbout"

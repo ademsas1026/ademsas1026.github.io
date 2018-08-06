@@ -25,6 +25,7 @@ export default class Navbar extends Component {
     const { showTech } = this.state
     return (
       <div id="navbar">
+       
         <nav id={showTech ? 'leftColumnNav' : 'columnNav'}>
           <Link
             onClick={this.props.showNav}
