@@ -17,7 +17,7 @@ export default class Navbar extends Component {
 
   render() {
     const technologies = {
-      proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
+      proficient: ['Javascript/ES6+', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
       knowledgeable: ['Socket.io', 'Webpack', 'Firebase', 'Sequelize / ORMs', 'Mocha', 'Chai'],
       familiar: ['Material-UI', 'Heroku']
     }
