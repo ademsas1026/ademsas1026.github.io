@@ -1,13 +1,14 @@
 
 
-@media only screen and (max-device-width:  480px){
+@media only screen and (max-device-width:  480px)
+{
   #appStyle {
     #content {
       .about {
         width: 100%;
         position: relative;
-        top: 145vh;
-        left: -30vw;
+        top: 155vh;
+        left: -25vw;
         background-color: rgba(223, 214, 223, 0.893);
         padding-right: 2vw;
         padding-left: 2vw;
@@ -22,9 +23,9 @@
           #aboutAbout {
             margin: 0vh 2vw 0vh 2vw;
             font-weight: bold;
-            font-size: 1em;
+            font-size: 1.2em;
             #subAbout {
-              font-size: 0.75em;
+              font-size: 0.8em;
               #contactLink {
                 color: rgba(76, 186, 160, 0.571);
                 left: 2vw;

@@ -1,5 +1,6 @@
-@media only screen and (max-device-width:  480px)
-                  
+
+
+@media only screen and (max-device-width:  480px)                  
 {
 #appAndNav {
   a {
@@ -9,11 +10,11 @@
   a:visited {
     color: black;
   };
-
-  @media only screen and (device-aspect-ratio: 40/71) {
+  @media only screen and (device-aspect-ratio: 411/731) 
+  {
     #navbar {
-      width: 250vw;
-      height: 200vh;
+      width: 200vw;
+      height: 150vh;
       position: fixed;
       z-index: 500;
       margin-bottom: 50vh;
@@ -27,7 +28,7 @@
       left: -30vw;
       padding-right: 1vw;
       h3 {
-        font-size: 1.5em;
+        font-size: 1em;
         margin: 0 0 0 0;
         position: relative;
         top: 25vh;
@@ -38,7 +39,7 @@
         align-items: flex-end;
         position: relative;
         top: 15vh;
-        font-size: 3.5em;
+        font-size: 2em;
         #aboutLink {
           margin-bottom: 10vh;
         };
@@ -53,15 +54,14 @@
       #leftColumnNav {
         display: flex;
         flex-direction: column;
-        width: 25vw;
         align-items: flex-start;
         position: relative;
-        top: 20vh;
-        font-size: 2em;
-        left: -35vw;
-        padding-right: 18%;
+        top: 25vh;
+        font-size: 1.5em;
+        left: -40vw;
+        padding-right: 5%;
         border-right: 0.2em solid black;
-        margin-right: 30vw;
+        margin-right: 15vw;
         transition: 0.3s ease-in-out;
         #aboutLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -82,21 +82,115 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -13vh;
-        left: 40vw;
+        top: -43vh;
+        left: 15vw;
         border-left: 0.2em solid white;
-        padding-right: -5vw;
-        
+        // margin-right: -40vw;
+        margin-left: -35vw;
+        width: 60vw;
         ul {
           list-style-type: none;
           h3 {
-            font-size: 2em;
+            font-size: 1.2em;
             position: relative;
             top: -3vh;
             margin-bottom: -5vh;
           }
           li {
-            font-size: 2em;
+            font-size: 1.2em;
+            
+          };
+        };
+      };
+    };
+  };
+  @media only screen and (device-aspect-ratio: 320/568) {
+    #navbar {
+      width: 200vw;
+      height: 150vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -30vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: 15vh;
+        font-size: 2em;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+        
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        top: 25vh;
+        font-size: 1.5em;
+        left: -40vw;
+        padding-right: 5%;
+        border-right: 0.2em solid black;
+        margin-right: 15vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          text-decoration: underline;
+          text-decoration-color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -43vh;
+        left: 15vw;
+        border-left: 0.2em solid white;
+        // margin-right: -40vw;
+        margin-left: -35vw;
+        width: 60vw;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 1em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1em;
             
           };
         };
@@ -105,6 +199,7 @@
   };
   @media only screen and (device-aspect-ratio: 375/667) {
     #navbar {
+      overflow-x: hidden;
       width: 200vw;
       height: 200vh;
       position: fixed;
@@ -128,11 +223,11 @@
       #columnNav {
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
+        align-items: flex-end;
         position: relative;
-        top: 5vh;
-        font-size: 3em;
-        left: -2vw;
+        font-size: 2em;
+        left: 5vw;
+        // top: 10vh;
         #aboutLink {
           margin-bottom: 10vh;
         };
@@ -149,10 +244,10 @@
         width: 25vw;
         align-items: flex-start;
         position: relative;
-        top: 10vh;
-        font-size: 1.7em;
-        left: -10vw;
-        padding-right: 15%;
+        top: 15vh;
+        font-size: 1.2em;
+        left: -20vw;
+        padding-right: 10%;
         border-right: 0.2em solid black;
         margin-right: 30vw;
         transition: 0.3s ease-in-out;
@@ -175,21 +270,19 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -18vh;
-        left: 32vw;
+        top: -50vh;
+        left: 12vw;
         border-left: 0.2em solid white;
-        padding-right: -5vw;
-        padding-left: -10vw;
         ul {
           list-style-type: none;
           h3 {
-            font-size: 1.6em;
+            font-size: 1.2em;
             position: relative;
             top: -3vh;
             margin-bottom: -5vh;
           }
           li {
-            font-size: 1.3em;
+            font-size: 1em;
             
           };
         };
@@ -315,7 +408,7 @@
         flex-direction: column;
         align-content: flex-end;
         position: relative;
-        // top: 5vh;
+        top: 5vh;
         font-size: 2.5em;
         left: -5vw;
         #aboutLink {

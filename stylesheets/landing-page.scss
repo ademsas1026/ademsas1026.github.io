@@ -1,5 +1,69 @@
+@media only screen and (device-aspect-ratio: 411/731)
+{
+  #appStyle {
+    top: 32vh;
+    display: flex;
+    flex-direction: column;
+    #littleBubble {
+      background-color: rgba(76, 186, 160, 0.571);
+      position: relative;
+      border-radius: 75%;
+      top: -15vh;
+      left: -20vw;
+      z-index: 4000;
+      width: 35vw;
+      height: 20vh;
+      opacity: 0.5;
+      align-self: flex-end;
+    };
+    #landingPage {
+      border-radius: 75%;
+      border: 0.2em solid white;
+      width: 80vw;
+      height: 45vh;
+      left: -7vw;
+      background-color: rgba(76, 186, 160, 0.571);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      top: -10vh;
+      #titleHeading {
+        align-self: center;
+        font-size: 1.5em;
+      };
+      #titleSubheading {
+        align-self: center;
+        font-size: 1em;
+      };
+    };
+    #navButton {
+      position: fixed;
+      top: 2vh;
+      border-radius: 75%;
+      padding: 1%;
+      background-color: black;
+      color: white;
+      z-index: 1000;
+      width: 20vw;
+      height: 10vh;
+      h3 {
+        font-size: 1.7em;
+        position: relative;
+        left: 0.8vw;
+        top: -1vh;
+      };
+    };
+    #navButton:hover {
+      background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+      text-decoration: none;
+    };
+  };
+};
 @media only screen and (max-device-width: 480px)
-                  and (device-aspect-ratio: 40/71)
+                  and (device-aspect-ratio: 320/568)
 {
   #background {
     overflow-x: hidden;
@@ -19,50 +83,50 @@
       position: relative;
       border-radius: 75%;
       top: -15vh;
-      left: -10vw;
+      left: -20vw;
       z-index: 4000;
-      width: 55vw;
-      height: 25vh;
+      width: 35vw;
+      height: 20vh;
       opacity: 0.5;
       align-self: flex-end;
     };
     #landingPage {
       border-radius: 75%;
       border: 0.2em solid white;
-      width: 180vw;
-      height: 90vh;
-      left: 2vw;
+      width: 80vw;
+      height: 45vh;
+      left: -7vw;
       background-color: rgba(76, 186, 160, 0.571);
       position: relative;
-      top: 25vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       align-self: center;
+      top: -10vh;
       #titleHeading {
         align-self: center;
-        font-size: 2.5em;
+        font-size: 1.5em;
       };
       #titleSubheading {
         align-self: center;
-        font-size: 2em;
+        font-size: 1em;
       };
     };
     #navButton {
       position: fixed;
-      top: 7vh;
+      top: 2vh;
       border-radius: 75%;
       padding: 1%;
       background-color: black;
       color: white;
       z-index: 1000;
-      width: 40vw;
-      height: 20vh;
+      width: 20vw;
+      height: 10vh;
       h3 {
-        font-size: 2.2em;
+        font-size: 1em;
         position: relative;
-        left: 4vw;
+        left: 2.5vw;
       };
     };
     #navButton:hover {
@@ -70,16 +134,17 @@
       text-decoration: none;
     };
   };
-}
-@media only screen and (max-device-width:  480px) 
-                  and (device-aspect-ratio: 375/667)
+};
+
+@media only screen and (max-device-width: 480px)
+                  and (device-aspect-ratio: 360/640)
 {
   #background {
+    overflow-x: hidden;
     opacity: 0.4;
     z-index: 0;
     width: 100%;
     height: 100%;
-    top: 400vh;
     position: absolute;
     left: -1vw;
   };
@@ -92,9 +157,9 @@
       position: relative;
       border-radius: 75%;
       top: -15vh;
-      left: 2vw;
+      left: -20vw;
       z-index: 4000;
-      width: 40vw;
+      width: 35vw;
       height: 20vh;
       opacity: 0.5;
       align-self: flex-end;
@@ -102,39 +167,114 @@
     #landingPage {
       border-radius: 75%;
       border: 0.2em solid white;
-      width: 120vw;
-      height: 70vh;
+      width: 80vw;
+      height: 45vh;
+      left: -20vw;
       background-color: rgba(76, 186, 160, 0.571);
       position: relative;
-      left: 4vw;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      align-self: center;
+      top: -10vh;
       #titleHeading {
         align-self: center;
-        font-size: 2.5em;
+        font-size: 1.5em;
       };
       #titleSubheading {
         align-self: center;
-        font-size: 2em;
+        font-size: 1em;
       };
     };
     #navButton {
       position: fixed;
       top: 2vh;
-      left: 5vw;
       border-radius: 75%;
       padding: 1%;
       background-color: black;
       color: white;
       z-index: 1000;
+      width: 20vw;
+      height: 10vh;
+      h3 {
+        font-size: 1em;
+        position: relative;
+        left: 1vw;
+      };
+    };
+    #navButton:hover {
+      background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+      text-decoration: none;
+    };
+  };
+};
+@media only screen and (max-device-width:  480px) 
+                  and (device-aspect-ratio: 375/667)
+{
+  #background {
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 600vh;
+    position: absolute;
+    left: -1vw;
+  };
+  #appStyle {
+    top: 32vh;
+    display: flex;
+    flex-direction: column;
+    #littleBubble {
+      background-color: rgba(76, 186, 160, 0.571);
+      position: relative;
+      border-radius: 75%;
+      top: -20vh;
+      left: -15vw;
+      z-index: 4000;
       width: 30vw;
       height: 15vh;
-      h3 {
-        font-size: 1.8em;
+      opacity: 0.5;
+      align-self: flex-end;
+    };
+    #landingPage {
+      border-radius: 75%;
+      border: 0.2em solid white;
+      width: 90vw;
+      height: 50vh;
+      background-color: rgba(76, 186, 160, 0.571);
+      position: relative;
+      left: 3vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: -10vh;
+      #titleHeading {
         position: relative;
-        left: 3vw; 
+        font-size: 2.1em;
+      };
+      #titleSubheading {
+        align-self: center;
+        font-size: 1.5em;
+      };
+    };
+    #navButton {
+      position: fixed;
+      top: 2vh;
+      left: 2vw;
+      border-radius: 75%;
+      padding: 1%;
+      background-color: black;
+      color: white;
+      z-index: 1000;
+      width: 20vw;
+      height: 10vh;
+      h3 {
+        font-size: 1.5em;
+        position: relative;
+        left: 1.1vw; 
+        top: -1vh;
       }
     };
     #navButton:hover {

@@ -1,11 +1,31 @@
-@media only screen and (max-device-width:  480px){
+@media only screen and (max-device-width:  480px)
+{
   #appStyle {
     position: absolute;
     #content {
+      @media only screen and (device-aspect-ratio: 320/568)
+      {
+        .portfolio {
+          position: relative;
+          left: -45vw;
+          top: 190vh;
+          #allPortfolio {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            #portfolioHeader {
+              position: relative;
+              left: 20vw;
+              font-weight: bold;
+              font-size: 2em;
+            };
+          };
+        };
+      }
       .portfolio {
         position: relative;
         left: -45vw;
-        top: 150vh;
+        top: 190vh;
         #allPortfolio {
           position: relative;
           display: flex;
