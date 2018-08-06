@@ -496,6 +496,8 @@ var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_mo
 
 var _reactScroll = __webpack_require__(/*! react-scroll */ "./node_modules/react-scroll/modules/index.js");
 
+var _core = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -546,7 +548,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var technologies = {
-        proficient: ['Javascript/ES6', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
+        proficient: ['Javascript/ES6+', 'Node', 'React', 'Redux', 'Express', 'Git', 'Responsive Design'],
         knowledgeable: ['Socket.io', 'Webpack', 'Firebase', 'Sequelize / ORMs', 'Mocha', 'Chai'],
         familiar: ['Material-UI', 'Heroku']
       };
@@ -566,7 +568,10 @@ function (_Component) {
       }, _react.default.createElement("h3", null, _react.default.createElement("b", null, " About "))), _react.default.createElement("a", {
         id: "techLink",
         onClick: this.showTech
-      }, _react.default.createElement("h3", null, "Tech")), _react.default.createElement(_reactScroll.Link, {
+      }, _react.default.createElement("h3", null, "Tech")), _react.default.createElement("a", {
+        id: "resumeLink",
+        href: "/images/Abigail_Resume.pdf"
+      }, _react.default.createElement("h3", null, "Resume")), _react.default.createElement(_reactScroll.Link, {
         onClick: this.props.showNav,
         to: "portfolioHeader",
         id: "portfolioLink",

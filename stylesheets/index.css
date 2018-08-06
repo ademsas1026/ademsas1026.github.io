@@ -120,7 +120,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 15vh;
+    top: -5vh;
     font-size: 2em;
   }
   #appAndNav #navbar #columnNav #aboutLink {
@@ -128,6 +128,10 @@
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -137,7 +141,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    top: 25vh;
+    top: 10vh;
     font-size: 1.5em;
     left: -40vw;
     padding-right: 5%;
@@ -150,8 +154,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -182,6 +189,102 @@
     font-size: 1.2em;
   }
 }
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 414/736) {
+  #appAndNav #navbar {
+    width: 200vw;
+    height: 150vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -30vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 25vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: -15vh;
+    font-size: 2em;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 10vh;
+    font-size: 1.5em;
+    left: -40vw;
+    padding-right: 5%;
+    border-right: 0.2em solid black;
+    margin-right: 15vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -63vh;
+    left: 30vw;
+    border-left: 0.2em solid white;
+    width: 60vw;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 2em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 1.5em;
+  }
+}
 @media only screen and (max-device-width: 480px) and (device-aspect-ratio: 320/568) {
   #appAndNav #navbar {
     width: 200vw;
@@ -210,14 +313,18 @@
     flex-direction: column;
     align-items: flex-end;
     position: relative;
-    top: 15vh;
     font-size: 2em;
+    top: -5vh;
   }
   #appAndNav #navbar #columnNav #aboutLink {
     margin-bottom: 10vh;
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -240,8 +347,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -303,12 +413,17 @@
     position: relative;
     font-size: 2em;
     left: 5vw;
+    top: -10vh;
   }
   #appAndNav #navbar #columnNav #aboutLink {
     margin-bottom: 10vh;
   }
   #appAndNav #navbar #columnNav #techLink {
     margin-bottom: 10vh;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    color: white;
   }
   #appAndNav #navbar #columnNav #portfolioLink {
     margin-bottom: 10vh;
@@ -319,7 +434,7 @@
     width: 25vw;
     align-items: flex-start;
     position: relative;
-    top: 15vh;
+    top: 5vh;
     font-size: 1.2em;
     left: -20vw;
     padding-right: 10%;
@@ -332,8 +447,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -409,7 +527,6 @@
     width: 25vw;
     align-items: flex-start;
     position: relative;
-    top: 10vh;
     font-size: 1.2em;
     left: -25vw;
     padding-right: 8%;
@@ -422,8 +539,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -512,8 +632,11 @@
   }
   #appAndNav #navbar #leftColumnNav #techLink {
     margin: 0vh 0vw 10vh 4vw;
-    text-decoration: underline;
-    text-decoration-color: white;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
   }
   #appAndNav #navbar #leftColumnNav #portfolioLink {
     margin: 0vh 0vw 10vh 4vw;
@@ -1601,7 +1724,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1674,7 +1797,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1746,7 +1869,7 @@
     border-radius: 75%;
     top: -15vh;
     left: -20vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
@@ -1818,7 +1941,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 30vw;
     height: 15vh;
     opacity: 0.5;
@@ -1891,7 +2014,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 15vh;
     opacity: 0.5;
@@ -1964,7 +2087,7 @@
     border-radius: 75%;
     top: -20vh;
     left: -15vw;
-    z-index: 4000;
+    z-index: 0;
     width: 35vw;
     height: 20vh;
     opacity: 0.5;
