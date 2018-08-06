@@ -163,6 +163,59 @@
       };
     };
   };
+  @media only screen and (device-aspect-ratio: 414/736) {
+    #appStyle {
+      .contact {
+        position: relative;
+        top: 240vh;
+        left: -15vw;
+        #contact {
+          #contactNav {
+            #contactHeader {
+              position: relative;
+              top: -5vh;
+              font-size: 3em;
+              left: -7vw;
+            }
+          };
+          form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: none;
+            width: 100%;
+            left: -15vw;
+            top: 10vh;
+            #submitEmail {
+              position: relative;
+              left: -5vw;
+            };
+          };
+          #alternateContact{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: -13vw;
+            top: -35vh;
+            #linkedInButton {
+              width: 40%;
+              #linkedInIcon {
+                width: 50%;
+              };
+            };
+            #githubButton {
+              width: 40%;
+              position: relative;
+              left: 3vw;
+              #githubIcon {
+                width: 50%;
+              };
+            }
+          }
+        };
+      };
+    };
+  };
 
 };
 
