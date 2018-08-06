@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
+import { Button } from '@material-ui/core'
 
 export default class Navbar extends Component {
   constructor(){
@@ -24,6 +25,7 @@ export default class Navbar extends Component {
     const { showTech } = this.state
     return (
       <div id="navbar">
+       
         <nav id={showTech ? 'leftColumnNav' : 'columnNav'}>
           <Link
             onClick={this.props.showNav}
@@ -38,6 +40,9 @@ export default class Navbar extends Component {
             </h3>
           </Link>
           <a id="techLink" onClick={this.showTech}><h3>Tech</h3></a>
+          <a id="resumeLink" href="/images/Abigail_Resume.pdf">
+            <h3>Resume</h3>
+          </a>
           <Link
             onClick={this.props.showNav}
             to="portfolioHeader"

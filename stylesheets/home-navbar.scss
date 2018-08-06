@@ -38,13 +38,17 @@
         flex-direction: column;
         align-items: flex-end;
         position: relative;
-        top: 15vh;
+        top: -5vh;
         font-size: 2em;
         #aboutLink {
           margin-bottom: 10vh;
         };
         #techLink {
           margin-bottom: 10vh;
+        };
+        #resumeLink {
+          margin-bottom: 10vh;
+          color: white;
         };
         #portfolioLink {
           margin-bottom: 10vh;
@@ -56,7 +60,7 @@
         flex-direction: column;
         align-items: flex-start;
         position: relative;
-        top: 25vh;
+        top: 10vh;
         font-size: 1.5em;
         left: -40vw;
         padding-right: 5%;
@@ -68,8 +72,11 @@
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
-          text-decoration: underline;
-          text-decoration-color: white;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -85,7 +92,6 @@
         top: -43vh;
         left: 15vw;
         border-left: 0.2em solid white;
-        // margin-right: -40vw;
         margin-left: -35vw;
         width: 60vw;
         ul {
@@ -98,6 +104,105 @@
           }
           li {
             font-size: 1.2em;
+            
+          };
+        };
+      };
+    };
+  };
+  @media only screen and (device-aspect-ratio: 414/736) 
+  {
+    #navbar {
+      width: 200vw;
+      height: 150vh;
+      position: fixed;
+      z-index: 500;
+      margin-bottom: 50vh;
+      background-color:rgba(76, 186, 160, 1);
+      border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+      border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -5vh;
+      left: -30vw;
+      padding-right: 1vw;
+      h3 {
+        font-size: 1em;
+        margin: 0 0 0 0;
+        position: relative;
+        top: 25vh;
+      };
+      #columnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: -15vh;
+        font-size: 2em;
+        #aboutLink {
+          margin-bottom: 10vh;
+        };
+        #techLink {
+          margin-bottom: 10vh;
+        };
+        #resumeLink {
+          margin-bottom: 10vh;
+          color: white;
+        };
+        #portfolioLink {
+          margin-bottom: 10vh;
+        };
+        
+      };
+      #leftColumnNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        top: 10vh;
+        font-size: 1.5em;
+        left: -40vw;
+        padding-right: 5%;
+        border-right: 0.2em solid black;
+        margin-right: 15vw;
+        transition: 0.3s ease-in-out;
+        #aboutLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #techLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
+        };
+        #portfolioLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+        #contactLink {
+          margin: 0vh 0vw 10vh 4vw;
+        };
+      };
+      #techList {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -63vh;
+        left: 30vw;
+        border-left: 0.2em solid white;
+        width: 60vw;
+        ul {
+          list-style-type: none;
+          h3 {
+            font-size: 2em;
+            position: relative;
+            top: -3vh;
+            margin-bottom: -5vh;
+          }
+          li {
+            font-size: 1.5em;
             
           };
         };
@@ -131,13 +236,17 @@
         flex-direction: column;
         align-items: flex-end;
         position: relative;
-        top: 15vh;
         font-size: 2em;
+        top: -5vh;
         #aboutLink {
           margin-bottom: 10vh;
         };
         #techLink {
           margin-bottom: 10vh;
+        };
+        #resumeLink {
+          margin-bottom: 10vh;
+          color: white;
         };
         #portfolioLink {
           margin-bottom: 10vh;
@@ -161,8 +270,11 @@
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
-          text-decoration: underline;
-          text-decoration-color: white;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -227,12 +339,16 @@
         position: relative;
         font-size: 2em;
         left: 5vw;
-        // top: 10vh;
+        top: -10vh;
         #aboutLink {
           margin-bottom: 10vh;
         };
         #techLink {
           margin-bottom: 10vh;
+        };
+        #resumeLink {
+          margin-bottom: 10vh;
+          color: white;
         };
         #portfolioLink {
           margin-bottom: 10vh;
@@ -244,7 +360,7 @@
         width: 25vw;
         align-items: flex-start;
         position: relative;
-        top: 15vh;
+        top: 5vh;
         font-size: 1.2em;
         left: -20vw;
         padding-right: 10%;
@@ -256,8 +372,11 @@
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
-          text-decoration: underline;
-          text-decoration-color: white;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -335,7 +454,7 @@
         width: 25vw;
         align-items: flex-start;
         position: relative;
-        top: 10vh;
+        // top: 10vh;
         font-size: 1.2em;
         left: -25vw;
         padding-right: 8%;
@@ -347,8 +466,11 @@
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
-          text-decoration: underline;
-          text-decoration-color: white;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
@@ -439,8 +561,11 @@
         };
         #techLink {
           margin: 0vh 0vw 10vh 4vw;
-          text-decoration: underline;
-          text-decoration-color: white;
+          color: black;
+        };
+        #resumeLink {
+          margin: 0vh 0vw 10vh 4vw;
+          color: white;
         };
         #portfolioLink {
           margin: 0vh 0vw 10vh 4vw;
