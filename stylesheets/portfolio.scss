@@ -202,6 +202,9 @@
           box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
           padding: 2%;
         };
+        .screenshot + .Chronos {
+          margin-bottom: -200vh;
+        }
       };
       nav {
         position: relative;

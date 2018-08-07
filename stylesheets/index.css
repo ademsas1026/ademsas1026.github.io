@@ -1069,6 +1069,9 @@
     box-shadow: 0px 7px 25px 3px #857e85;
     padding: 2%;
   }
+  #portfolio #gridItem:hover #image .screenshot + .Chronos {
+    margin-bottom: -200vh;
+  }
   #portfolio #gridItem:hover nav {
     position: relative;
     bottom: 0;
@@ -1468,7 +1471,7 @@
 @media only screen and (max-width: 1400px) and (min-width: 480px) {
   #appStyle .contact {
     position: relative;
-    top: 100vh;
+    top: 125vh;
     left: -3vw;
   }
   #appStyle .contact #contactNav {
@@ -2203,7 +2206,7 @@
     z-index: 0;
     width: 110%;
     height: auto;
-    top: 380vh;
+    top: 470vh;
     position: absolute;
     left: -1vw;
   }
