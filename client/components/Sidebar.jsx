@@ -15,8 +15,6 @@ const styles = {
 const Sidebar = () => (
   <div id="nav">
     <nav id="columnNav">
-      <h2>Abigail Demsas</h2>
-      <h2>Fullstack Developer</h2>
       <Button>
         <Link
           to="aboutAbout"

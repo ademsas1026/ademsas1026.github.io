@@ -7,7 +7,7 @@ const About = () =>  (
         <div id="aboutAbout">
           <br />
           <br />
-          Hi! I'm a fullstack web developer based in New York.
+          Hi! I'm Abigail, a fullstack web developer based in New York.
           <br/>
           <br/>
             <h3 id="subAbout">

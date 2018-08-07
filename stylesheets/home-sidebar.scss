@@ -1,13 +1,13 @@
 #appStyle {
   display: flex;
 
-  @media only screen and (max-width: 721px){
+  @media only screen and (max-width: 1400px){
     #sidebar {
       display: none;
     };
   };
 
-  @media only screen and (min-width: 721px) {
+  @media only screen and (min-width: 1400px) {
     #sidebar {
       position: fixed;
       width: 30vw;
