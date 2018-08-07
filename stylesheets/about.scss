@@ -50,16 +50,16 @@
         position: relative;
         top: 60vh;
         left: -25vw;
+        background-color: rgba(223, 214, 223, 0.893);
+        padding: 2%;
         #bioAbout {
           display: flex;
           flex-direction: column;
-          #bioHeader {
-            font-size: 2em;
-            align-self: center;
-          };
-          #about {
-            font-size: 1em;
-            text-align: center;
+          #aboutAbout {
+            font-size: 1.2em;
+            #subAbout {
+              font-size: 0.8em;
+            }
             #contactLink {
               color: black;
             }

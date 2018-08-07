@@ -130,7 +130,7 @@
   };
 };
 
-@media only screen and (max-width: 721px)
+@media only screen and (max-width: 1400px)
                   and (min-width: 480px)
 {
   #allPortfolio {
@@ -142,8 +142,8 @@
     #portfolioHeader {
       position: relative;
       font-size: 2em;
-      left: 22vw;
-      background-color: beige;
+      left: -2vw;
+      background-color: rgba(223, 214, 223, 0.893);
       -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
       -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
       box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
@@ -174,8 +174,8 @@
           transition: 600ms ease-in-out;
         };
         .Chronos {
-          width: 50%;
-          left: 10vw;
+          width: 240%;
+          left: 13vw;
           // top: 2vh;
           position: relative;
         };
@@ -186,9 +186,10 @@
           width: 200%;
           height: 30%;
           position: relative;
-          top: -10vh;
+          top: 10vh;
           left: 9vw;
           opacity: 1;
+          background-color: rgba(223, 214, 223, 0.893);
           -moz-transform: translateY(36vh) translateX(8vw);
           -webkit-transform: translateY(36vh) translateX(8vw);
           transform: translateY(36vh) translateX(8vw); 
@@ -205,7 +206,7 @@
       nav {
         position: relative;
         bottom: 0;
-        top: 15vh;
+        top: 35vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -242,11 +243,16 @@
       left: -15vw;
       #image {
         position: relative;
-        top: 4vh;
+        margin-bottom: 40vh;
         .screenshot {
           width: 300%;
           position: absolute;
-          top: -10vw;
+          margin-bottom: 200vh;
+        };
+        .Chronos {
+          width: 240%;
+          left: 13vw;
+          position: relative;
         };
         #title {
           display: none;
@@ -266,134 +272,6 @@
   };
 };
 
-@media only screen and (min-width: 721px)
-                  and (max-width: 1400px)
-                  {
-  #allPortfolio {
-    position: absolute;
-    left: 70vw;
-    top: 90vh;
-    bottom: 10vh;
-    margin: 0vh 0vw 0vh -40vw;
-    width: 100%;
-    height: auto;
-    #portfolioHeader {
-      position: relative;
-      font-size: 3em;
-      left: 10.5vw;
-      background-color: beige;
-      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-    };
-    #portfolio {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      top: 1vh;
-      #gridItem:hover {
-        display: flex;
-        flex-direction: column;
-        #image {
-          position: relative;
-          .screenshot {
-            opacity: 0.3;
-            width: 125%;
-            position: absolute;
-            top: -10vh;
-            -moz-transform: translateY(-22vh);
-            -webkit-transform: translateY(-22vh);
-            transform: translateY(-22vh); 
-            transition: 600ms ease-in-out;
-            top: -4vh;
-          };
-          #title {
-            display: none;
-          };
-          #description {
-            width: 80%;
-            height: 70%;
-            position: relative;
-            left: 6vw;
-            opacity: 1;
-            -moz-transform: translateY(-13vh) translateX(8vw);
-            -webkit-transform: translateY(-13vh) translateX(8vw);
-            transform: translateY(-13vh) translateX(8vw); 
-            z-index: 100;
-            transition: 300ms ease-in-out;
-            font-size: 1.2em;
-            margin: -10vh 0vw 20vh 0vw;
-            background-color: rgba(65, 125, 77, 0.721);
-            -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            padding: 2%;
-          };
-        };
-        nav {
-          position: relative;
-          bottom: 0;
-          top: 5vh;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          left: 15vw;
-          z-index: 200;
-          #githubLink {
-            position: relative;
-            width: 100%;
-            #githubIcon {
-              width: 30%;
-              height: auto;
-              position: relative;
-            };
-          };
-          #deployLink {
-            position: relative;
-            left: 4vw;
-            width: 100%;
-            #globeIcon {
-              width: 30%;
-              height: auto;
-              position: relative;
-            };
-          };
-        };
-      };
-      #gridItem {
-        display: flex;
-        flex-direction: column;
-        width: 100vh;
-        height: auto;
-        margin-bottom: 30vh;
-        position: relative;
-        left: 1vw;
-        #image {
-          position: relative;
-          .screenshot {
-            width: 125%;
-            position: absolute;
-            top: -10vh;
-          };
-          #title {
-            display: none;
-          };
-          #description {
-            width: 120%;
-            height: 70%;
-            position: relative;
-            top: 30vh;
-            opacity: 0;
-            left: -20vw;
-          };
-        };
-        nav {
-          display: none;
-        };
-      };
-    };
-  };
-};
 
 @media only screen and (min-width: 1400px) {
   #allPortfolio {

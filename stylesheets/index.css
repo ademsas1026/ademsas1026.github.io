@@ -1,12 +1,12 @@
 #appStyle {
   display: flex;
 }
-@media only screen and (max-width: 721px) {
+@media only screen and (max-width: 1400px) {
   #appStyle #sidebar {
     display: none;
   }
 }
-@media only screen and (min-width: 721px) {
+@media only screen and (min-width: 1400px) {
   #appStyle #sidebar {
     position: fixed;
     width: 30vw;
@@ -666,7 +666,115 @@
     font-size: 1em;
   }
 }
-@media only screen and (min-width: 721px) {
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
+  #appAndNav #navbar {
+    width: 200vw;
+    height: 200vh;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 50vh;
+    background-color: #4cbaa0;
+    border-top: 0.1em solid rgba(194, 145, 59, 0.5);
+    border-bottom: 0.1em solid rgba(194, 145, 59, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -5vh;
+    left: -40vw;
+    padding-right: 1vw;
+  }
+  #appAndNav #navbar h3 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 5vh;
+  }
+  #appAndNav #navbar #columnNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 5vh;
+    font-size: 2.5em;
+    left: 17vw;
+  }
+  #appAndNav #navbar #columnNav #aboutLink {
+    margin-bottom: 10vh;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #techLink {
+    margin-bottom: 10vh;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #resumeLink {
+    margin-bottom: 10vh;
+    text-decoration: none;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #portfolioLink {
+    margin-bottom: 10vh;
+    color: white;
+  }
+  #appAndNav #navbar #columnNav #contactLink {
+    color: white;
+  }
+  #appAndNav #navbar #leftColumnNav {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: flex-start;
+    position: relative;
+    top: 20vh;
+    font-size: 1.2em;
+    left: -25vw;
+    padding-right: 8%;
+    border-right: 0.2em solid black;
+    margin-right: 25vw;
+    transition: 0.3s ease-in-out;
+  }
+  #appAndNav #navbar #leftColumnNav #aboutLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #techLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: black;
+  }
+  #appAndNav #navbar #leftColumnNav #resumeLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+    text-decoration: none;
+  }
+  #appAndNav #navbar #leftColumnNav #portfolioLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+  }
+  #appAndNav #navbar #leftColumnNav #contactLink {
+    margin: 0vh 0vw 10vh 4vw;
+    color: white;
+  }
+  #appAndNav #navbar #techList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -32vh;
+    border-left: 0.2em solid white;
+    padding-left: -10%;
+  }
+  #appAndNav #navbar #techList ul {
+    list-style-type: none;
+  }
+  #appAndNav #navbar #techList ul h3 {
+    font-size: 1.4em;
+    position: relative;
+    top: -3vh;
+    margin-bottom: -5vh;
+  }
+  #appAndNav #navbar #techList ul li {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1400px) {
   #appAndNav #navbar {
     display: none;
   }
@@ -714,23 +822,23 @@
     position: relative;
     top: 60vh;
     left: -25vw;
+    background-color: rgba(223, 214, 223, 0.893);
+    padding: 2%;
   }
   #appStyle #content .about #bioAbout {
     display: flex;
     flex-direction: column;
   }
-  #appStyle #content .about #bioAbout #bioHeader {
-    font-size: 2em;
-    align-self: center;
+  #appStyle #content .about #bioAbout #aboutAbout {
+    font-size: 1.2em;
   }
-  #appStyle #content .about #bioAbout #about {
-    font-size: 1em;
-    text-align: center;
+  #appStyle #content .about #bioAbout #aboutAbout #subAbout {
+    font-size: 0.8em;
   }
-  #appStyle #content .about #bioAbout #about #contactLink {
+  #appStyle #content .about #bioAbout #aboutAbout #contactLink {
     color: black;
   }
-  #appStyle #content .about #bioAbout #about #contactLink:hover {
+  #appStyle #content .about #bioAbout #aboutAbout #contactLink:hover {
     color: black;
     text-decoration-color: blue;
   }
@@ -889,7 +997,7 @@
     height: auto;
   }
 }
-@media only screen and (max-width: 721px) and (min-width: 480px) {
+@media only screen and (max-width: 1400px) and (min-width: 480px) {
   #allPortfolio {
     position: absolute;
     top: 130vh;
@@ -900,8 +1008,8 @@
   #allPortfolio #portfolioHeader {
     position: relative;
     font-size: 2em;
-    left: 22vw;
-    background-color: beige;
+    left: -2vw;
+    background-color: rgba(223, 214, 223, 0.893);
     -webkit-box-shadow: 0px 7px 25px 3px #857e85;
     -moz-box-shadow: 0px 7px 25px 3px #857e85;
     box-shadow: 0px 7px 25px 3px #857e85;
@@ -934,8 +1042,8 @@
     transition: 600ms ease-in-out;
   }
   #portfolio #gridItem:hover #image .Chronos {
-    width: 50%;
-    left: 10vw;
+    width: 240%;
+    left: 13vw;
     position: relative;
   }
   #portfolio #gridItem:hover #image #title {
@@ -945,9 +1053,10 @@
     width: 200%;
     height: 30%;
     position: relative;
-    top: -10vh;
+    top: 10vh;
     left: 9vw;
     opacity: 1;
+    background-color: rgba(223, 214, 223, 0.893);
     -moz-transform: translateY(36vh) translateX(8vw);
     -webkit-transform: translateY(36vh) translateX(8vw);
     transform: translateY(36vh) translateX(8vw);
@@ -963,7 +1072,7 @@
   #portfolio #gridItem:hover nav {
     position: relative;
     bottom: 0;
-    top: 15vh;
+    top: 35vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1000,12 +1109,17 @@
   }
   #portfolio #gridItem #image {
     position: relative;
-    top: 4vh;
+    margin-bottom: 40vh;
   }
   #portfolio #gridItem #image .screenshot {
     width: 300%;
     position: absolute;
-    top: -10vw;
+    margin-bottom: 200vh;
+  }
+  #portfolio #gridItem #image .Chronos {
+    width: 240%;
+    left: 13vw;
+    position: relative;
   }
   #portfolio #gridItem #image #title {
     display: none;
@@ -1018,132 +1132,6 @@
     opacity: 0;
   }
   #portfolio #gridItem nav {
-    display: none;
-  }
-}
-@media only screen and (min-width: 721px) and (max-width: 1400px) {
-  #allPortfolio {
-    position: absolute;
-    left: 70vw;
-    top: 90vh;
-    bottom: 10vh;
-    margin: 0vh 0vw 0vh -40vw;
-    width: 100%;
-    height: auto;
-  }
-  #allPortfolio #portfolioHeader {
-    position: relative;
-    font-size: 3em;
-    left: 10.5vw;
-    background-color: beige;
-    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
-    -moz-box-shadow: 0px 7px 25px 3px #857e85;
-    box-shadow: 0px 7px 25px 3px #857e85;
-  }
-  #allPortfolio #portfolio {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 1vh;
-  }
-  #allPortfolio #portfolio #gridItem:hover {
-    display: flex;
-    flex-direction: column;
-  }
-  #allPortfolio #portfolio #gridItem:hover #image {
-    position: relative;
-  }
-  #allPortfolio #portfolio #gridItem:hover #image .screenshot {
-    opacity: 0.3;
-    width: 125%;
-    position: absolute;
-    top: -10vh;
-    -moz-transform: translateY(-22vh);
-    -webkit-transform: translateY(-22vh);
-    transform: translateY(-22vh);
-    transition: 600ms ease-in-out;
-    top: -4vh;
-  }
-  #allPortfolio #portfolio #gridItem:hover #image #title {
-    display: none;
-  }
-  #allPortfolio #portfolio #gridItem:hover #image #description {
-    width: 80%;
-    height: 70%;
-    position: relative;
-    left: 6vw;
-    opacity: 1;
-    -moz-transform: translateY(-13vh) translateX(8vw);
-    -webkit-transform: translateY(-13vh) translateX(8vw);
-    transform: translateY(-13vh) translateX(8vw);
-    z-index: 100;
-    transition: 300ms ease-in-out;
-    font-size: 1.2em;
-    margin: -10vh 0vw 20vh 0vw;
-    background-color: rgba(65, 125, 77, 0.721);
-    -webkit-box-shadow: 0px 7px 25px 3px #857e85;
-    -moz-box-shadow: 0px 7px 25px 3px #857e85;
-    box-shadow: 0px 7px 25px 3px #857e85;
-    padding: 2%;
-  }
-  #allPortfolio #portfolio #gridItem:hover nav {
-    position: relative;
-    bottom: 0;
-    top: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    left: 15vw;
-    z-index: 200;
-  }
-  #allPortfolio #portfolio #gridItem:hover nav #githubLink {
-    position: relative;
-    width: 100%;
-  }
-  #allPortfolio #portfolio #gridItem:hover nav #githubLink #githubIcon {
-    width: 30%;
-    height: auto;
-    position: relative;
-  }
-  #allPortfolio #portfolio #gridItem:hover nav #deployLink {
-    position: relative;
-    left: 4vw;
-    width: 100%;
-  }
-  #allPortfolio #portfolio #gridItem:hover nav #deployLink #globeIcon {
-    width: 30%;
-    height: auto;
-    position: relative;
-  }
-  #allPortfolio #portfolio #gridItem {
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    height: auto;
-    margin-bottom: 30vh;
-    position: relative;
-    left: 1vw;
-  }
-  #allPortfolio #portfolio #gridItem #image {
-    position: relative;
-  }
-  #allPortfolio #portfolio #gridItem #image .screenshot {
-    width: 125%;
-    position: absolute;
-    top: -10vh;
-  }
-  #allPortfolio #portfolio #gridItem #image #title {
-    display: none;
-  }
-  #allPortfolio #portfolio #gridItem #image #description {
-    width: 120%;
-    height: 70%;
-    position: relative;
-    top: 30vh;
-    opacity: 0;
-    left: -20vw;
-  }
-  #allPortfolio #portfolio #gridItem nav {
     display: none;
   }
 }
@@ -1477,10 +1465,10 @@
     width: 50%;
   }
 }
-@media only screen and (max-width: 721px) and (min-width: 480px) {
+@media only screen and (max-width: 1400px) and (min-width: 480px) {
   #appStyle .contact {
     position: relative;
-    top: 25vh;
+    top: 100vh;
     left: -3vw;
   }
   #appStyle .contact #contactNav {
@@ -1539,129 +1527,7 @@
     width: 50%;
   }
 }
-@media only screen and (max-width: 1000px) and (min-width: 721px) {
-  #appStyle .contact {
-    position: relative;
-    top: -20vh;
-  }
-  #appStyle .contact #contactNav {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 20vw;
-  }
-  #appStyle .contact #contactNav #contactHeader {
-    font-size: 4em;
-    align-self: center;
-  }
-  #appStyle .contact #contactNav #contactHome {
-    align-self: center;
-  }
-  #appStyle .contact #contact {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    top: 105vh;
-    left: -25vw;
-    margin: 85vh 0vw 0vh 5vw;
-  }
-  #appStyle .contact #contact form {
-    display: flex;
-    flex-direction: column;
-    margin: 0vh 0vw 10vh 0vw;
-    padding: none;
-    width: 100%;
-  }
-  #appStyle .contact #contact #alternateContact {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 20vw;
-  }
-  #appStyle .contact #contact #alternateContact #linkedInButton {
-    width: 20%;
-  }
-  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
-    width: 50%;
-  }
-  #appStyle .contact #contact #alternateContact #githubButton {
-    width: 20%;
-  }
-  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
-    width: 50%;
-  }
-  #appStyle .contact #contact::after {
-    background-image: url("/images/nyc-map.jpg");
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
-  #appStyle {
-    position: absolute;
-  }
-  #appStyle .contact {
-    position: relative;
-    top: 275vh;
-    left: 6vw;
-  }
-  #appStyle .contact #contactNav {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  #appStyle .contact #contactNav #contactHeader {
-    font-size: 3em;
-    position: relative;
-    left: 15vw;
-  }
-  #appStyle .contact #contactNav #contactHome {
-    position: relative;
-    left: 15vw;
-    top: -2vh;
-  }
-  #appStyle .contact #contact {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200%;
-  }
-  #appStyle .contact #contact form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -1vh;
-    left: 15vw;
-  }
-  #appStyle .contact #contact #alternateContact {
-    display: flex;
-    position: relative;
-    margin-bottom: 40vh;
-    left: 12vw;
-    top: 2vh;
-  }
-  #appStyle .contact #contact #alternateContact #linkedInButton {
-    width: 20%;
-  }
-  #appStyle .contact #contact #alternateContact #linkedInButton #linkedInIcon {
-    width: 50%;
-  }
-  #appStyle .contact #contact #alternateContact #githubButton {
-    width: 20%;
-  }
-  #appStyle .contact #contact #alternateContact #githubButton #githubIcon {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   #appStyle {
     position: absolute;
   }
@@ -1732,6 +1598,9 @@
     height: 20vh;
     opacity: 0.5;
     align-self: flex-end;
+  }
+  #appStyle #littleBubble img {
+    display: none;
   }
   #appStyle #landingPage {
     border-radius: 75%;
@@ -1806,6 +1675,9 @@
     opacity: 0.5;
     align-self: flex-end;
   }
+  #appStyle #littleBubble img {
+    display: none;
+  }
   #appStyle #landingPage {
     border-radius: 75%;
     border: 0.2em solid white;
@@ -1878,6 +1750,9 @@
     opacity: 0.5;
     align-self: flex-end;
   }
+  #appStyle #littleBubble img {
+    display: none;
+  }
   #appStyle #landingPage {
     border-radius: 75%;
     border: 0.2em solid white;
@@ -1949,6 +1824,9 @@
     height: 15vh;
     opacity: 0.5;
     align-self: flex-end;
+  }
+  #appStyle #littleBubble img {
+    display: none;
   }
   #appStyle #landingPage {
     border-radius: 75%;
@@ -2023,6 +1901,9 @@
     opacity: 0.5;
     align-self: flex-end;
   }
+  #appStyle #littleBubble img {
+    display: none;
+  }
   #appStyle #landingPage {
     border-radius: 75%;
     border: 0.2em solid white;
@@ -2096,6 +1977,9 @@
     opacity: 0.5;
     align-self: flex-end;
   }
+  #appStyle #littleBubble img {
+    display: none;
+  }
   #appStyle #landingPage {
     border-radius: 75%;
     border: 0.2em solid white;
@@ -2141,30 +2025,62 @@
     text-decoration: none;
   }
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 480px) and (max-width: 1400px) {
   #background {
     opacity: 0.4;
     z-index: 0;
     width: 100%;
-    height: 90%;
-    top: 400vh;
+    height: 100%;
+    top: 10000vh;
     position: absolute;
-    left: -1vw;
+    left: -40vw;
   }
 
   #appStyle {
     top: 32vh;
+    display: flex;
+    flex-direction: column;
   }
   #appStyle #littleBubble {
-    display: none;
-  }
-  #appStyle #titleHeading {
+    background-color: rgba(76, 186, 160, 0.571);
     position: relative;
-    left: 12%;
+    border-radius: 75%;
+    top: 10vh;
+    left: -15vw;
+    z-index: 0;
+    width: 15vw;
+    height: 20vh;
+    align-self: flex-end;
   }
-  #appStyle #titleSubheading {
+  #appStyle #littleBubble img {
+    width: 11vw;
+    border-radius: 75%;
+    height: 15vh;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
+  }
+  #appStyle #landingPage {
+    border-radius: 75%;
+    border: 0.2em solid white;
+    width: 45vw;
+    height: 60vh;
+    background-color: rgba(76, 186, 160, 0.571);
     position: relative;
-    left: 12%;
+    left: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 20vh;
+  }
+  #appStyle #landingPage #titleHeading {
+    align-self: center;
+    font-size: 2.1em;
+  }
+  #appStyle #landingPage #titleSubheading {
+    align-self: center;
+    font-size: 1.6em;
   }
   #appStyle #navButton {
     position: fixed;
@@ -2175,13 +2091,24 @@
     background-color: black;
     color: white;
     z-index: 1000;
+    max-width: 10vw;
+    max-height: 11vh;
+  }
+  #appStyle #navButton h3 {
+    font-size: 1.8em;
+    position: relative;
+    top: -1vh;
   }
   #appStyle #navButton:hover {
-    background-image: linear-gradient(black, rgba(20, 53, 85, 0.7));
+    background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+    text-decoration: none;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1401px) {
   #appStyle #littleBubble {
+    display: none;
+  }
+  #appStyle #littleBubble img {
     display: none;
   }
   #appStyle #titleHeading {

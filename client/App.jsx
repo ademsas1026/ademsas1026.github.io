@@ -56,7 +56,9 @@ class App extends Component {
         }
         <div id="appStyle">
         
-          <div id="littleBubble"></div>
+          <div id="littleBubble">
+            <img src="/images/me.jpg" alt="me" id="headshot" />
+          </div>
           <div id="landingPage">
             <h1 id="titleHeading">Abigail Demsas</h1>
             <h2 id="titleSubheading">Software Developer</h2>
@@ -65,8 +67,6 @@ class App extends Component {
           <section id="sidebar">
             <img src="/images/me.jpg" alt="me" id="headshot" />
             <br />
-            <h1 id="titleHeading">Abigail Demsas</h1>
-            <h2 id="titleSubheading">Software Developer</h2>
             <Sidebar />
           </section>
           

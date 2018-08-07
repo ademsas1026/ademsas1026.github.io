@@ -195,7 +195,11 @@ function (_Component) {
         id: "appStyle"
       }, _react.default.createElement("div", {
         id: "littleBubble"
-      }), _react.default.createElement("div", {
+      }, _react.default.createElement("img", {
+        src: "/images/me.jpg",
+        alt: "me",
+        id: "headshot"
+      })), _react.default.createElement("div", {
         id: "landingPage"
       }, _react.default.createElement("h1", {
         id: "titleHeading"
@@ -210,11 +214,7 @@ function (_Component) {
         src: "/images/me.jpg",
         alt: "me",
         id: "headshot"
-      }), _react.default.createElement("br", null), _react.default.createElement("h1", {
-        id: "titleHeading"
-      }, "Abigail Demsas"), _react.default.createElement("h2", {
-        id: "titleSubheading"
-      }, "Software Developer"), _react.default.createElement(_components.Sidebar, null)), _react.default.createElement("section", {
+      }), _react.default.createElement("br", null), _react.default.createElement(_components.Sidebar, null)), _react.default.createElement("section", {
         id: "content"
       }, _react.default.createElement("div", {
         className: "about",
@@ -266,7 +266,7 @@ var About = function About() {
     id: "bioAbout"
   }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, _react.default.createElement("br", null), _react.default.createElement("br", null), "Hi! I'm a fullstack web developer based in New York.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h3", {
+  }, _react.default.createElement("br", null), _react.default.createElement("br", null), "Hi! I'm Abigail, a fullstack web developer based in New York.", _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h3", {
     id: "subAbout"
   }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.", _react.default.createElement("br", null), _react.default.createElement("br", null), "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals.", _react.default.createElement("br", null), _react.default.createElement("br", null), "You can find me coding around the city and at various meetups. To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
     to: "contact",
@@ -737,7 +737,7 @@ var Sidebar = function Sidebar() {
     id: "nav"
   }, _react.default.createElement("nav", {
     id: "columnNav"
-  }, _react.default.createElement("h2", null, "Abigail Demsas"), _react.default.createElement("h2", null, "Fullstack Developer"), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
+  }, _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
     to: "aboutAbout",
     activeClass: "active",
     spy: true,
