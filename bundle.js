@@ -630,7 +630,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var projects = [{
   name: 'Not Alone',
   githubLink: 'https://github.com/ademsas1026/we-are-not-alone',
-  deployLink: 'https://we-are-not-alone.herokuapp.com/',
+  deployLink: 'https://not-alone-1949.firebaseapp.com/',
   screenShot: './images/screenshot-not-alone-1.png',
   description: "a visualization of UFO sightings from 1950 - 2013, data furnished by the National UFO Reporting Center (NUFORC). Built with Mapbox, React, k-means clustering-based word frequency analysis, data visualization with Victory.",
   technologies: ['Mapbox', 'Node', 'React', 'Victory']
