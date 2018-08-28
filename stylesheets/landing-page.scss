@@ -145,15 +145,6 @@
 @media only screen and (max-device-width: 480px)
                   and (device-aspect-ratio: 360/640)
 {
-  #background {
-    overflow-x: hidden;
-    opacity: 0.4;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: -1vw;
-  };
   #appStyle {
     top: 32vh;
     display: flex;
@@ -221,97 +212,55 @@
 @media only screen and (max-device-width:  480px) 
                   and (device-aspect-ratio: 375/667)
 {
-  #background {
-    opacity: 0.4;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 600vh;
-    position: absolute;
-    left: -1vw;
-  };
   #appStyle {
     top: 32vh;
     display: flex;
     flex-direction: column;
-    #littleBubble {
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      border-radius: 75%;
-      top: -20vh;
-      left: -15vw;
-      z-index: 0;
-      width: 30vw;
-      height: 15vh;
-      opacity: 0.5;
-      align-self: flex-end;
-      img {
-        display: none;
+    left: -15vw;
+    #landing {
+      display: inline-block;
+      #navButton {
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+        border-radius: 75%;
+        padding: 1%;
+        background-color: black;
+        color: white;
+        z-index: 1000;
+        width: 20vw;
+        height: 10vh;
+        h3 {
+          font-size: 1.5em;
+          position: relative;
+          left: 1.1vw; 
+          top: -1vh;
+        }
       };
-    };
-    #landingPage {
-      border-radius: 75%;
-      border: 0.2em solid white;
-      width: 90vw;
-      height: 50vh;
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      left: 3vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      top: -10vh;
-      #titleHeading {
-        position: relative;
-        font-size: 2.1em;
+      #navButton:hover {
+        background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
+        text-decoration: none;
       };
-      #titleSubheading {
-        align-self: center;
-        font-size: 1.5em;
-      };
-    };
-    #navButton {
-      position: fixed;
-      top: 2vh;
-      left: 2vw;
-      border-radius: 75%;
-      padding: 1%;
-      background-color: black;
-      color: white;
-      z-index: 1000;
-      width: 20vw;
-      height: 10vh;
-      h3 {
-        font-size: 1.5em;
-        position: relative;
-        left: 1.1vw; 
-        top: -1vh;
+      #welcome {
+        // align-self: flex-start;
+        // position: relative;
+        // left: -10000vw;
+        margin-left: -30vw;
       }
-    };
-    #navButton:hover {
-      background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
-      text-decoration: none;
-    };
+    }
+    
+    
   };
 };
 
 @media only screen and (max-device-width:  480px) 
                   and (device-aspect-ratio: 375/812)
 {
-  #background {
-    opacity: 0.4;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 400vh;
-    position: absolute;
-    left: -1vw;
-  };
   #appStyle {
     top: 32vh;
     display: flex;
     flex-direction: column;
+    width: 100vw;
     #littleBubble {
       background-color: rgba(76, 186, 160, 0.571);
       position: relative;
@@ -390,43 +339,7 @@
     top: 32vh;
     display: flex;
     flex-direction: column;
-    #littleBubble {
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      border-radius: 75%;
-      top: -20vh;
-      left: -15vw;
-      z-index: 0;
-      width: 35vw;
-      height: 20vh;
-      opacity: 0.5;
-      align-self: flex-end;
-      img {
-        display: none;
-      };
-    };
-    #landingPage {
-      border-radius: 75%;
-      border: 0.2em solid white;
-      width: 90vw;
-      height: 50vh;
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      left: 2vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      top: -15vh;
-      #titleHeading {
-        align-self: center;
-        font-size: 2.1em;
-      };
-      #titleSubheading {
-        align-self: center;
-        font-size: 1.6em;
-      };
-    };
+   
     #navButton {
       position: fixed;
       top: 2vh;
@@ -452,110 +365,16 @@
   };
 };
 
-@media only screen and (min-width: 480px)
-                    and (max-width: 1400px)
-{
-  #background {
-    opacity: 0.4;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    top: 10000vh;
-    position: absolute;
-    left: -40vw;
-  };
-  #appStyle {
-    top: 32vh;
-    display: flex;
-    flex-direction: column;
-    #littleBubble {
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      border-radius: 75%;
-      top: 10vh;
-      left: -15vw;
-      z-index: 0;
-      width: 15vw;
-      height: 20vh;
-      align-self: flex-end;
-      img {
-        width: 11vw;
-        border-radius: 75%;
-        height: 15vh;
-        position: absolute;
-        left: 2vw;
-        top: 2vh;
-      };
-    };
-    #landingPage {
-      border-radius: 75%;
-      border: 0.2em solid white;
-      width: 45vw;
-      height: 60vh;
-      background-color: rgba(76, 186, 160, 0.571);
-      position: relative;
-      left: 25vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      top: 20vh;
-      #titleHeading {
-        align-self: center;
-        font-size: 2.1em;
-      };
-      #titleSubheading {
-        align-self: center;
-        font-size: 1.6em;
-      };
-    };
-    #navButton {
-      position: fixed;
-      top: 2vh;
-      left: 5vw;
-      border-radius: 75%;
-      padding: 1%;
-      background-color: black;
-      color: white;
-      z-index: 1000;
-      max-width: 10vw;
-      max-height: 11vh;
-      h3 {
-        font-size: 1.8em;
-        position: relative;
-        top: -1vh;
-      }
-    };
-    #navButton:hover {
-      background-image: linear-gradient(black, rgba(76, 186, 160, 0.571));
-      text-decoration: none;
-    };
-  };
-};
-// @media only screen and (min-width: 481px)
-//                    and (max-width: 1399px)
-// {
-//   #background {
-//     position: relative;
-//     top: 600vh;
-//   }
-// }
-@media only screen and (min-width:  1401px){
-  #appStyle {
-    #littleBubble {
-      display: none;
-      img {
+@media only screen and (min-width:  480px){
+  // body {
+    #appStyle {
+      width: 100vw;
+      #welcome {
         display: none;
-      }
+      };
+      #navButton {
+        opacity: 0;
+      };
     };
-    #titleHeading {
-      display: none;
-    };
-    #titleSubheading {
-      display: none;
-    };
-    #navButton {
-      opacity: 0;
-    };
-  }
-}
+  };
+// };

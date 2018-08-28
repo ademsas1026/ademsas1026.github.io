@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Portfolio, Contact, Sidebar, Navbar, About } from './components'
 import { Events, animateScroll as scroll } from 'react-scroll'
+import Typist from 'react-typist'
 
 class App extends Component {
 
@@ -15,11 +16,11 @@ class App extends Component {
 
   componentDidMount() {
 
-    Events.scrollEvent.register('begin', function () {
+    Events.scrollEvent.register('begin', () => {
       console.log('begin', arguments)
     })
 
-    Events.scrollEvent.register('end', function () {
+    Events.scrollEvent.register('end', () => {
       console.log('end', arguments);
     });
 
@@ -34,8 +35,8 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
+    Events.scrollEvent.remove('begin')
+    Events.scrollEvent.remove('end')
   }
 
   showNav(){
@@ -55,21 +56,11 @@ class App extends Component {
                       />
         }
         <div id="appStyle">
-        
-          <div id="littleBubble">
-            <img src="/images/me.jpg" alt="me" id="headshot" />
-          </div>
-          <div id="landingPage">
-            <h1 id="titleHeading">Abigail Demsas</h1>
-            <h2 id="titleSubheading">Software Developer</h2>
-          </div>
-          <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
-          <section id="sidebar">
-            <img src="/images/me.jpg" alt="me" id="headshot" />
-            <br />
-            <Sidebar />
+          <section id="landing">
+            <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
+            <Typist id="welcome" style={{position: 'relative', left: '-90vw'}}>Hi! I'm so happy you made it to my site. Look through the menu to learn more about me and my work.</Typist>
           </section>
-          
+          <Sidebar />
           <section id="content">
               
               <div className="about" name="about">

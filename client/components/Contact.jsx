@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, TextField, FormHelperText } from '@material-ui/core'
+import { Button, TextField, FormHelperText, Typography } from '@material-ui/core'
 
 export default class Contact extends Component {
   constructor(){
@@ -52,8 +52,10 @@ export default class Contact extends Component {
 
     return (
       <div id="contact">
-        <div id="contactNav">
-          <h2 id="contactHeader">Contact</h2>
+        <div id="contactHeader">
+          <h2 id="contactTitle">Email Me</h2>
+          <img src="images/line.png" alt="divider" />
+          <Typography variant="body1">Looking for a developer? Let's talk!</Typography>
         </div>
         <form id="contactform" method="POST" action="https://formspree.io/abigail.demsas.codes@gmail.com">
         { nameWarning && <FormHelperText id="name-helper-text">Please enter your name</FormHelperText>}
@@ -62,7 +64,7 @@ export default class Contact extends Component {
               type="text"
               onChange={this.handleChange.bind(this)}
               name="name"
-              placeholder="name"
+              placeholder="your name"
               onKeyDown={this.submitName}
               />
 
@@ -71,7 +73,7 @@ export default class Contact extends Component {
             type="email"
             style={{ margin: '0% 0% 5% 0%', backgroundColor: 'white', borderRadius: '5%', padding: '0.5em', opacity: '0.8' }}
             onChange={this.handleChange.bind(this)}
-            placeholder="email"
+            placeholder="your email address"
             name="email"
           />
           

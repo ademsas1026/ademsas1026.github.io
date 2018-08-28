@@ -6,7 +6,7 @@ const projects = [
     githubLink: 'https://github.com/ademsas1026/we-are-not-alone',
     deployLink: 'https://not-alone-1949.firebaseapp.com/',
     screenShot: './images/screenshot-not-alone-1.png',
-    description: `a visualization of UFO sightings from 1950 - 2013, data furnished by the National UFO Reporting Center (NUFORC). Built with Mapbox, React, k-means clustering-based word frequency analysis, data visualization with Victory.`,
+    description: `a visualization of UFO sightings from 1949 - 2013, data furnished by the National UFO Reporting Center (NUFORC). Built with Mapbox, React, k-means clustering-based word frequency analysis, data visualization with Victory.`,
     technologies: ['Mapbox', 'Node', 'React', 'Victory']
   },
   {
@@ -29,29 +29,26 @@ const projects = [
 
 
 const Portfolio = () =>  (
-    <div id="allPortfolio">
-      <h2 id="portfolioHeader">Portfolio</h2>
-      <Grid container spacing={24} id="portfolio">
-        { projects.length && projects.map(project => (
-            
-            <Grid item xs={12} sm={6} key={project.name} id="gridItem">
-              <nav>
-                <a href={project.githubLink} id="githubLink"><img src="/images/github.svg" id="githubIcon" /></a>
-                <a href={project.deployLink} id="deployLink"><img src="/images/globe.png" id="globeIcon" /></a>
-              </nav>
-              <div id="image">
-                <img src={project.screenShot} className={`screenshot ${project.name}`} />
-                <div className="titleAndDescription">
-                  <h2 id="title">{project.name}</h2>
-                  <h3 id="description">{project.description}</h3>
-                </div>
-              </div>
-              
-            </Grid>
-            ))
-        }
-      </Grid>
+  <div id="allPortfolio">
+    <div id="portfolioHeader">
+      <h2>My Work</h2>
+      <img src="images/line.png" alt="divider" />
+      <Typography variant="body1">Some past projects</Typography>
     </div>
+    <Grid container spacing={24} id="portfolio">
+      { projects.length && projects.map(project => (
+        <Grid item xs={6} sm={3} key={project.name} id="portfolioItem">
+          <img src={project.screenShot} id="screenshot" />
+          <a href={project.deployLink}><h4>{project.name}</h4></a>
+          <h5>{project.description}</h5>
+          <nav>
+            <a href={project.githubLink}><img src="images/github.svg" alt="github" id="github"/></a>
+            <a href={project.deployLink}><img src="images/globe.png" alt="deployed site" id="deploy"/></a>
+          </nav>
+        </Grid>
+      ))}
+    </Grid>
+  </div>
   )
 
 

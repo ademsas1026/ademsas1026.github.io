@@ -1,6 +1,7 @@
 @media only screen and (device-aspect-ratio: 360/640)
 {
   #appStyle {
+    
     .contact {
       position: relative;
       top: 262vh;
@@ -219,257 +220,58 @@
 
 };
 
-@media only screen and (max-width: 1400px)
-                  and (min-width: 480px)
-{
+// @media only screen and (min-width: 480px){
   #appStyle {
     .contact {
       position: relative;
-      top: 125vh;
-      left: -3vw;
-      #contactNav {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 24vw;
-        #contactHeader {
-          font-size: 2em;
-          align-self: center;
-          position: relative;
-          margin-bottom: 1vh;
-        };
-        #contactHome {
-          align-self: center;
-          margin-bottom: -2vh;
-        };
-      };
+      left: -25vw;
+      top: 25vh;
+      // bottom: 10vh;
+      padding-bottom: 10vh;
       #contact {
-        position: relative;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        height: 100vh;
-        top: 110vh;
-        left: -25vw;
-        margin: 85vh 0vw 0vh 5vw;
-        form {
+        align-items: center;
+        #contactHeader {
           display: flex;
           flex-direction: column;
-          position: relative;
-          top: 3vh;
-          padding: none;
-          width: 100%;
-        };
-        #alternateContact {
-          display: flex;
-          flex-direction: row;
-          position: relative;
-          left: 18vw;
-          top: 5vw;
-          #linkedInButton {
-            width: 20%;
-            #linkedInIcon {
-              width: 50%;
-            };
+          align-items: center;
+          h2 {
+            font-size: 2em;
           };
-          #githubButton {
-            width: 20%;
+          img {
+            width: 15vw;
+            height: 2vh; 
             position: relative;
-            left: 3vw;
-            #githubIcon {
-              width: 50%;
-            };
           };
         };
-      };
-    };
-  }
-};
-
-// @media only screen and (max-width: 1000px) 
-//                     and (min-width: 1400px)
-// {
-//   #appStyle{
-//     .contact {
-//       position: relative;
-//       top: -20vh;
-//       #contactNav {
-//         display: flex;
-//         flex-direction: column;
-//         position: relative;
-//         left: 20vw;
-//         #contactHeader {
-//           font-size: 4em;
-//           align-self: center;
-//         };
-//         #contactHome {
-//           align-self: center;
+          form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10vh;
+          };
+          #alternateContact {
+            display: flex;
+            align-self: center;
+            position: relative;
           
-//         };
-//       };
-//       #contact {
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         height: 100vh;
-//         top: 105vh;
-//         left: -25vw;
-//         margin: 85vh 0vw 0vh 5vw;
-//         form {
-//           display: flex;
-//           flex-direction: column;
-//           margin: 0vh 0vw 10vh 0vw;
-//           padding: none;
-//           width: 100%;
-//         };
-//         #alternateContact{
-//           display: flex;
-//           flex-direction: row;
-//           position: relative;
-//           left: 20vw;
-//           #linkedInButton {
-//             width: 20%;
-//             #linkedInIcon {
-//               width: 50%;
-//             };
-//           };
-//           #githubButton {
-//             width: 20%;
-//             #githubIcon {
-//               width: 50%;
-//             };
-//           }
-//         }
-//       };
-//       #contact::after{
-//         background-image: url('/images/nyc-map.jpg');
-//         opacity: 0.5;
-//         top: 0;
-//         left: 0;
-//         bottom: 0;
-//         right: 0;
-//         position: absolute;
-//         z-index: -1; 
-//       }
-//     };
- 
-//   };
-// };
-
-// @media only screen and (min-width: 1000px)
-//                   and (max-width: 1400px)
-// {
-//   #appStyle {
-//     position: absolute;
-//     .contact {
-//       position: relative;
-//       top: 275vh;
-//       left: 6vw;
-//       #contactNav {
-//         display: flex;
-//         flex-direction: column;
-//         position: relative;
-//         #contactHeader {
-//           font-size: 3em;
-//           position: relative;
-//           left: 15vw;
-//         };
-//         #contactHome {
-//           position: relative;
-//           left: 15vw;
-//           top: -2vh;
-//         };
-//       };
-//       #contact {
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         width: 200%;
-//         form {
-//           display: flex;
-//           flex-direction: column;
-//           position: relative;
-//           top: -1vh;
-//           left: 15vw;
-//         };
-//         #alternateContact {
-//           display: flex;
-//           position: relative;
-//           margin-bottom: 40vh;
-//           left: 12vw;
-//           top: 2vh;
-//           #linkedInButton {
-//             width: 20%;
-//             #linkedInIcon {
-//               width: 50%;
-//             };
-//           };
-//           #githubButton {
-//             width: 20%;
-//             #githubIcon {
-//               width: 50%;
-//             };
-//           };
-//         };
-//       };
-//     }
-//   }    
-// }
-
-@media only screen and (min-width: 1400px){
-  #appStyle {
-    position: absolute;
-    .contact {
-      position: relative;
-      top: 345vh;
-      left: 15vw;
-      #contactNav {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        #contactHeader {
-          font-size: 4em;
-        };
-        #contactHome {
-          position: relative;
-        };
-      };
-      #contact {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 200%;
-        form {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          top: 5vh;
-          left: 2.5vw;
-        };
-        #alternateContact {
-          display: flex;
-          position: relative;
-          margin-bottom: 40vh;
-          left: -0.5vw;
-          top: 4vw;
-          #linkedInButton {
-            width: 20%;
-            #linkedInIcon {
-              width: 50%;
+            left: 13vw;
+            // top: 4vw;
+            #linkedInButton {
+              width: 20%;
+              #linkedInIcon {
+                width: 50%;
+              };
             };
-          };
-          #githubButton {
-            width: 20%;
-            #githubIcon {
-              width: 50%;
+            #githubButton {
+              width: 20%;
+              #githubIcon {
+                width: 50%;
+              };
             };
-          };
-        }
+          }
+    
       };
     }
   };
-
-}
+// };

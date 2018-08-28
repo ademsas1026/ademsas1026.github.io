@@ -39,73 +39,78 @@
   }
 }
 
-@media only screen and (max-width: 1400px)
-                  and (min-width: 481px)
-{
-  #appStyle {
-    position: absolute;
-    #content {
-      position: relative;
-      .about {
-        position: relative;
-        top: 60vh;
-        left: -25vw;
-        background-color: rgba(223, 214, 223, 0.893);
-        padding: 2%;
-        #bioAbout {
-          display: flex;
-          flex-direction: column;
-          #aboutAbout {
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-            }
-            #contactLink {
-              color: black;
-            }
-            #contactLink:hover {
-              color: black;
-              text-decoration-color: blue;
-            };
-          };
-        };
-      };
-    };
-  };
-};
+// @media only screen and (max-width: 1400px)
+//                   and (min-width: 481px)
+// {
+//   #appStyle {
+//     position: absolute;
+//     #content {
+//       position: relative;
+//       .about {
+//         position: relative;
+//         top: 60vh;
+//         left: -25vw;
+//         background-color: rgba(223, 214, 223, 0.893);
+//         padding: 2%;
+//         #bioAbout {
+//           display: flex;
+//           flex-direction: column;
+//           #aboutAbout {
+//             font-size: 1.2em;
+//             #subAbout {
+//               font-size: 0.8em;
+//             }
+//             #contactLink {
+//               color: black;
+//             }
+//             #contactLink:hover {
+//               color: black;
+//               text-decoration-color: blue;
+//             };
+//           };
+//         };
+//       };
+//     };
+//   };
+// };
 
 
-@media only screen and (min-width: 1401px){
-  #appStyle {
-    position: absolute;
-    
+// @media only screen and (min-width: 480px){
+  // #appStyle {
+  //   position: absolute;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-content: center;
     #content {
       .about {
         #bioAbout {
           #aboutAbout {
             position: relative;
             bottom: 15vh;
-            top: 30vh;
+            top: 15vh;
             width: 40vw;
-            left: -4.5vw;
+            left: -28vw;
             background-color: rgba(223, 214, 223, 0.893);
-            padding: 0 10vw 2vh 2vw;
+            padding: 0 10vw 2vh 10vw;
             font-size: 1.2em;
+            #spaceAboveAbout {
+              height: 90vh;
+              background-color:  rgba(223, 214, 223, 0.893);
+            };
             #subAbout {
               font-size: 0.8em;
             };
             #contactLink {
-              margin-left: 0.5vw;
+              // margin-left: 0.5vw;
               color: black;
+              text-decoration: underline;
             };
             #contactLink:hover {
               color: rgba(65, 125, 77, 0.721);
-              text-decoration: none;
             };
-
           };  
         };
       } 
     };
-  };
-};
+  // };
+// };

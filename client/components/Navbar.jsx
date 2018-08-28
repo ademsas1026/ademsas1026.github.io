@@ -29,11 +29,13 @@ export default class Navbar extends Component {
         <nav id={showTech ? 'leftColumnNav' : 'columnNav'}>
           <Link
             onClick={this.props.showNav}
-            id="aboutLink" to="aboutAbout"
+            id="aboutLink"
+            to="aboutAbout"
             activeClass="active"
             spy={true}
             smooth={true}
-            duration={500} 
+            duration={500}
+            offset={-150} 
           >
             <h3>
               <b> About </b>

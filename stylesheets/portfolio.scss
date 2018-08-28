@@ -130,293 +130,87 @@
   };
 };
 
-@media only screen and (max-width: 1400px)
-                  and (min-width: 480px)
-{
-  #allPortfolio {
-    position: absolute;
-    top: 130vh;
-    width: 100%;
-    height: auto;
-    left: -23vw;
-    #portfolioHeader {
-      position: relative;
-      font-size: 2em;
-      left: -2vw;
-      background-color: rgba(223, 214, 223, 0.893);
-      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-    };
-  };
-  #portfolio {
+
+// @media only screen and (min-width: 480px) {
+  .portfolio {
+    width: 100vw;
+    background-color: white;
+    margin: 60vh 0 0 -50vw;
+    padding-bottom: 10vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 1vh;
-    
-    #gridItem:hover {
-      display: flex;
-      flex-direction: column;
-      #image {
+    // left: -10vw;
+    #allPortfolio {
+      align-self: flex-start;
+      #portfolioHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+        margin-left: -8vw;
+       
+        h2 {
+          font-size: 2em;
+        };
+        img {
+          width: 15vw;
+          height: 2vh; 
+          position: relative;
+        };
+      };
+      #portfolio {
         position: relative;
-        width: 100%;
-        height: auto;
-        bottom: -10vh;
         top: 5vh;
-        .screenshot {
-          width: 300%;
-          position: absolute;
-          opacity: 0.3;
-          -moz-transform: translateY(-10vh);
-          -webkit-transform: translateY(-10vh);
-          transform: translateY(-10vh); 
-          transition: 600ms ease-in-out;
-        };
-        .Chronos {
-          width: 240%;
-          left: 13vw;
-          // top: 2vh;
-          position: relative;
-        };
-        #title {
-          display: none;
-        };
-        #description {
-          width: 200%;
-          height: 30%;
-          position: relative;
-          top: 10vh;
-          left: 9vw;
-          opacity: 1;
-          background-color: rgba(223, 214, 223, 0.893);
-          -moz-transform: translateY(36vh) translateX(8vw);
-          -webkit-transform: translateY(36vh) translateX(8vw);
-          transform: translateY(36vh) translateX(8vw); 
-          z-index: 100;
-          transition: 300ms ease-in-out;
-          font-size: 1/5em;
-          margin: -10vh 0vw 20vh 0vw;
-          -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-          -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-          box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-          padding: 2%;
-        };
-        .screenshot + .Chronos {
-          margin-bottom: -200vh;
-        }
-      };
-      nav {
-        position: relative;
-        bottom: 0;
-        top: 35vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        left: 35vw;
-        z-index: 200;
-        #githubLink {
-          position: relative;
-          width: 100%;
-          #githubIcon {
-            width: 30%;
-            height: auto;
-            position: relative;
-          };
-        };
-        #deployLink {
-          position: relative;
-          left: 4vw;
-          width: 100%;
-          #globeIcon {
-            width: 30%;
-            height: auto;
-            position: relative;
-          };
-        };
-      };
-    };
-    #gridItem {
-      display: flex;
-      flex-direction: column;
-      width: 100vh;
-      height: auto;
-      margin-bottom: 20vh;
-      position: relative;
-      left: -15vw;
-      #image {
-        position: relative;
-        margin-bottom: 40vh;
-        .screenshot {
-          width: 300%;
-          position: absolute;
-          margin-bottom: 200vh;
-        };
-        .Chronos {
-          width: 240%;
-          left: 13vw;
-          position: relative;
-        };
-        #title {
-          display: none;
-        };
-        #description {
-          width: 140%;
-          height: 70%;
-          position: relative;
-          top: 30vh;
-          opacity: 0;
-        };
-      };
-      nav {
-        display: none;
-      };
-    };
-  };
-};
-
-
-@media only screen and (min-width: 1400px) {
-  #allPortfolio {
-    position: absolute;
-    left: 30vw;
-    top: 130vh;
-    bottom: 20vh;
-    width: 100%;
-    height: auto;
-    #portfolioHeader {
-      position: relative;
-      font-size: 4em;
-      left: 10vw;
-      width: 20vw;
-      background-color: rgba(223, 214, 223, 0.893);
-      -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-      box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-    };
-    #portfolio {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      top: 1vh;
-      #gridItem:hover {
-        display: flex;
-        flex-direction: column;
-        #image {
-          position: relative;
-          .screenshot {
-            opacity: 0.3;
-            width: 140%;
-            position: absolute;
-            top: -10vh;
-            -moz-transform: translateY(-22vh);
-            -webkit-transform: translateY(-22vh);
-            transform: translateY(-22vh); 
-            transition: 600ms ease-in-out;
-          };
-          .Chronos {
-            width: 105%;
-            left: 9vw;
-            top: 2vh;
-          };
-          #title {
-            display: none;
-          };
-          #description {
-            width: 80%;
-            height: 70%;
-            position: relative;
-            top: -10vh;
-            left: 6vw;
-            opacity: 1;
-            -moz-transform: translateY(46vh) translateX(8vw);
-            -webkit-transform: translateY(46vh) translateX(8vw);
-            transform: translateY(46vh) translateX(8vw); 
-            z-index: 100;
-            transition: 300ms ease-in-out;
-            font-size: 1em;
-            margin: -10vh 0vw 20vh 0vw;
-            background-color: rgba(223, 214, 223, 0.893);
-            -webkit-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            -moz-box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            box-shadow: 0px 7px 25px 3px rgba(133,126,133,1);
-            padding: 2%;
-          };
-        };
-        nav {
-          position: relative;
-          bottom: 0;
-          top: 15vh;
+        #portfolioItem {
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          left: 15vw;
-          z-index: 200;
-          #githubLink {
-            position: relative;
+          flex-direction: column;
+          margin: 0 4.5vw 0 2vw;
+          #screenshot {
             width: 100%;
-            #githubIcon {
-              width: 30%;
-              height: auto;
-              position: relative;
+            height: auto;
+          };
+          a {
+            text-decoration: none;
+            h4 {
+              align-self: center;
+              color: rgba(76, 186, 160, 1);
             };
           };
-          #deployLink {
+          h4:hover {
+            color: rgba(76, 186, 160, 1);
+            text-decoration: underline;
+          }
+          h5 {
+            color: grey;
+          };
+          nav {
+            display: none;
+          }
+        };
+        #portfolioItem:hover {
+          transition: 1.5s ease-in-out;
+          img {
+            opacity: 0.3;
+          };
+          nav {
             position: relative;
-            left: 4vw;
-            width: 100%;
-            #globeIcon {
+            display: flex;
+            top: -40vh;
+            left: 6vw;
+            align-content: space-around;
+            #github {
               width: 30%;
               height: auto;
-              position: relative;
-              
+              opacity: 1;
+            };
+            #deploy {
+              width: 20%;
+              height: auto;
+              opacity: 1;
             };
           };
-        };
-      };
-      #gridItem {
-        display: flex;
-        flex-direction: column;
-        width: 100vh;
-        height: auto;
-        margin-bottom: 60vh;
-        position: relative;
-        left: 1vw;
-        #image {
-          position: relative;
-          .screenshot {
-            width: 140%;
-            position: absolute;
-            top: -10vh;
-          };
-          .Chronos {
-            width: 105%;
-            left: 9vw;
-            top: 2vh;
-          };
-          #title {
-            font-size: 1.5em;
-            position: absolute;
-            left: 30.7vw;
-            top: 59.5vh;
-            width: 60%;
-            background-color: rgba(223, 214, 223, 0.893);
-            padding: 2%;
-          };
-          #description {
-            width: 120%;
-            height: 70%;
-            position: relative;
-            top: 30vh;
-            opacity: 0;
-            left: -20vw;
-          };
-        };
-        nav {
-          display: none;
         };
       };
     };
   };
-};
+// };
 

@@ -30,7 +30,8 @@ const About = () =>  (
             <br />
             <br />
             You can find me coding around the city and at various meetups. 
-            To get in touch, you can contact me 
+            To get in touch, you can contact me
+            <b> </b>
             <Link
                 to="contact"
                 activeClass="active"
@@ -38,7 +39,7 @@ const About = () =>  (
                 smooth={true}
                 duration={500}
                 id="contactLink"
-              > here.
+              >here.
             </Link>
           </h3>
         </div>
