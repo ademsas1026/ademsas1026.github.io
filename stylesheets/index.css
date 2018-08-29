@@ -34,7 +34,7 @@
 #navButton {
   max-width: 25vw;
   position: fixed;
-  margin-left: -32vw;
+  left: -5vw;
   z-index: 2000;
 }
 
@@ -59,7 +59,7 @@
   background-color: white;
   font-size: 0.8em;
   min-width: 100vw;
-  margin-left: 20vw;
+  margin-left: 10vw;
   padding: 0 5vw 2vh 6vw;
 }
 #bioAbout .aboutHeader {
@@ -81,7 +81,7 @@
 #allPortfolio {
   background-color: white;
   max-width: 100vw;
-  margin-left: 18vw;
+  margin-left: 10vw;
   margin-top: 18vh;
   padding-left: 6vw;
 }
@@ -126,10 +126,10 @@
 }
 #allPortfolio #gridItem #image .titleAndDescription #title {
   color: #36CCCA;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 #allPortfolio #gridItem #image .titleAndDescription #description {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 #allPortfolio #gridItem:hover {
   max-width: 100vw;
@@ -177,7 +177,7 @@ body {
 body #appStyle {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media only screen and (min-width: 480px) {
