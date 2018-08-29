@@ -8,7 +8,7 @@ const About = props => {
         <div>
           <div id="aboutAbout">
           { window.innerWidth > 740 &&
-            <h3>Hi, welcome to my site! I'm <a id="name" onClick={() => props.showMore('all')}>Abigail,</a> a fullstack developer based in New York.</h3>
+            <h2>Hi, welcome to my site! I'm <a id="name" onClick={() => props.showMore('all')}>Abigail,</a> a fullstack developer based in New York.</h2>
           }
             <br />
             <br />
@@ -17,7 +17,7 @@ const About = props => {
               </h2>
               {!showCurious && <img className="divider" src="images/line.png" />}
               {showCurious &&
-                <h3 id="curious">
+                <h3 id="curious" style={{width: '80vw'}}>
                   I've always loved digging in to new topics and
                   finding clear solutions to real problems that
                   affect real people. In the past, I've funneled these interests into
@@ -34,7 +34,7 @@ const About = props => {
               </h2>
               {!showInterests && <img className="divider" src="images/line.png" />}
               { showInterests &&
-                <h3 id="interests">
+                <h3 id="interests" style={{width: '80vw'}}>
                 I'm comfortable throughout the stack, and I'm 
                 particularly interested in developing applications 
                 with a measurable and humane social impact. 
@@ -47,7 +47,7 @@ const About = props => {
                 I'm <a onClick={() => props.showMore('FindMe')} className="aboutHeader">reachable!</a>
               </h2>
               { showFindMe &&
-                <h3 id="findMe">
+                <h3 id="findMe" style={{width: '80vw'}}>
                   You can find me coding around the city and at various meetups. 
                   To get in touch, you can contact me
                   <Link

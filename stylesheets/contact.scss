@@ -2,21 +2,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20vh 0vw 0 10vw;
+  margin: 20vh 0 10vh 0;
+  #contactHeader {
+    width: 80vw;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+  };
   #contactform {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     #submitEmail {
       align-self: center;
-    }
+    };
   };
   #alternateContact {
     display: flex;
-    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
     img {
       max-width: 10vw;
       max-height: auto;
     };
+    img:hover {
+      max-width: 12vw;
+      max-height: auto;
+    }
   };
 };

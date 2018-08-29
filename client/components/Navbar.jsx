@@ -27,9 +27,11 @@ const Navbar = props => (
           <h2 style={styles.navButtons}> <b> About </b></h2>
         </Link>
       </Button>
+      <img className="divider" src="images/line.png" />
       <Button href="/images/Abigail_Resume.pdf">
         <h2 style={styles.navButtons}>Resume</h2>
       </Button>
+      <img className="divider" src="images/line.png" />
       <Button>
         <Link
           to="portfolioHeader"
@@ -43,6 +45,7 @@ const Navbar = props => (
           <h2 style={styles.navButtons}><b> Portfolio </b></h2>
         </Link>
       </Button>
+      <img className="divider" src="images/line.png" />
       <Button>
         <Link
           to="contact"

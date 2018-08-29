@@ -1,6 +1,23 @@
 import React, { Component } from 'react'
 import { Button, TextField, FormHelperText } from '@material-ui/core'
 
+const styles = {
+  textField: {
+    margin: '0% 0% 5% 0%',
+    backgroundColor: 'white',
+    borderRadius: '5%',
+    padding: '0.5em',
+    opacity: '0.8'
+  },
+  bigTextField: {
+    margin: '0% 0% 5% 0%',
+    backgroundColor: 'white',
+    borderRadius: '5%',
+    padding: '0.5em 0 0.5em 0.5em',
+    opacity: '0.8'
+  }
+}
+
 export default class Contact extends Component {
   constructor(){
     super()
@@ -52,34 +69,32 @@ export default class Contact extends Component {
 
     return (
       <div id="contactMe">
-        <div id="contactNav">
-          <h2 id="contactHeader">Contact</h2>
-        </div>
+      <h2 id="contactHeader">Looking for a developer? Let's talk.</h2>
         <form id="contactform" method="POST" action="https://formspree.io/abigail.demsas.codes@gmail.com">
         { nameWarning && <FormHelperText id="name-helper-text">Please enter your name</FormHelperText>}
           <TextField
-              style={{ margin: '0% 0% 5% 0%', backgroundColor: 'white', borderRadius: '5%', padding: '0.5em', opacity: '0.8' }}
+              style={styles.textField}
               type="text"
               onChange={this.handleChange.bind(this)}
               name="name"
-              placeholder="name"
+              placeholder="your name"
               onKeyDown={this.submitName}
               />
 
           { emailWarning && <FormHelperText id="name-helper-text">Please enter your email</FormHelperText>}
           <TextField
             type="email"
-            style={{ margin: '0% 0% 5% 0%', backgroundColor: 'white', borderRadius: '5%', padding: '0.5em', opacity: '0.8' }}
+            style={styles.textField}
             onChange={this.handleChange.bind(this)}
-            placeholder="email"
+            placeholder="your email"
             name="email"
           />
           
           { messageWarning && <FormHelperText id="name-helper-text">Please enter a message</FormHelperText>}
           <TextField
-              style={{ margin: '0% 0% 5% 0%', backgroundColor: 'white', borderRadius: '5%', padding: '0.5em', opacity: '0.8' }}
+              style={window.innerWidth > 480 ? styles.bigTextField : styles.textField}
               onChange={this.handleChange.bind(this)}
-              placeholder="let's talk!"
+              placeholder="your message"
               name="message"
               multiline="true"
             />

@@ -271,6 +271,7 @@ function (_Component) {
       var _this2 = this;
 
       var showNav = this.state.showNav;
+      window.innerWidth > 480 && !showNav && this.showNav();
       return _react.default.createElement("div", {
         id: "appAndNav"
       }, _react.default.createElement("div", {
@@ -354,7 +355,7 @@ var About = function About(props) {
     id: "bioAbout"
   }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, window.innerWidth > 740 && _react.default.createElement("h3", null, "Hi, welcome to my site! I'm ", _react.default.createElement("a", {
+  }, window.innerWidth > 740 && _react.default.createElement("h2", null, "Hi, welcome to my site! I'm ", _react.default.createElement("a", {
     id: "name",
     onClick: function onClick() {
       return props.showMore('all');
@@ -368,7 +369,10 @@ var About = function About(props) {
     className: "divider",
     src: "images/line.png"
   }), showCurious && _react.default.createElement("h3", {
-    id: "curious"
+    id: "curious",
+    style: {
+      width: '80vw'
+    }
   }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions."), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('Interests');
@@ -378,14 +382,20 @@ var About = function About(props) {
     className: "divider",
     src: "images/line.png"
   }), showInterests && _react.default.createElement("h3", {
-    id: "interests"
+    id: "interests",
+    style: {
+      width: '80vw'
+    }
   }, "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals."), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('FindMe');
     },
     className: "aboutHeader"
   }, "reachable!")), showFindMe && _react.default.createElement("h3", {
-    id: "findMe"
+    id: "findMe",
+    style: {
+      width: '80vw'
+    }
   }, "You can find me coding around the city and at various meetups. To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
     to: "contact",
     activeClass: "active",
@@ -441,6 +451,23 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var styles = {
+  textField: {
+    margin: '0% 0% 5% 0%',
+    backgroundColor: 'white',
+    borderRadius: '5%',
+    padding: '0.5em',
+    opacity: '0.8'
+  },
+  bigTextField: {
+    margin: '0% 0% 5% 0%',
+    backgroundColor: 'white',
+    borderRadius: '5%',
+    padding: '0.5em 0 0.5em 0.5em',
+    opacity: '0.8'
+  }
+};
 
 var Contact =
 /*#__PURE__*/
@@ -516,55 +543,35 @@ function (_Component) {
           messageWarning = _this$state.messageWarning;
       return _react.default.createElement("div", {
         id: "contactMe"
-      }, _react.default.createElement("div", {
-        id: "contactNav"
       }, _react.default.createElement("h2", {
         id: "contactHeader"
-      }, "Contact")), _react.default.createElement("form", {
+      }, "Looking for a developer? Let's talk."), _react.default.createElement("form", {
         id: "contactform",
         method: "POST",
         action: "https://formspree.io/abigail.demsas.codes@gmail.com"
       }, nameWarning && _react.default.createElement(_core.FormHelperText, {
         id: "name-helper-text"
       }, "Please enter your name"), _react.default.createElement(_core.TextField, {
-        style: {
-          margin: '0% 0% 5% 0%',
-          backgroundColor: 'white',
-          borderRadius: '5%',
-          padding: '0.5em',
-          opacity: '0.8'
-        },
+        style: styles.textField,
         type: "text",
         onChange: this.handleChange.bind(this),
         name: "name",
-        placeholder: "name",
+        placeholder: "your name",
         onKeyDown: this.submitName
       }), emailWarning && _react.default.createElement(_core.FormHelperText, {
         id: "name-helper-text"
       }, "Please enter your email"), _react.default.createElement(_core.TextField, {
         type: "email",
-        style: {
-          margin: '0% 0% 5% 0%',
-          backgroundColor: 'white',
-          borderRadius: '5%',
-          padding: '0.5em',
-          opacity: '0.8'
-        },
+        style: styles.textField,
         onChange: this.handleChange.bind(this),
-        placeholder: "email",
+        placeholder: "your email",
         name: "email"
       }), messageWarning && _react.default.createElement(_core.FormHelperText, {
         id: "name-helper-text"
       }, "Please enter a message"), _react.default.createElement(_core.TextField, {
-        style: {
-          margin: '0% 0% 5% 0%',
-          backgroundColor: 'white',
-          borderRadius: '5%',
-          padding: '0.5em',
-          opacity: '0.8'
-        },
+        style: window.innerWidth > 480 ? styles.bigTextField : styles.textField,
         onChange: this.handleChange.bind(this),
-        placeholder: "let's talk!",
+        placeholder: "your message",
         name: "message",
         multiline: "true"
       }), _react.default.createElement(_core.Button, {
@@ -645,11 +652,17 @@ var Navbar = function Navbar(props) {
     onClick: props.showNav
   }, _react.default.createElement("h2", {
     style: styles.navButtons
-  }, " ", _react.default.createElement("b", null, " About ")))), _react.default.createElement(_core.Button, {
+  }, " ", _react.default.createElement("b", null, " About ")))), _react.default.createElement("img", {
+    className: "divider",
+    src: "images/line.png"
+  }), _react.default.createElement(_core.Button, {
     href: "/images/Abigail_Resume.pdf"
   }, _react.default.createElement("h2", {
     style: styles.navButtons
-  }, "Resume")), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
+  }, "Resume")), _react.default.createElement("img", {
+    className: "divider",
+    src: "images/line.png"
+  }), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
     to: "portfolioHeader",
     activeClass: "active",
     spy: true,
@@ -659,7 +672,10 @@ var Navbar = function Navbar(props) {
     onClick: props.showNav
   }, _react.default.createElement("h2", {
     style: styles.navButtons
-  }, _react.default.createElement("b", null, " Portfolio ")))), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
+  }, _react.default.createElement("b", null, " Portfolio ")))), _react.default.createElement("img", {
+    className: "divider",
+    src: "images/line.png"
+  }), _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
     to: "contact",
     activeClass: "active",
     spy: true,
@@ -726,7 +742,10 @@ var Portfolio = function Portfolio() {
     id: "allPortfolio"
   }, _react.default.createElement("h2", {
     id: "portfolioHeader"
-  }, "My Work"), _react.default.createElement(_core.Grid, {
+  }, "My Work"), _react.default.createElement("img", {
+    className: "divider",
+    src: "images/line.png"
+  }), _react.default.createElement(_core.Grid, {
     container: true,
     spacing: 24,
     id: "portfolio"

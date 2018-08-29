@@ -76,6 +76,7 @@ class App extends Component {
   
   render(){
     const { showNav } = this.state
+    window.innerWidth > 480 && !showNav && this.showNav()
     return (
       <div id="appAndNav">
         <div id="appStyle">
