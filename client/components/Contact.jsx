@@ -51,7 +51,7 @@ export default class Contact extends Component {
     const {  nameWarning, emailWarning, messageWarning } = this.state
 
     return (
-      <div id="contact">
+      <div id="contactMe">
         <div id="contactNav">
           <h2 id="contactHeader">Contact</h2>
         </div>

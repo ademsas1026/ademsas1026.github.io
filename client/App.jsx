@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
-import { Portfolio, Contact, Sidebar, Navbar, About } from './components'
+import { Portfolio, Contact, Navbar, About } from './components'
 import { Events, animateScroll as scroll } from 'react-scroll'
+import Typist from 'react-typist'
+import { Button } from '@material-ui/core'
 
 class App extends Component {
 
   constructor() {
     super()
     this.state = {
-      showNav: false
+      showNav: false,
+      showCurious: false,
+      showInterests: false,
+      showFindMe: false
     }
-    this.scrollToTop = this.scrollToTop.bind(this)
     this.showNav = this.showNav.bind(this)
+    this.scrollToTop = this.scrollToTop.bind(this)
+    this.showMore = this.showMore.bind(this)
   }
 
   componentDidMount() {
@@ -38,42 +44,62 @@ class App extends Component {
     Events.scrollEvent.remove('end');
   }
 
-  showNav(){
-    this.setState(prevState => { 
-      return {showNav: !prevState.showNav} 
-    })
+  showNav() {
+    this.setState(prevState => ({ showNav: !prevState.showNav }))
+  }
+
+  async showMore(sectionName){
+    switch (sectionName){
+      case 'Curious':
+        this.setState(prevState => ({ showCurious: !prevState.showCurious }))
+        break
+      case 'Interests':
+        this.setState(prevState => ({ showInterests: !prevState.showInterests }))
+        break
+      case 'FindMe':
+        this.setState(prevState => ({ showFindMe: !prevState.showFindMe }))
+        break
+      case 'all':
+        await this.setState(prevState => 
+          ({ 
+            showFindMe: !prevState.showFindMe,
+            showCurious: !prevState.showFindMe,
+            showInterests: !prevState.showFindMe 
+          }))
+         break
+      default:
+        return null
+    }
   }
 
   
-
   render(){
     const { showNav } = this.state
     return (
       <div id="appAndNav">
-         { showNav && <Navbar
-                        showNav={this.showNav}
-                      />
-        }
         <div id="appStyle">
         
-          <div id="littleBubble">
-            <img src="/images/me.jpg" alt="me" id="headshot" />
-          </div>
+          <Button onClick={this.showNav}>
+            <img id="navButton" src="images/hamburger.png"/>
+          </Button>
+
+          { showNav &&  <Navbar showNav={this.showNav}/>}
           <div id="landingPage">
-            <h1 id="titleHeading">Abigail Demsas</h1>
-            <h2 id="titleSubheading">Software Developer</h2>
+            
+              <p className="welcome heading">
+                Hi! I'm <a id="name" onClick={() => this.showMore('all')} className="aboutHeader">Abigail.</a>
+              </p>
+              <p className="welcome subheading">
+                I'm a fullstack web developer based in New York.
+              </p>
+      
           </div>
-          <a onClick={this.showNav} id="navButton"><h3>Menu</h3></a>
-          <section id="sidebar">
-            <img src="/images/me.jpg" alt="me" id="headshot" />
-            <br />
-            <Sidebar />
-          </section>
-          
+         
+         
           <section id="content">
               
               <div className="about" name="about">
-                <About />
+                <About showMore={this.showMore} showCurious={this.state.showCurious} showFindMe={this.state.showFindMe} showInterests={this.state.showInterests}/>
               </div>
               <div className="portfolio" name="portfolio">
                 <Portfolio />

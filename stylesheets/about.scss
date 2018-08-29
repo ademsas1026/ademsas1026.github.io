@@ -1,111 +1,23 @@
-
-
-@media only screen and (max-device-width:  480px)
-{
-  #appStyle {
-    #content {
-      .about {
-        width: 100%;
-        position: relative;
-        top: 155vh;
-        left: -25vw;
-        background-color: rgba(223, 214, 223, 0.893);
-        padding-right: 2vw;
-        padding-left: 2vw;
-        #bioAbout {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          margin-top: -75vh;
-          #bioHeader {
-            display: none;
-          };
-          #aboutAbout {
-            margin: 0vh 2vw 0vh 2vw;
-            font-weight: bold;
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-              #contactLink {
-                color: rgba(76, 186, 160, 0.571);
-                left: 2vw;
-              };
-            };
-            
-          };  
-        };
-      };
-    }
+#bioAbout {
+  background-color: white;
+  font-size: 0.8em;
+  min-width: 100vw;
+  margin-left: 20vw;
+  // margin-top: 20vh;
+  padding: 0 5vw 2vh 6vw;
+  .aboutHeader {
+    color: #36CCCA;
+  };
+  .aboutHeader:hover {
+    text-decoration: underline;
+    transition: 0.3s smooth ease-in-out;
+  };
+  .divider {
+    align-self: center;
+    max-width: 10vw;
+    max-height: 10vh;
+  };
+  #contactLink {
+    margin-left: 1vw;
   }
-}
-
-@media only screen and (max-width: 1400px)
-                  and (min-width: 481px)
-{
-  #appStyle {
-    position: absolute;
-    #content {
-      position: relative;
-      .about {
-        position: relative;
-        top: 60vh;
-        left: -25vw;
-        background-color: rgba(223, 214, 223, 0.893);
-        padding: 2%;
-        #bioAbout {
-          display: flex;
-          flex-direction: column;
-          #aboutAbout {
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-            }
-            #contactLink {
-              color: black;
-            }
-            #contactLink:hover {
-              color: black;
-              text-decoration-color: blue;
-            };
-          };
-        };
-      };
-    };
-  };
-};
-
-
-@media only screen and (min-width: 1401px){
-  #appStyle {
-    position: absolute;
-    
-    #content {
-      .about {
-        #bioAbout {
-          #aboutAbout {
-            position: relative;
-            bottom: 15vh;
-            top: 30vh;
-            width: 40vw;
-            left: -4.5vw;
-            background-color: rgba(223, 214, 223, 0.893);
-            padding: 0 10vw 2vh 2vw;
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-            };
-            #contactLink {
-              margin-left: 0.5vw;
-              color: black;
-            };
-            #contactLink:hover {
-              color: rgba(65, 125, 77, 0.721);
-              text-decoration: none;
-            };
-
-          };  
-        };
-      } 
-    };
-  };
 };
