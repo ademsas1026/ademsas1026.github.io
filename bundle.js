@@ -170,6 +170,8 @@ function (_Component) {
       _reactScroll.Events.scrollEvent.register('end', function () {
         console.log('end', arguments);
       });
+
+      window.innerWidth > 740 ? this.showNav() : null;
     }
   }, {
     key: "scrollToTop",
@@ -352,7 +354,12 @@ var About = function About(props) {
     id: "bioAbout"
   }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
+  }, window.innerWidth > 740 && _react.default.createElement("h3", null, "Hi, welcome to my site! I'm ", _react.default.createElement("a", {
+    id: "name",
+    onClick: function onClick() {
+      return props.showMore('all');
+    }
+  }, "Abigail,"), " a fullstack developer based in New York."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('Curious');
     },
@@ -614,14 +621,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var styles = {
   navButtons: {
     fontFamily: 'Montserrat, sans-serif',
-    fontSize: '1em',
-    color: 'white'
+    fontSize: '1em'
   }
 };
 
 var Navbar = function Navbar(props) {
   return _react.default.createElement("nav", {
     id: "nav"
+  }, window.innerWidth > 740 && _react.default.createElement(_core.Button, {
+    id: "nameNav",
+    style: {
+      fontSize: '2em'
+    }
+  }, "Abigail Demsas"), _react.default.createElement("div", {
+    id: "leftNav"
   }, _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {
     to: "aboutAbout",
     activeClass: "active",
@@ -656,7 +669,7 @@ var Navbar = function Navbar(props) {
     onClick: props.showNav
   }, _react.default.createElement("h2", {
     style: styles.navButtons
-  }, _react.default.createElement("b", null, " Contact ")))));
+  }, _react.default.createElement("b", null, " Contact "))))));
 };
 
 var _default = Navbar;

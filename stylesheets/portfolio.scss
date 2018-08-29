@@ -64,33 +64,19 @@
         opacity: 0.5;
       };
     };
-    // nav:hover {
-    //   position: absolute;
-    //   background-color: grey
-    //   img {
-    //     max-width: 10vw;
-    //     max-height: auto;
-    //   };
-    // };
   };
-  // #gridItem:hover {
-  //   nav {
-  //     background-color: rgba(0, 0, 0, 0.5);
-  //     max-width: 90vw;
-  //     margin-left: 160vw;
-  //     z-index: 2000;
-  //     position
-  //     a {
-  //       // max-width: 15vw;
-  //       img {
-  //         max-width: 50vw;
-  //         align-self: center;
-  //         justify-self: center;
+};
 
-
-         
-  //       };
-  //     };
-  //   };
-  // };
+@media only screen and (min-width: 740px){
+  #allPortfolio {
+    max-width: 100vw;
+    overflow-x: hidden;
+    #gridItem {
+      max-width: 10vw;
+      max-height: auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      position: relative;
+    };
+  };
 };

@@ -20,7 +20,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-
     Events.scrollEvent.register('begin', function () {
       console.log('begin', arguments)
     })
@@ -28,6 +27,8 @@ class App extends Component {
     Events.scrollEvent.register('end', function () {
       console.log('end', arguments);
     });
+
+    window.innerWidth > 740 ? this.showNav() : null
 
   }
 

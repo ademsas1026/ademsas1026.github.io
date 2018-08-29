@@ -55,12 +55,38 @@
   z-index: 1999;
 }
 
+@media only screen and (min-width: 740px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100vw;
+    margin-top: -1vh;
+    margin-left: 2vw;
+    background-color: white;
+  }
+  #nav #nameNav {
+    align-self: center;
+  }
+  #nav #leftNav {
+    justify-self: flex-end;
+    margin-left: 10vw;
+  }
+}
 #bioAbout {
   background-color: white;
   font-size: 0.8em;
   min-width: 100vw;
   margin-left: 10vw;
+  margin-top: 20vh;
   padding: 0 5vw 2vh 6vw;
+}
+#bioAbout h3 {
+  position: relative;
+  left: -10vw;
+}
+#bioAbout h3 #name {
+  color: #36CCCA;
 }
 #bioAbout .aboutHeader {
   color: #36CCCA;
@@ -146,6 +172,20 @@
   opacity: 0.5;
 }
 
+@media only screen and (min-width: 740px) {
+  #allPortfolio {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  #allPortfolio #gridItem {
+    max-width: 10vw;
+    max-height: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    position: relative;
+    top: 20vh;
+  }
+}
 #contactMe {
   display: flex;
   flex-direction: column;

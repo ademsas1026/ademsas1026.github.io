@@ -7,6 +7,9 @@ const About = props => {
     <div id="bioAbout">
         <div>
           <div id="aboutAbout">
+          { window.innerWidth > 740 &&
+            <h3>Hi, welcome to my site! I'm <a id="name" onClick={() => props.showMore('all')}>Abigail,</a> a fullstack developer based in New York.</h3>
+          }
             <br />
             <br />
               <h2>
