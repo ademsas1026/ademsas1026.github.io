@@ -347,6 +347,16 @@ var _reactScroll = __webpack_require__(/*! react-scroll */ "./node_modules/react
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var styles = {
+  bigScreenSection: {
+    maxWidth: '25vw',
+    margin: '0'
+  },
+  smallScreenSection: {
+    width: '80vw'
+  }
+};
+
 var About = function About(props) {
   var showCurious = props.showCurious,
       showInterests = props.showInterests,
@@ -355,12 +365,18 @@ var About = function About(props) {
     id: "bioAbout"
   }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, window.innerWidth > 740 && _react.default.createElement("h2", null, "Hi, welcome to my site! I'm ", _react.default.createElement("a", {
+  }, window.innerWidth > 740 && _react.default.createElement("h2", {
+    id: "aboutHead"
+  }, "Hi! I'm ", _react.default.createElement("a", {
     id: "name",
     onClick: function onClick() {
       return props.showMore('all');
     }
-  }, "Abigail,"), " a fullstack developer based in New York."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
+  }, "Abigail,"), " a fullstack developer based in New York."), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("section", {
+    id: "aboutBody"
+  }, _react.default.createElement("section", {
+    className: "section"
+  }, _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('Curious');
     },
@@ -370,10 +386,10 @@ var About = function About(props) {
     src: "images/line.png"
   }), showCurious && _react.default.createElement("h3", {
     id: "curious",
-    style: {
-      width: '80vw'
-    }
-  }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions."), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
+    style: window.innerWidth > 480 ? styles.bigScreenSection : styles.smallScreenSection
+  }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.")), _react.default.createElement("br", null), _react.default.createElement("section", {
+    className: "section"
+  }, _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('Interests');
     },
@@ -383,27 +399,28 @@ var About = function About(props) {
     src: "images/line.png"
   }), showInterests && _react.default.createElement("h3", {
     id: "interests",
-    style: {
-      width: '80vw'
-    }
-  }, "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals."), _react.default.createElement("br", null), _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
+    style: window.innerWidth > 480 ? styles.bigScreenSection : styles.smallScreenSection
+  }, "I'm comfortable throughout the stack, and I'm particularly interested in developing applications with a measurable and humane social impact. I currently mentor at a web development bootcamp that caters to women and non-binary individuals.")), _react.default.createElement("br", null), _react.default.createElement("section", {
+    className: "section"
+  }, _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
       return props.showMore('FindMe');
     },
     className: "aboutHeader"
-  }, "reachable!")), showFindMe && _react.default.createElement("h3", {
+  }, "reachable!")), !showFindMe && _react.default.createElement("img", {
+    className: "divider",
+    src: "images/line.png"
+  }), showFindMe && _react.default.createElement("h3", {
     id: "findMe",
-    style: {
-      width: '80vw'
-    }
-  }, "You can find me coding around the city and at various meetups. To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
+    style: window.innerWidth > 480 ? styles.bigScreenSection : styles.smallScreenSection
+  }, "To get in touch, you can contact me", _react.default.createElement(_reactScroll.Link, {
     to: "contact",
     activeClass: "active",
     spy: true,
     smooth: true,
     duration: 500,
     id: "contactLink"
-  }, "here.")))));
+  }, "here.")))))));
 };
 
 var _default = About;

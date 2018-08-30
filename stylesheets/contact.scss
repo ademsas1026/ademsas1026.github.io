@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   margin: 20vh 0 10vh 0;
+  @media only screen and (min-width: 480px){
+    margin: 40vh 0 10vh 0;
+  }
   #contactHeader {
     width: 80vw;
     text-align: center;
@@ -28,6 +31,16 @@
     img:hover {
       max-width: 12vw;
       max-height: auto;
+    };
+    @media only screen and (min-width: 480px){
+      img {
+        max-width: 3vw;
+      };
+      img:hover {
+        max-width: 4vw;
+        max-height: auto;
+      };
     }
   };
 };
+
