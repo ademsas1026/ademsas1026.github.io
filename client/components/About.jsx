@@ -17,7 +17,7 @@ const About = props => {
     <div id="bioAbout">
         <div>
           <div id="aboutAbout">
-          { window.innerWidth > 740 &&
+          { window.innerWidth > 480 &&
             <h2 id="aboutHead">Hi! I'm <a id="name" onClick={() => props.showMore('all')}>Abigail,</a> a fullstack developer based in New York.</h2>
           }
             <br />

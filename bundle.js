@@ -366,7 +366,7 @@ var About = function About(props) {
     id: "bioAbout"
   }, _react.default.createElement("div", null, _react.default.createElement("div", {
     id: "aboutAbout"
-  }, window.innerWidth > 740 && _react.default.createElement("h2", {
+  }, window.innerWidth > 480 && _react.default.createElement("h2", {
     id: "aboutHead"
   }, "Hi! I'm ", _react.default.createElement("a", {
     id: "name",
@@ -653,7 +653,7 @@ var styles = {
 var Navbar = function Navbar(props) {
   return _react.default.createElement("nav", {
     id: "nav"
-  }, window.innerWidth > 740 && _react.default.createElement(_core.Button, {
+  }, window.innerWidth > 480 && _react.default.createElement(_core.Button, {
     id: "nameNav",
     style: {
       fontSize: '2em'
