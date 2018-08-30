@@ -11,12 +11,31 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
     <script defer src="/bundle.js"></script>
+    <style type="text/css">
+        #app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #app #loading {
+            position: relative;
+            top: 10vh;
+        }
+        
+    </style>
 </head>
 
 <body>
-    <img src="/images/nyc-map.jpg" id="background"/>
-    <div id="app"></div>
+    <div id="app">
+        <img id="loading" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F78%2F3b%2F35%2F783b356cc39b74fe942828a9e887db3f.gif&f=1" alt="loading" />
+    </div>
     
+</body>
+
+</html>
+
+    </div>
 </body>
 
 </html>

@@ -1,111 +1,76 @@
-
-
-@media only screen and (max-device-width:  480px)
-{
-  #appStyle {
-    #content {
-      .about {
-        width: 100%;
-        position: relative;
-        top: 155vh;
-        left: -25vw;
-        background-color: rgba(223, 214, 223, 0.893);
-        padding-right: 2vw;
-        padding-left: 2vw;
-        #bioAbout {
+#bioAbout {
+  background-color: white;
+  font-size: 0.8em;
+  // min-width: 90vw;
+  min-width: 100vw;
+  margin-left: 10vw;
+  margin-top: 20vh;
+  padding: 2vh 6vw 2vh 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  -moz-text-align-last: left;
+  text-align-last: left;
+   h2 {
+    font-size: 1.4em;
+    #name {
+      color: #36CCCA;
+    };
+  };
+  .aboutHeader {
+    color: #36CCCA;
+  };
+  .aboutHeader:hover {
+    text-decoration: underline;
+    transition: 0.3s smooth ease-in-out;
+  };
+  .divider {
+    align-self: center;
+    max-width: 10vw;
+    max-height: 10vh;
+  };
+  #contactLink {
+    margin-left: 1vw;
+    color: #36CCCA;
+  };
+  @media only screen and (min-width: 480px){
+    // padding: 0 0 0 6vw;
+    min-width: 105vw;
+    margin-left: 0;
+    #aboutHead {
+      margin-left: 2vw;
+    };
+    #aboutAbout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #aboutBody {
+        display: flex;
+        justify-content: space-evenly;
+        min-width: 100vw;
+        .section {
           display: flex;
           flex-direction: column;
-          position: relative;
-          margin-top: -75vh;
-          #bioHeader {
-            display: none;
-          };
-          #aboutAbout {
-            margin: 0vh 2vw 0vh 2vw;
-            font-weight: bold;
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-              #contactLink {
-                color: rgba(76, 186, 160, 0.571);
-                left: 2vw;
-              };
-            };
-            
-          };  
-        };
-      };
-    }
-  }
-}
-
-@media only screen and (max-width: 1400px)
-                  and (min-width: 481px)
-{
-  #appStyle {
-    position: absolute;
-    #content {
-      position: relative;
-      .about {
-        position: relative;
-        top: 60vh;
-        left: -25vw;
-        background-color: rgba(223, 214, 223, 0.893);
-        padding: 2%;
-        #bioAbout {
-          display: flex;
-          flex-direction: column;
-          #aboutAbout {
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-            }
+          padding-left: 5vw;
+          h3 {
+            align-self: flex-start;
+            margin-right: 10vw;
+            max-width: 50vw;
             #contactLink {
-              color: black;
-            }
-            #contactLink:hover {
-              color: black;
-              text-decoration-color: blue;
+              margin-left: 0.4vw;
             };
           };
         };
-      };
+      
+      }
     };
   };
+  
 };
 
-
-@media only screen and (min-width: 1401px){
-  #appStyle {
-    position: absolute;
-    
-    #content {
-      .about {
-        #bioAbout {
-          #aboutAbout {
-            position: relative;
-            bottom: 15vh;
-            top: 30vh;
-            width: 40vw;
-            left: -4.5vw;
-            background-color: rgba(223, 214, 223, 0.893);
-            padding: 0 10vw 2vh 2vw;
-            font-size: 1.2em;
-            #subAbout {
-              font-size: 0.8em;
-            };
-            #contactLink {
-              margin-left: 0.5vw;
-              color: black;
-            };
-            #contactLink:hover {
-              color: rgba(65, 125, 77, 0.721);
-              text-decoration: none;
-            };
-
-          };  
-        };
-      } 
-    };
-  };
-};
+// @media only screen and (min-width: 480px){
+//   #bioAbout {
+//     max-width: 50vw;
+//   };
+// };

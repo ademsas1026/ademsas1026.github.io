@@ -30,7 +30,8 @@ const projects = [
 
 const Portfolio = () =>  (
     <div id="allPortfolio">
-      <h2 id="portfolioHeader">Portfolio</h2>
+      <h2 id="portfolioHeader">My Work</h2>
+      <img className="divider" src="images/line.png" />
       <Grid container spacing={24} id="portfolio">
         { projects.length && projects.map(project => (
             
