@@ -282,7 +282,8 @@ function (_Component) {
         id: "navButton",
         src: "images/hamburger.png"
       })), showNav && _react.default.createElement(_components.Navbar, {
-        showNav: this.showNav
+        showNav: this.showNav,
+        scrollToTop: this.scrollToTop
       }), _react.default.createElement("div", {
         id: "landingPage"
       }, _react.default.createElement("p", {
@@ -656,7 +657,8 @@ var Navbar = function Navbar(props) {
     id: "nameNav",
     style: {
       fontSize: '2em'
-    }
+    },
+    onClick: props.scrollToTop
   }, "Abigail Demsas"), _react.default.createElement("div", {
     id: "leftNav"
   }, _react.default.createElement(_core.Button, null, _react.default.createElement(_reactScroll.Link, {

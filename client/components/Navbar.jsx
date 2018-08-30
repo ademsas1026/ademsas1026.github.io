@@ -11,7 +11,7 @@ const styles = {
 const Navbar = props => (
   <nav id="nav">
   { window.innerWidth > 740 &&
-    <Button id="nameNav" style={{fontSize: '2em'}}>Abigail Demsas</Button>
+    <Button id="nameNav" style={{fontSize: '2em'}} onClick={props.scrollToTop}>Abigail Demsas</Button>
   }
     <div id="leftNav">
       <Button>

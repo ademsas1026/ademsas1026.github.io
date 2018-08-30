@@ -85,7 +85,7 @@ class App extends Component {
             <img id="navButton" src="images/hamburger.png"/>
           </Button>
 
-          { showNav &&  <Navbar showNav={this.showNav}/>}
+          { showNav &&  <Navbar showNav={this.showNav} scrollToTop={this.scrollToTop} />}
           <div id="landingPage">
             
               <p className="welcome heading">
