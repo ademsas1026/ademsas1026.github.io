@@ -125,7 +125,7 @@
 @media only screen and (min-width: 480px) {
   #bioAbout {
     min-width: 105vw;
-    margin-left: 0;
+    margin: 35vh 0 35vh 0;
   }
   #bioAbout #aboutHead {
     margin-left: 2vw;
