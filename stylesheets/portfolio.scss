@@ -83,9 +83,9 @@
 
 };
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 740px){
   #allPortfolio {
-    overflow-x: hidden;
+    overflow: hidden;
     min-width: 100vw;
     margin: 18vh 0 0 0;
     #portfolio {
