@@ -1,4 +1,13 @@
 #nav {
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 22px -4px rgba(71,71,71,1);
+  -moz-box-shadow: 0px 8px 22px -4px rgba(71,71,71,1);
+  box-shadow: 0px 8px 22px -4px rgba(71,71,71,1);
+  background-color: #faf9f7;
+  padding: 0 2vw 0 9vw;
+  position: fixed;
+  top: 0;
+  z-index: 1999;
   #leftNav {
     display: flex;
     flex-direction: column;
@@ -7,14 +16,9 @@
     .divider {
       min-width: 60vw;
       max-height: 2vh;
-    }
-  }
-  background-color: white;
-  padding: 0 2vw 0 9vw;
-  position: fixed;
-  top: 0;
-  z-index: 1999;
-}
+    };
+  };
+};
 
 @media only screen and (min-width: 480px){
   #nav {
