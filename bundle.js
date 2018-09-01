@@ -779,9 +779,11 @@ var Portfolio = function Portfolio() {
       sm: 6,
       key: project.name,
       id: "gridItem"
+    }, _react.default.createElement("a", {
+      href: project.deployLink
     }, _react.default.createElement("h2", {
       id: "title"
-    }, project.name), _react.default.createElement("nav", null, _react.default.createElement("a", {
+    }, project.name)), _react.default.createElement("nav", null, _react.default.createElement("a", {
       href: project.githubLink,
       id: "githubLink"
     }, _react.default.createElement("img", {

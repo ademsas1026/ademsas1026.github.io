@@ -183,6 +183,9 @@
 #allPortfolio #portfolio #gridItem {
   width: 100%;
 }
+#allPortfolio #portfolio #gridItem a {
+  text-decoration: none;
+}
 #allPortfolio #portfolio #gridItem #title {
   color: #36CCCA;
   font-size: 1.1em;

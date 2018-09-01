@@ -20,6 +20,9 @@
     width: 100%;
     #gridItem {
       width: 100%;
+      a {
+        text-decoration: none;
+      };
       #title {
         color: #36CCCA;
         font-size: 1.1em;
