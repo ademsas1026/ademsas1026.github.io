@@ -31,9 +31,9 @@ const About = props => {
                 {showCurious &&
                   <h3 id="curious" style={window.innerWidth > 480 ? styles.bigScreenSection : styles.smallScreenSection }>
                     I've always loved digging in to new topics and
-                    finding clear solutions to real problems that
-                    affect real people. In the past, I've funneled these interests into
-                    neuroscience research into the mechanisms underlying
+                    finding clear solutions to problems that
+                    affect real people. I've funneled these interests into
+                    neuroscience research focusing on the mechanisms underlying
                     stress / anxiety and medical case management for New
                     Yorkers affected by HIV/AIDS and other chronic conditions.
                     Over the past year, I've switched gears to software development

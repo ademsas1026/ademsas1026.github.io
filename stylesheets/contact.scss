@@ -4,7 +4,7 @@
   align-items: center;
   margin: 20vh 0 10vh 0;
   @media only screen and (min-width: 480px){
-    margin: 40vh 0 10vh 0;
+    margin: 40vh 0 20vh 0;
   }
   #contactHeader {
     width: 80vw;
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 10vh;
     #submitEmail {
       align-self: center;
     };

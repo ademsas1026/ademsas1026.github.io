@@ -388,7 +388,7 @@ var About = function About(props) {
   }), showCurious && _react.default.createElement("h3", {
     id: "curious",
     style: window.innerWidth > 480 ? styles.bigScreenSection : styles.smallScreenSection
-  }, "I've always loved digging in to new topics and finding clear solutions to real problems that affect real people. In the past, I've funneled these interests into neuroscience research into the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.")), _react.default.createElement("br", null), _react.default.createElement("section", {
+  }, "I've always loved digging in to new topics and finding clear solutions to problems that affect real people. I've funneled these interests into neuroscience research focusing on the mechanisms underlying stress / anxiety and medical case management for New Yorkers affected by HIV/AIDS and other chronic conditions. Over the past year, I've switched gears to software development and would love to find a home for these passions.")), _react.default.createElement("br", null), _react.default.createElement("section", {
     className: "section"
   }, _react.default.createElement("h2", null, "I'm ", _react.default.createElement("a", {
     onClick: function onClick() {
@@ -474,16 +474,19 @@ var styles = {
   textField: {
     margin: '0% 0% 5% 0%',
     backgroundColor: 'white',
-    borderRadius: '5%',
     padding: '0.5em',
     opacity: '0.8'
   },
   bigTextField: {
     margin: '0% 0% 5% 0%',
     backgroundColor: 'white',
-    borderRadius: '5%',
     padding: '0.5em 0 0.5em 0.5em',
     opacity: '0.8'
+  },
+  sendButton: {
+    backgroundColor: '#B4B072',
+    width: '100%' // color: 'white'
+
   }
 };
 
@@ -587,14 +590,15 @@ function (_Component) {
       }), messageWarning && _react.default.createElement(_core.FormHelperText, {
         id: "name-helper-text"
       }, "Please enter a message"), _react.default.createElement(_core.TextField, {
-        style: window.innerWidth > 480 ? styles.bigTextField : styles.textField,
+        style: styles.bigTextField,
         onChange: this.handleChange.bind(this),
         placeholder: "your message",
         name: "message",
         multiline: "true"
       }), _react.default.createElement(_core.Button, {
         type: "submit",
-        id: "submitEmail"
+        id: "submitEmail",
+        style: styles.sendButton
       }, "Send")), _react.default.createElement("div", {
         id: "alternateContact"
       }, _react.default.createElement(_core.Button, {
@@ -745,7 +749,7 @@ var projects = [{
   githubLink: 'https://github.com/JARLcodes/mahazay-two',
   deployLink: 'https://mahazay-c248c.firebaseapp.com/',
   screenShot: './images/screenshot-mahazay-1.png',
-  description: 'a smart bullet journaling app built with Firestore, Google Cloud Functions and IBM Watson Personality and Tone Analyzer on the backend & Victory and React on the front.',
+  description: "a smart bullet journal with habit-tracking and sentiment analysis made possible by IBM Watson, media storage made possible by Google Cloud Storage, fast queries and realtime data updates courtesy of Google Firestore, and React + Material-UI for an interactive, modular, and responsive front-end.",
   technologies: ['Node', 'Firebase / NOSQL Database', 'IBM Watson API integration', 'Data visualization', 'React']
 }, {
   name: 'Chronos',
@@ -766,7 +770,7 @@ var Portfolio = function Portfolio() {
     src: "images/line.png"
   }), _react.default.createElement(_core.Grid, {
     container: true,
-    spacing: 24,
+    spacing: 8,
     id: "portfolio"
   }, projects.length && projects.map(function (project) {
     return _react.default.createElement(_core.Grid, {
@@ -775,7 +779,9 @@ var Portfolio = function Portfolio() {
       sm: 6,
       key: project.name,
       id: "gridItem"
-    }, _react.default.createElement("nav", null, _react.default.createElement("a", {
+    }, _react.default.createElement("h2", {
+      id: "title"
+    }, project.name), _react.default.createElement("nav", null, _react.default.createElement("a", {
       href: project.githubLink,
       id: "githubLink"
     }, _react.default.createElement("img", {
@@ -792,13 +798,9 @@ var Portfolio = function Portfolio() {
     }, _react.default.createElement("img", {
       src: project.screenShot,
       className: "screenshot ".concat(project.name)
-    }), _react.default.createElement("div", {
-      className: "titleAndDescription"
-    }, _react.default.createElement("h2", {
-      id: "title"
-    }, project.name), _react.default.createElement("h3", {
+    }), _react.default.createElement("h3", {
       id: "description"
-    }, project.description))));
+    }, project.description)));
   })));
 };
 

@@ -5,16 +5,19 @@ const styles = {
   textField: {
     margin: '0% 0% 5% 0%',
     backgroundColor: 'white',
-    borderRadius: '5%',
     padding: '0.5em',
     opacity: '0.8'
   },
   bigTextField: {
     margin: '0% 0% 5% 0%',
     backgroundColor: 'white',
-    borderRadius: '5%',
     padding: '0.5em 0 0.5em 0.5em',
     opacity: '0.8'
+  },
+  sendButton: {
+    backgroundColor: '#B4B072',
+    width: '100%'
+    // color: 'white'
   }
 }
 
@@ -92,14 +95,14 @@ export default class Contact extends Component {
           
           { messageWarning && <FormHelperText id="name-helper-text">Please enter a message</FormHelperText>}
           <TextField
-              style={window.innerWidth > 480 ? styles.bigTextField : styles.textField}
+              style={styles.bigTextField}
               onChange={this.handleChange.bind(this)}
               placeholder="your message"
               name="message"
               multiline="true"
             />
 
-          <Button type="submit" id="submitEmail">Send</Button>
+          <Button type="submit" id="submitEmail" style={styles.sendButton}>Send</Button>
         </form>
         <div id="alternateContact">
           <Button id="linkedInButton" href="https://linkedin.com/in/abigail-demsas"><img src="/images/linkedin.svg" id="linkedInIcon"/></Button>
